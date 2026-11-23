@@ -1396,7 +1396,7 @@ public class Saellatrix extends NPC {
 		doll.setPlayerKnowsName(false);
 		doll.setName("doll");
 		String dollNumber = "#"+String.format("%03d", Util.random.nextInt(800));
-		if(id=="кукла2") {
+		if(id=="doll2") {
 			dollNumber = "#"+String.format("%03d", 800+Util.random.nextInt(200));
 		}
 		doll.setSurname(dollNumber);

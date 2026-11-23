@@ -129,7 +129,7 @@ public class CreationController {
 		for (AbstractAntennaType antennaType : AntennaType.getAllAntennaTypes()) {
 			String id = "ANTENNA_"+AntennaType.getIdFromAntennaType(antennaType);
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setAntennaType(antennaType);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -142,7 +142,7 @@ public class CreationController {
 			String id = "ANTENNA_COUNT_"+i;
 			if (MainController.document.getElementById(id) != null) {
 				int finalI = i;
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setAntennaRows(finalI);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -154,7 +154,7 @@ public class CreationController {
 		for (HornLength antennaLength : HornLength.values()) {
 			String id = "ANTENNA_LENGTH_"+antennaLength;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setAntennaLength(antennaLength.getMedianValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -167,7 +167,7 @@ public class CreationController {
 			String id = "ANTENNA_COUNT_PER_ROW_"+i;
 			if (MainController.document.getElementById(id) != null) {
 				int finalI = i;
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setAntennaePerRow(finalI);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -180,7 +180,7 @@ public class CreationController {
 		for (Capacity capacity : Capacity.getCapacityListFromPreferences()) {
 			String id = "ANUS_CAPACITY_"+capacity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setAssCapacity(capacity.getMedianValue(), true);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -192,7 +192,7 @@ public class CreationController {
 		for (OrificeDepth depth : OrificeDepth.values()) {
 			String id = "ANUS_DEPTH_"+depth;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setAssDepth(depth.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -204,7 +204,7 @@ public class CreationController {
 		for (OrificeElasticity elasticity : OrificeElasticity.values()) {
 			String id = "ANUS_ELASTICITY_"+elasticity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setAssElasticity(elasticity.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -216,7 +216,7 @@ public class CreationController {
 		for (OrificeModifier orificeMod : OrificeModifier.values()) {
 			String id = "ANUS_MOD_"+orificeMod;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (BodyChanging.getTarget().hasAssOrificeModifier(orificeMod)) {
 						BodyChanging.getTarget().removeAssOrificeModifier(orificeMod);
 					} else {
@@ -235,7 +235,7 @@ public class CreationController {
 		for (OrificePlasticity plasticity : OrificePlasticity.values()) {
 			String id = "ANUS_PLASTICITY_"+plasticity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setAssPlasticity(plasticity.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -247,7 +247,7 @@ public class CreationController {
 		for (Wetness wetness : Wetness.values()) {
 			String id = "ANUS_WETNESS_"+wetness;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setAssWetness(wetness.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -260,7 +260,7 @@ public class CreationController {
 		for (AbstractArmType armType : ArmType.getAllArmTypes()) {
 			String id = "ARM_"+ArmType.getIdFromArmType(armType);
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setArmType(armType);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -273,7 +273,7 @@ public class CreationController {
 			String id = "ARM_COUNT_"+i;
 			if (MainController.document.getElementById(id) != null) {
 				int finalI = i;
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setArmRows(finalI);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -286,7 +286,7 @@ public class CreationController {
 		for (AbstractAssType assType : AssType.getAllAssTypes()) {
 			String id = "ASS_"+AssType.getIdFromAssType(assType);
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setAssType(assType);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -304,7 +304,7 @@ public class CreationController {
 		for (AssSize as : sizes) {
 			String id = "ASS_SIZE_"+as;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setAssSize(as.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -322,7 +322,7 @@ public class CreationController {
 		for (HipSize hs : sizes) {
 			String id = "HIP_SIZE_"+hs;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setHipSize(hs.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -335,7 +335,7 @@ public class CreationController {
 		for (AbstractBreastType breastType : BreastType.getAllBreastTypes()) {
 			String id = "BREAST_"+BreastType.getIdFromBreastType(breastType);
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setBreastType(breastType);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -348,7 +348,7 @@ public class CreationController {
 			String id = "BREAST_COUNT_"+i;
 			if (MainController.document.getElementById(id) != null) {
 				int finalI = i;
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setBreastRows(finalI);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -360,7 +360,7 @@ public class CreationController {
 		for (BreastShape bs : BreastShape.values()) {
 			String id = "BREAST_SHAPE_"+bs;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setBreastShape(bs);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -374,7 +374,7 @@ public class CreationController {
 			for (CupSize cs : CharacterModificationUtils.getBreastSizesAvailable()) {
 				id = "BREAST_SIZE_"+cs;
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						BodyChanging.getTarget().setBreastSize(cs.getMeasurement());
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 					}, false);
@@ -383,21 +383,21 @@ public class CreationController {
 		} else {
 			id = "BREAST_SIZE_INCREASE";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().incrementBreastSize(1);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
 			}
 			id = "BREAST_SIZE_INCREASE_LARGE";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().incrementBreastSize(5);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
 			}
 			id = "BREAST_SIZE_DECREASE";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().incrementBreastSize(-1);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -411,7 +411,7 @@ public class CreationController {
 			}
 			id = "BREAST_SIZE_DECREASE_LARGE";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().incrementBreastSize(-5);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -429,7 +429,7 @@ public class CreationController {
 	public static void initLactationCapacityListeners() {
 		String id = "MILK_PRODUCTION_INCREASE_SMALL";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setBreastMilkStorage(Math.min(CharacterModificationUtils.getLactationUpperLimit(), BodyChanging.getTarget().getBreastRawMilkStorageValue()+CharacterModificationUtils.FLUID_INCREMENT_SMALL));
 				BodyChanging.getTarget().fillMilkToMaxStorage();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -437,7 +437,7 @@ public class CreationController {
 		}
 		id = "MILK_PRODUCTION_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setBreastMilkStorage(Math.min(CharacterModificationUtils.getLactationUpperLimit(), BodyChanging.getTarget().getBreastRawMilkStorageValue()+CharacterModificationUtils.FLUID_INCREMENT_AVERAGE));
 				BodyChanging.getTarget().fillMilkToMaxStorage();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -445,7 +445,7 @@ public class CreationController {
 		}
 		id = "MILK_PRODUCTION_INCREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setBreastMilkStorage(Math.min(CharacterModificationUtils.getLactationUpperLimit(), BodyChanging.getTarget().getBreastRawMilkStorageValue()+CharacterModificationUtils.FLUID_INCREMENT_LARGE));
 				BodyChanging.getTarget().fillMilkToMaxStorage();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -453,7 +453,7 @@ public class CreationController {
 		}
 		id = "MILK_PRODUCTION_INCREASE_HUGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setBreastMilkStorage(Math.min(CharacterModificationUtils.getLactationUpperLimit(), BodyChanging.getTarget().getBreastRawMilkStorageValue()+CharacterModificationUtils.FLUID_INCREMENT_HUGE));
 				BodyChanging.getTarget().fillMilkToMaxStorage();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -461,28 +461,28 @@ public class CreationController {
 		}
 		id = "MILK_PRODUCTION_DECREASE_SMALL";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastMilkStorage(-CharacterModificationUtils.FLUID_INCREMENT_SMALL);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "MILK_PRODUCTION_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastMilkStorage(-CharacterModificationUtils.FLUID_INCREMENT_AVERAGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "MILK_PRODUCTION_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastMilkStorage(-CharacterModificationUtils.FLUID_INCREMENT_LARGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "MILK_PRODUCTION_DECREASE_HUGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastMilkStorage(-CharacterModificationUtils.FLUID_INCREMENT_HUGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
@@ -493,7 +493,7 @@ public class CreationController {
 		for (FluidFlavour flavour : FluidFlavour.values()) {
 			String id = "MILK_FLAVOUR_"+flavour;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setMilkFlavour(flavour);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -505,7 +505,7 @@ public class CreationController {
 		for (FluidModifier modifier : FluidModifier.values()) {
 			String id = "MILK_MODIFIER_"+modifier;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (BodyChanging.getTarget().hasMilkModifier(modifier)) {
 						BodyChanging.getTarget().removeMilkModifier(modifier);
 					} else {
@@ -523,56 +523,56 @@ public class CreationController {
 	public static void initLactationRegenListeners() {
 		String id = "MILK_REGENERATION_INCREASE_SMALL";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastLactationRegeneration(CharacterModificationUtils.FLUID_REGEN_INCREMENT_SMALL);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "MILK_REGENERATION_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastLactationRegeneration(CharacterModificationUtils.FLUID_REGEN_INCREMENT_AVERAGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "MILK_REGENERATION_INCREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastLactationRegeneration(CharacterModificationUtils.FLUID_REGEN_INCREMENT_LARGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "MILK_REGENERATION_INCREASE_HUGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastLactationRegeneration(CharacterModificationUtils.FLUID_REGEN_INCREMENT_HUGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "MILK_REGENERATION_DECREASE_SMALL";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastLactationRegeneration(-CharacterModificationUtils.FLUID_REGEN_INCREMENT_SMALL);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "MILK_REGENERATION_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastLactationRegeneration(-CharacterModificationUtils.FLUID_REGEN_INCREMENT_AVERAGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "MILK_REGENERATION_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastLactationRegeneration(-CharacterModificationUtils.FLUID_REGEN_INCREMENT_LARGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "MILK_REGENERATION_DECREASE_HUGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastLactationRegeneration(-CharacterModificationUtils.FLUID_REGEN_INCREMENT_HUGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
@@ -583,7 +583,7 @@ public class CreationController {
 		for (Capacity capacity : Capacity.getCapacityListFromPreferences()) {
 			String id = "NIPPLE_CAPACITY_"+capacity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setNippleCapacity(capacity.getMedianValue(), true);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -596,7 +596,7 @@ public class CreationController {
 			String id = "NIPPLE_COUNT_"+i;
 			if (MainController.document.getElementById(id) != null) {
 				int finalI = i;
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setNippleCountPerBreast(finalI);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -608,7 +608,7 @@ public class CreationController {
 		for (OrificeDepth depth : OrificeDepth.values()) {
 			String id = "NIPPLE_DEPTH_"+depth;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setNippleDepth(depth.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -620,7 +620,7 @@ public class CreationController {
 		for (OrificeElasticity elasticity : OrificeElasticity.values()) {
 			String id = "NIPPLE_ELASTICITY_"+elasticity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setNippleElasticity(elasticity.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -632,7 +632,7 @@ public class CreationController {
 		for (OrificeModifier orificeMod : OrificeModifier.values()) {
 			String id = "NIPPLE_MOD_"+orificeMod;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (BodyChanging.getTarget().hasNippleOrificeModifier(orificeMod)) {
 						BodyChanging.getTarget().removeNippleOrificeModifier(orificeMod);
 					} else {
@@ -651,7 +651,7 @@ public class CreationController {
 		for (OrificePlasticity plasticity : OrificePlasticity.values()) {
 			String id = "NIPPLE_PLASTICITY_"+plasticity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setNipplePlasticity(plasticity.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -663,7 +663,7 @@ public class CreationController {
 		for (NippleShape ns : NippleShape.values()) {
 			String id = "NIPPLE_SHAPE_"+ns;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setNippleShape(ns);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -675,7 +675,7 @@ public class CreationController {
 		for (NippleSize ns : NippleSize.values()) {
 			String id = "NIPPLE_SIZE_"+ns;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setNippleSize(ns.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -687,7 +687,7 @@ public class CreationController {
 		for (AreolaeSize as : AreolaeSize.values()) {
 			String id = "AREOLAE_SIZE_"+as;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setAreolaeSize(as.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -700,7 +700,7 @@ public class CreationController {
 		for (BodyMaterial mat : BodyMaterial.values()) {
 			String id = "BODY_MATERIAL_"+mat;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setBodyMaterial(mat);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -712,7 +712,7 @@ public class CreationController {
 		for (BodySize bs : BodySize.values()) {
 			String id = "BODY_SIZE_"+bs;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setBodySize(bs.getMedianValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -724,7 +724,7 @@ public class CreationController {
 		for (GenitalArrangement genitalArrangement : GenitalArrangement.values()) {
 			String id = "GENITAL_ARRANGEMENT_"+genitalArrangement;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setGenitalArrangement(genitalArrangement);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -735,7 +735,7 @@ public class CreationController {
 	public static void initHeightListeners() {
 		String id = "HEIGHT_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				if(BodyChanging.getTarget().getHeightValue()
 						< (Main.game.isInNewWorld()
 								?BodyChanging.getTarget().getMaximumHeight()
@@ -747,7 +747,7 @@ public class CreationController {
 		}
 		id = "HEIGHT_INCREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				if(BodyChanging.getTarget().getHeightValue()
 						< (Main.game.isInNewWorld()
 								?BodyChanging.getTarget().getMaximumHeight()
@@ -762,7 +762,7 @@ public class CreationController {
 		}
 		id = "HEIGHT_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				if(BodyChanging.getTarget().getHeightValue()>BodyChanging.getTarget().getMinimumHeight()) {
 					BodyChanging.getTarget().incrementHeight(-1, BodyChanging.isDebugMenu());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -771,7 +771,7 @@ public class CreationController {
 		}
 		id = "HEIGHT_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				if(BodyChanging.getTarget().getHeightValue()>BodyChanging.getTarget().getMinimumHeight()) {
 					BodyChanging.getTarget().incrementHeight(-5, BodyChanging.isDebugMenu());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -784,7 +784,7 @@ public class CreationController {
 		for (Muscle muscle : Muscle.values()) {
 			String id = "MUSCLE_"+muscle;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setMuscle(muscle.getMedianValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -797,7 +797,7 @@ public class CreationController {
 		for (AbstractBreastType breastType : BreastType.getAllBreastTypes()) {
 			String id = "BREAST_CROTCH_"+BreastType.getIdFromBreastType(breastType);
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setBreastCrotchType(breastType);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -810,7 +810,7 @@ public class CreationController {
 			String id = "BREAST_CROTCH_COUNT_"+i;
 			if (MainController.document.getElementById(id) != null) {
 				int finalI = i;
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setBreastCrotchRows(finalI);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -822,7 +822,7 @@ public class CreationController {
 		for (BreastShape bs : BreastShape.values()) {
 			String id = "BREAST_CROTCH_SHAPE_"+bs;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setBreastCrotchShape(bs);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -833,21 +833,21 @@ public class CreationController {
 	public static void initCrotchBreastSizeListeners() {
 		String id = "BREAST_CROTCH_SIZE_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastCrotchSize(1);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "BREAST_CROTCH_SIZE_INCREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastCrotchSize(5);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "BREAST_CROTCH_SIZE_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastCrotchSize(-1);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
@@ -861,7 +861,7 @@ public class CreationController {
 		}
 		id = "BREAST_CROTCH_SIZE_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastCrotchSize(-5);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
@@ -878,7 +878,7 @@ public class CreationController {
 	public static void initCrotchLactationCapacityListeners() {
 		String id = "MILK_CROTCH_PRODUCTION_INCREASE_SMALL";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setBreastCrotchMilkStorage(Math.min(CharacterModificationUtils.getLactationUpperLimit(), BodyChanging.getTarget().getBreastCrotchRawMilkStorageValue()+CharacterModificationUtils.FLUID_INCREMENT_SMALL));
 				BodyChanging.getTarget().fillMilkCrotchToMaxStorage();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -886,7 +886,7 @@ public class CreationController {
 		}
 		id = "MILK_CROTCH_PRODUCTION_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setBreastCrotchMilkStorage(Math.min(CharacterModificationUtils.getLactationUpperLimit(), BodyChanging.getTarget().getBreastCrotchRawMilkStorageValue()+CharacterModificationUtils.FLUID_INCREMENT_AVERAGE));
 				BodyChanging.getTarget().fillMilkCrotchToMaxStorage();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -894,7 +894,7 @@ public class CreationController {
 		}
 		id = "MILK_CROTCH_PRODUCTION_INCREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setBreastCrotchMilkStorage(Math.min(CharacterModificationUtils.getLactationUpperLimit(), BodyChanging.getTarget().getBreastCrotchRawMilkStorageValue()+CharacterModificationUtils.FLUID_INCREMENT_LARGE));
 				BodyChanging.getTarget().fillMilkCrotchToMaxStorage();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -902,7 +902,7 @@ public class CreationController {
 		}
 		id = "MILK_CROTCH_PRODUCTION_INCREASE_HUGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setBreastCrotchMilkStorage(Math.min(CharacterModificationUtils.getLactationUpperLimit(), BodyChanging.getTarget().getBreastCrotchRawMilkStorageValue()+CharacterModificationUtils.FLUID_INCREMENT_HUGE));
 				BodyChanging.getTarget().fillMilkToMaxStorage();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -910,28 +910,28 @@ public class CreationController {
 		}
 		id = "MILK_CROTCH_PRODUCTION_DECREASE_SMALL";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastCrotchMilkStorage(-CharacterModificationUtils.FLUID_INCREMENT_SMALL);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "MILK_CROTCH_PRODUCTION_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastCrotchMilkStorage(-CharacterModificationUtils.FLUID_INCREMENT_AVERAGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "MILK_CROTCH_PRODUCTION_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastCrotchMilkStorage(-CharacterModificationUtils.FLUID_INCREMENT_LARGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "MILK_CROTCH_PRODUCTION_DECREASE_HUGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastCrotchMilkStorage(-CharacterModificationUtils.FLUID_INCREMENT_HUGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
@@ -942,7 +942,7 @@ public class CreationController {
 		for (FluidFlavour flavour : FluidFlavour.values()) {
 			String id = "MILK_CROTCH_FLAVOUR_"+flavour;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setMilkCrotchFlavour(flavour);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -954,7 +954,7 @@ public class CreationController {
 		for (FluidModifier modifier : FluidModifier.values()) {
 			String id = "MILK_CROTCH_MODIFIER_"+modifier;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (BodyChanging.getTarget().hasMilkCrotchModifier(modifier)) {
 						BodyChanging.getTarget().removeMilkCrotchModifier(modifier);
 					} else {
@@ -972,56 +972,56 @@ public class CreationController {
 	public static void initCrotchLactationRegenListeners() {
 		String id = "MILK_CROTCH_REGENERATION_INCREASE_SMALL";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastCrotchLactationRegeneration(CharacterModificationUtils.FLUID_REGEN_INCREMENT_SMALL);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "MILK_CROTCH_REGENERATION_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastCrotchLactationRegeneration(CharacterModificationUtils.FLUID_REGEN_INCREMENT_AVERAGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "MILK_CROTCH_REGENERATION_INCREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastCrotchLactationRegeneration(CharacterModificationUtils.FLUID_REGEN_INCREMENT_LARGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "MILK_CROTCH_REGENERATION_INCREASE_HUGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastCrotchLactationRegeneration(CharacterModificationUtils.FLUID_REGEN_INCREMENT_HUGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "MILK_CROTCH_REGENERATION_DECREASE_SMALL";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastCrotchLactationRegeneration(-CharacterModificationUtils.FLUID_REGEN_INCREMENT_SMALL);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "MILK_CROTCH_REGENERATION_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastCrotchLactationRegeneration(-CharacterModificationUtils.FLUID_REGEN_INCREMENT_AVERAGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "MILK_CROTCH_REGENERATION_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastCrotchLactationRegeneration(-CharacterModificationUtils.FLUID_REGEN_INCREMENT_LARGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "MILK_CROTCH_REGENERATION_DECREASE_HUGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementBreastCrotchLactationRegeneration(-CharacterModificationUtils.FLUID_REGEN_INCREMENT_HUGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
@@ -1032,7 +1032,7 @@ public class CreationController {
 		for (Capacity capacity : Capacity.getCapacityListFromPreferences()) {
 			String id = "NIPPLE_CROTCH_CAPACITY_"+capacity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setNippleCrotchCapacity(capacity.getMedianValue(), true);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1045,7 +1045,7 @@ public class CreationController {
 			String id = "NIPPLE_CROTCH_COUNT_"+i;
 			if (MainController.document.getElementById(id) != null) {
 				int finalI = i;
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setNippleCrotchCountPerBreast(finalI);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1057,7 +1057,7 @@ public class CreationController {
 		for (OrificeDepth depth : OrificeDepth.values()) {
 			String id = "NIPPLE_CROTCH_DEPTH_"+depth;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setNippleCrotchDepth(depth.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1069,7 +1069,7 @@ public class CreationController {
 		for (OrificeElasticity elasticity : OrificeElasticity.values()) {
 			String id = "NIPPLE_CROTCH_ELASTICITY_"+elasticity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setNippleCrotchElasticity(elasticity.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1081,7 +1081,7 @@ public class CreationController {
 		for (OrificeModifier orificeMod : OrificeModifier.values()) {
 			String id = "NIPPLE_CROTCH_MOD_"+orificeMod;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (BodyChanging.getTarget().hasNippleCrotchOrificeModifier(orificeMod)) {
 						BodyChanging.getTarget().removeNippleCrotchOrificeModifier(orificeMod);
 					} else {
@@ -1100,7 +1100,7 @@ public class CreationController {
 		for (OrificePlasticity plasticity : OrificePlasticity.values()) {
 			String id = "NIPPLE_CROTCH_PLASTICITY_"+plasticity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setNippleCrotchPlasticity(plasticity.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1112,7 +1112,7 @@ public class CreationController {
 		for (NippleShape ns : NippleShape.values()) {
 			String id = "NIPPLE_CROTCH_SHAPE_"+ns;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setNippleCrotchShape(ns);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1124,7 +1124,7 @@ public class CreationController {
 		for (NippleSize ns : NippleSize.values()) {
 			String id = "NIPPLE_CROTCH_SIZE_"+ns;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setNippleCrotchSize(ns.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1136,7 +1136,7 @@ public class CreationController {
 		for (AreolaeSize as : AreolaeSize.values()) {
 			String id = "AREOLAE_CROTCH_SIZE_"+as;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setAreolaeCrotchSize(as.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1149,7 +1149,7 @@ public class CreationController {
 		for (AbstractEarType earType : EarType.getAllEarTypes()) {
 			String id = "EAR_"+EarType.getIdFromEarType(earType);
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setEarType(earType);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1162,7 +1162,7 @@ public class CreationController {
 		for (AbstractEyeType eyeType : EyeType.getAllEyeTypes()) {
 			String id = "EYE_"+EyeType.getIdFromEyeType(eyeType);
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setEyeType(eyeType);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1175,7 +1175,7 @@ public class CreationController {
 			String id = "EYE_COUNT_"+i;
 			if (MainController.document.getElementById(id) != null) {
 				int finalI = i;
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setEyePairs(finalI);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1188,14 +1188,14 @@ public class CreationController {
 		for (EyeShape eyeShape : EyeShape.values()) {
 			String id = "IRIS_SHAPE_"+eyeShape;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setIrisShape(eyeShape);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
 			}
 			id = "PUPIL_SHAPE_"+eyeShape;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setPupilShape(eyeShape);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1208,7 +1208,7 @@ public class CreationController {
 		for (AbstractFaceType faceType : FaceType.getAllFaceTypes()) {
 			String id = "FACE_"+FaceType.getIdFromFaceType(faceType);
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setFaceType(faceType);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1220,7 +1220,7 @@ public class CreationController {
 		for (LipSize ls : LipSize.values()) {
 			String id = "LIP_SIZE_"+ls;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setLipSize(ls.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1232,7 +1232,7 @@ public class CreationController {
 		for (Capacity capacity : Capacity.getCapacityListFromPreferences()) {
 			String id = "THROAT_CAPACITY_"+capacity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setFaceCapacity(capacity.getMedianValue(), true);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1244,7 +1244,7 @@ public class CreationController {
 		for (OrificeDepth depth : OrificeDepth.values()) {
 			String id = "THROAT_DEPTH_"+depth;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setFaceDepth(depth.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1256,7 +1256,7 @@ public class CreationController {
 		for (OrificeElasticity elasticity : OrificeElasticity.values()) {
 			String id = "THROAT_ELASTICITY_"+elasticity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setFaceElasticity(elasticity.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1268,7 +1268,7 @@ public class CreationController {
 		for (OrificeModifier orificeMod : OrificeModifier.values()) {
 			String id = "THROAT_MOD_"+orificeMod;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (BodyChanging.getTarget().hasFaceOrificeModifier(orificeMod)) {
 						BodyChanging.getTarget().removeFaceOrificeModifier(orificeMod);
 					} else {
@@ -1287,7 +1287,7 @@ public class CreationController {
 		for (OrificePlasticity plasticity : OrificePlasticity.values()) {
 			String id = "THROAT_PLASTICITY_"+plasticity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setFacePlasticity(plasticity.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1299,7 +1299,7 @@ public class CreationController {
 		for (Wetness wetness : Wetness.values()) {
 			String id = "THROAT_WETNESS_"+wetness;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setFaceWetness(wetness.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1311,7 +1311,7 @@ public class CreationController {
 		for (TongueLength tongueLength : TongueLength.values()) {
 			String id = "TONGUE_LENGTH_"+tongueLength;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setTongueLength(tongueLength.getMedianValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1323,7 +1323,7 @@ public class CreationController {
 		for (TongueModifier tongueMod : TongueModifier.values()) {
 			String id = "TONGUE_MOD_"+tongueMod;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (BodyChanging.getTarget().hasTongueModifier(tongueMod)) {
 						BodyChanging.getTarget().removeTongueModifier(tongueMod);
 					} else {
@@ -1340,7 +1340,7 @@ public class CreationController {
 		for (AbstractHairType hairType : HairType.getAllHairTypes()) {
 			String id = "HAIR_"+HairType.getIdFromHairType(hairType);
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setHairType(hairType);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1351,7 +1351,7 @@ public class CreationController {
 	public static void initNeckFluffListeners() {
 		String id = "NECK_FLUFF_ON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 					@Override
 					public void effects() {
@@ -1363,7 +1363,7 @@ public class CreationController {
 		
 		id = "NECK_FLUFF_OFF";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 					@Override
 					public void effects() {
@@ -1379,7 +1379,7 @@ public class CreationController {
 		for (AbstractHornType hornType : HornType.getAllHornTypes()) {
 			String id = "HORN_"+HornType.getIdFromHornType(hornType);
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setHornType(hornType);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1392,7 +1392,7 @@ public class CreationController {
 			String id = "HORN_COUNT_"+i;
 			if (MainController.document.getElementById(id) != null) {
 				int finalI = i;
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setHornRows(finalI);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1404,7 +1404,7 @@ public class CreationController {
 		for (HornLength hornLength : HornLength.values()) {
 			String id = "HORN_LENGTH_"+hornLength;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setHornLength(hornLength.getMedianValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1417,7 +1417,7 @@ public class CreationController {
 			String id = "HORN_COUNT_PER_ROW_"+i;
 			if (MainController.document.getElementById(id) != null) {
 				int finalI = i;
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setHornsPerRow(finalI);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1430,7 +1430,7 @@ public class CreationController {
 		for (AbstractLegType legType : LegType.getAllLegTypes()) {
 			String id = "LEG_"+LegType.getIdFromLegType(legType);
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setLegType(legType);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1442,7 +1442,7 @@ public class CreationController {
 		for (LegConfiguration legConfig : LegConfiguration.values()) {
 			String id = "LEG_CONFIGURATION_"+legConfig;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().getLegType().applyLegConfigurationTransformation(BodyChanging.getTarget(), legConfig, true, false);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1454,7 +1454,7 @@ public class CreationController {
 		for (FootStructure footStructure : FootStructure.values()) {
 			String id = "FOOT_STRUCTURE_"+footStructure;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setFootStructure(footStructure);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1467,7 +1467,7 @@ public class CreationController {
 		for (AbstractPenisType penisType : PenisType.getAllPenisTypes()) {
 			String id = "PENIS_"+PenisType.getIdFromPenisType(penisType);
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setPenisType(penisType);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1479,7 +1479,7 @@ public class CreationController {
 		for (PenetrationGirth girth : PenetrationGirth.values()) {
 			String id = "PENIS_GIRTH_"+girth;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setPenisGirth(girth.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1491,7 +1491,7 @@ public class CreationController {
 		for (PenetrationModifier penMod : PenetrationModifier.getPenetrationModifiers(SexAreaPenetration.PENIS)) {
 			String id = "PENIS_MOD_"+penMod;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (BodyChanging.getTarget().hasPenisModifier(penMod)) {
 						BodyChanging.getTarget().removePenisModifier(penMod);
 					} else {
@@ -1512,7 +1512,7 @@ public class CreationController {
 			for (int ps : CharacterModificationUtils.getPenisSizesAvailable()) {
 				id = "PENIS_SIZE_"+ps;
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						BodyChanging.getTarget().setPenisSize(ps);
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 					}, false);
@@ -1521,28 +1521,28 @@ public class CreationController {
 		} else {
 			id = "PENIS_SIZE_INCREASE";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().incrementPenisSize(1);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
 			}
 			id = "PENIS_SIZE_INCREASE_LARGE";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().incrementPenisSize(5);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
 			}
 			id = "PENIS_SIZE_DECREASE";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().incrementPenisSize(-1);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
 			}
 			id = "PENIS_SIZE_DECREASE_LARGE";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().incrementPenisSize(-5);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1553,28 +1553,28 @@ public class CreationController {
 	public static void initPenisCumExpulsionListeners() {
 		String id = "CUM_EXPULSION_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementPenisCumExpulsion(1);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "CUM_EXPULSION_INCREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementPenisCumExpulsion(10);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "CUM_EXPULSION_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementPenisCumExpulsion(-1);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "CUM_EXPULSION_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementPenisCumExpulsion(-10);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
@@ -1584,7 +1584,7 @@ public class CreationController {
 	public static void initPenisCumProductionListeners() {
 		String id = "CUM_PRODUCTION_INCREASE_SMALL";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setPenisCumStorage(Math.min(CharacterModificationUtils.getCumUpperLimit(), BodyChanging.getTarget().getPenisRawCumStorageValue()+CharacterModificationUtils.FLUID_INCREMENT_SMALL));
 				BodyChanging.getTarget().fillCumToMaxStorage();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -1592,7 +1592,7 @@ public class CreationController {
 		}
 		id = "CUM_PRODUCTION_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setPenisCumStorage(Math.min(CharacterModificationUtils.getCumUpperLimit(), BodyChanging.getTarget().getPenisRawCumStorageValue()+CharacterModificationUtils.FLUID_INCREMENT_AVERAGE));
 				BodyChanging.getTarget().fillCumToMaxStorage();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -1600,7 +1600,7 @@ public class CreationController {
 		}
 		id = "CUM_PRODUCTION_INCREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setPenisCumStorage(Math.min(CharacterModificationUtils.getCumUpperLimit(), BodyChanging.getTarget().getPenisRawCumStorageValue()+CharacterModificationUtils.FLUID_INCREMENT_LARGE));
 				BodyChanging.getTarget().fillCumToMaxStorage();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -1608,7 +1608,7 @@ public class CreationController {
 		}
 		id = "CUM_PRODUCTION_INCREASE_HUGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setPenisCumStorage(Math.min(CharacterModificationUtils.getCumUpperLimit(), BodyChanging.getTarget().getPenisRawCumStorageValue()+CharacterModificationUtils.FLUID_INCREMENT_HUGE));
 				BodyChanging.getTarget().fillCumToMaxStorage();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -1616,28 +1616,28 @@ public class CreationController {
 		}
 		id = "CUM_PRODUCTION_DECREASE_SMALL";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementPenisCumStorage(-CharacterModificationUtils.FLUID_INCREMENT_SMALL);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "CUM_PRODUCTION_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementPenisCumStorage(-CharacterModificationUtils.FLUID_INCREMENT_AVERAGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "CUM_PRODUCTION_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementPenisCumStorage(-CharacterModificationUtils.FLUID_INCREMENT_LARGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "CUM_PRODUCTION_DECREASE_HUGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementPenisCumStorage(-CharacterModificationUtils.FLUID_INCREMENT_HUGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
@@ -1647,56 +1647,56 @@ public class CreationController {
 	public static void initPenisCumRegenListeners() {
 		String id = "CUM_REGENERATION_INCREASE_SMALL";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementPenisCumProductionRegeneration(CharacterModificationUtils.FLUID_REGEN_INCREMENT_SMALL);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "CUM_REGENERATION_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementPenisCumProductionRegeneration(CharacterModificationUtils.FLUID_REGEN_INCREMENT_AVERAGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "CUM_REGENERATION_INCREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementPenisCumProductionRegeneration(CharacterModificationUtils.FLUID_REGEN_INCREMENT_LARGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "CUM_REGENERATION_INCREASE_HUGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementPenisCumProductionRegeneration(CharacterModificationUtils.FLUID_REGEN_INCREMENT_HUGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "CUM_REGENERATION_DECREASE_SMALL";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementPenisCumProductionRegeneration(-CharacterModificationUtils.FLUID_REGEN_INCREMENT_SMALL);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "CUM_REGENERATION_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementPenisCumProductionRegeneration(-CharacterModificationUtils.FLUID_REGEN_INCREMENT_AVERAGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "CUM_REGENERATION_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementPenisCumProductionRegeneration(-CharacterModificationUtils.FLUID_REGEN_INCREMENT_LARGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "CUM_REGENERATION_DECREASE_HUGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementPenisCumProductionRegeneration(-CharacterModificationUtils.FLUID_REGEN_INCREMENT_HUGE);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
@@ -1707,7 +1707,7 @@ public class CreationController {
 		for (FluidFlavour flavour : FluidFlavour.values()) {
 			String id = "CUM_FLAVOUR_"+flavour;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setCumFlavour(flavour);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1719,7 +1719,7 @@ public class CreationController {
 		for (FluidModifier modifier : FluidModifier.values()) {
 			String id = "CUM_MODIFIER_"+modifier;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (BodyChanging.getTarget().hasCumModifier(modifier)) {
 						BodyChanging.getTarget().removeCumModifier(modifier);
 					} else {
@@ -1739,7 +1739,7 @@ public class CreationController {
 			String id = "TESTICLE_COUNT_"+i;
 			if (MainController.document.getElementById(id) != null) {
 				int finalI = i;
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setTesticleCount(finalI);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1750,14 +1750,14 @@ public class CreationController {
 	public static void initTesticleInternalListeners() {
 		String id = "TESTICLES_INTERNAL_ON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setInternalTesticles(true);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "TESTICLES_INTERNAL_OFF";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setInternalTesticles(false);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
@@ -1774,7 +1774,7 @@ public class CreationController {
 		for (TesticleSize ts : sizes) {
 			String id = "TESTICLE_SIZE_"+ts;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setTesticleSize(ts.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1786,7 +1786,7 @@ public class CreationController {
 		for (Capacity capacity : Capacity.getCapacityListFromPreferences()) {
 			String id = "URETHRA_CAPACITY_"+capacity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setPenisCapacity(capacity.getMedianValue(), true);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1798,7 +1798,7 @@ public class CreationController {
 		for (OrificeDepth depth : OrificeDepth.values()) {
 			String id = "URETHRA_DEPTH_"+depth;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setUrethraDepth(depth.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1810,7 +1810,7 @@ public class CreationController {
 		for (OrificeElasticity elasticity : OrificeElasticity.values()) {
 			String id = "URETHRA_ELASTICITY_"+elasticity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setUrethraElasticity(elasticity.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1822,7 +1822,7 @@ public class CreationController {
 		for (OrificeModifier orificeMod : OrificeModifier.values()) {
 			String id = "URETHRA_MOD_"+orificeMod;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (BodyChanging.getTarget().hasUrethraOrificeModifier(orificeMod)) {
 						BodyChanging.getTarget().removeUrethraOrificeModifier(orificeMod);
 					} else {
@@ -1841,7 +1841,7 @@ public class CreationController {
 		for (OrificePlasticity plasticity : OrificePlasticity.values()) {
 			String id = "URETHRA_PLASTICITY_"+plasticity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setUrethraPlasticity(plasticity.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1854,7 +1854,7 @@ public class CreationController {
 		for (Capacity capacity : Capacity.getCapacityListFromPreferences()) {
 			String id = "SPINNERET_CAPACITY_"+capacity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setSpinneretCapacity(capacity.getMedianValue(), true);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1866,7 +1866,7 @@ public class CreationController {
 		for (OrificeDepth depth : OrificeDepth.values()) {
 			String id = "SPINNERET_DEPTH_"+depth;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setSpinneretDepth(depth.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1878,7 +1878,7 @@ public class CreationController {
 		for (OrificeElasticity elasticity : OrificeElasticity.values()) {
 			String id = "SPINNERET_ELASTICITY_"+elasticity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setSpinneretElasticity(elasticity.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1890,7 +1890,7 @@ public class CreationController {
 		for (OrificeModifier orificeMod : OrificeModifier.values()) {
 			String id = "SPINNERET_MOD_"+orificeMod;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (BodyChanging.getTarget().hasSpinneretOrificeModifier(orificeMod)) {
 						BodyChanging.getTarget().removeSpinneretOrificeModifier(orificeMod);
 					} else {
@@ -1909,7 +1909,7 @@ public class CreationController {
 		for (OrificePlasticity plasticity : OrificePlasticity.values()) {
 			String id = "SPINNERET_PLASTICITY_"+plasticity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setSpinneretPlasticity(plasticity.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1921,7 +1921,7 @@ public class CreationController {
 		for (Wetness wetness : Wetness.values()) {
 			String id = "SPINNERET_WETNESS_"+wetness;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setSpinneretWetness(wetness.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1934,7 +1934,7 @@ public class CreationController {
 		for (AbstractTailType tailType : TailType.getAllTailTypes()) {
 			String id = "TAIL_"+TailType.getIdFromTailType(tailType);
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setTailType(tailType);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1947,7 +1947,7 @@ public class CreationController {
 			String id = "TAIL_COUNT_"+i;
 			if (MainController.document.getElementById(id) != null) {
 				int finalI = i;
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setTailCount(finalI, BodyChanging.isDebugMenu());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1959,7 +1959,7 @@ public class CreationController {
 		for (PenetrationGirth girth : PenetrationGirth.values()) {
 			String id = "TAIL_GIRTH_"+girth;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setTailGirth(girth.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1970,7 +1970,7 @@ public class CreationController {
 	public static void initTailLengthListeners() {
 		String id = "TAIL_LENGTH_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				if (BodyChanging.getTarget().getLegConfiguration() == LegConfiguration.TAIL_LONG) {
 					BodyChanging.getTarget().incrementLegTailLengthAsPercentageOfHeight(0.05f);
 				} else {
@@ -1981,7 +1981,7 @@ public class CreationController {
 		}
 		id = "TAIL_LENGTH_INCREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				if (BodyChanging.getTarget().getLegConfiguration() == LegConfiguration.TAIL_LONG) {
 					BodyChanging.getTarget().incrementLegTailLengthAsPercentageOfHeight(0.25f);
 				} else {
@@ -1992,7 +1992,7 @@ public class CreationController {
 		}
 		id = "TAIL_LENGTH_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				if (BodyChanging.getTarget().getLegConfiguration() == LegConfiguration.TAIL_LONG) {
 					BodyChanging.getTarget().incrementLegTailLengthAsPercentageOfHeight(-0.05f);
 				} else {
@@ -2003,7 +2003,7 @@ public class CreationController {
 		}
 		id = "TAIL_LENGTH_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				if (BodyChanging.getTarget().getLegConfiguration() == LegConfiguration.TAIL_LONG) {
 					BodyChanging.getTarget().incrementLegTailLengthAsPercentageOfHeight(-0.25f);
 				} else {
@@ -2019,7 +2019,7 @@ public class CreationController {
 		for (PenetrationGirth girth : PenetrationGirth.values()) {
 			String id = "TENTACLE_GIRTH_"+girth;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setTentacleGirth(girth.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -2030,28 +2030,28 @@ public class CreationController {
 	public static void initTentacleLengthListeners() {
 		String id = "TENTACLE_LENGTH_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementTentacleLengthAsPercentageOfHeight(0.05f);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "TENTACLE_LENGTH_INCREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementTentacleLengthAsPercentageOfHeight(0.25f);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "TENTACLE_LENGTH_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementTentacleLengthAsPercentageOfHeight(-0.05f);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "TENTACLE_LENGTH_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementTentacleLengthAsPercentageOfHeight(-0.25f);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
@@ -2063,7 +2063,7 @@ public class CreationController {
 		for (AbstractTorsoType torsoType : TorsoType.getAllTorsoTypes()) {
 			String id = "TORSO_"+TorsoType.getIdFromTorsoType(torsoType);
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setTorsoType(torsoType);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -2076,7 +2076,7 @@ public class CreationController {
 		for (AbstractVaginaType vaginaType : VaginaType.getAllVaginaTypes()) {
 			String id = "VAGINA_"+VaginaType.getIdFromVaginaType(vaginaType);
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setVaginaType(vaginaType);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -2103,7 +2103,7 @@ public class CreationController {
 		for (Capacity capacity : Capacity.getCapacityListFromPreferences()) {
 			String id = "VAGINA_CAPACITY_"+capacity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setVaginaCapacity(capacity.getMedianValue(), true);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -2115,7 +2115,7 @@ public class CreationController {
 		for (FluidFlavour flavour : FluidFlavour.values()) {
 			String id = "GIRLCUM_FLAVOUR_"+flavour;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setGirlcumFlavour(flavour);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -2127,7 +2127,7 @@ public class CreationController {
 		for (FluidModifier modifier : FluidModifier.values()) {
 			String id = "GIRLCUM_MODIFIER_"+modifier;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (BodyChanging.getTarget().hasGirlcumModifier(modifier)) {
 						BodyChanging.getTarget().removeGirlcumModifier(modifier);
 					} else {
@@ -2146,7 +2146,7 @@ public class CreationController {
 		for (OrificeDepth depth : OrificeDepth.values()) {
 			String id = "VAGINA_DEPTH_"+depth;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setVaginaDepth(depth.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -2157,7 +2157,7 @@ public class CreationController {
 	public static void initVaginaEggLayerListeners() {
 		String id = "VAGINA_EGG_LAYER_ON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				if (!BodyChanging.getTarget().isPregnant()) {
 					BodyChanging.getTarget().setVaginaEggLayer(true);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -2166,7 +2166,7 @@ public class CreationController {
 		}
 		id = "VAGINA_EGG_LAYER_OFF";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				if (!BodyChanging.getTarget().isPregnant()) {
 					BodyChanging.getTarget().setVaginaEggLayer(false);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -2179,7 +2179,7 @@ public class CreationController {
 		for (OrificeElasticity elasticity : OrificeElasticity.values()) {
 			String id = "VAGINA_ELASTICITY_"+elasticity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setVaginaElasticity(elasticity.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -2190,14 +2190,14 @@ public class CreationController {
 	public static void initVaginaHymenListeners() {
 		String id = "VAGINA_HYMEN_ON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setHymen(true);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "VAGINA_HYMEN_OFF";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setHymen(false);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
@@ -2208,7 +2208,7 @@ public class CreationController {
 		for (OrificeModifier orificeMod : OrificeModifier.values()) {
 			String id = "VAGINA_MOD_"+orificeMod;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (BodyChanging.getTarget().hasVaginaOrificeModifier(orificeMod)) {
 						BodyChanging.getTarget().removeVaginaOrificeModifier(orificeMod);
 					} else {
@@ -2227,7 +2227,7 @@ public class CreationController {
 		for (OrificePlasticity plasticity : OrificePlasticity.values()) {
 			String id = "VAGINA_PLASTICITY_"+plasticity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setVaginaPlasticity(plasticity.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -2238,14 +2238,14 @@ public class CreationController {
 	public static void initVaginaSquinterListeners() {
 		String id = "VAGINA_SQUIRTER_ON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setVaginaSquirter(true);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "VAGINA_SQUIRTER_OFF";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setVaginaSquirter(false);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
@@ -2256,7 +2256,7 @@ public class CreationController {
 		for (Wetness wetness : Wetness.values()) {
 			String id = "VAGINA_WETNESS_"+wetness;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setVaginaWetness(wetness.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -2268,7 +2268,7 @@ public class CreationController {
 		for (PenetrationGirth girth : PenetrationGirth.values()) {
 			String id = "CLITORIS_GIRTH_"+girth;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setClitorisGirth(girth.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -2280,7 +2280,7 @@ public class CreationController {
 		for (PenetrationModifier penMod : PenetrationModifier.getPenetrationModifiers(SexAreaPenetration.CLIT)) {
 			String id = "CLITORIS_MOD_"+penMod;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (BodyChanging.getTarget().hasClitorisModifier(penMod)) {
 						BodyChanging.getTarget().removeClitorisModifier(penMod);
 					} else {
@@ -2301,7 +2301,7 @@ public class CreationController {
 			for (ClitorisSize cs : CharacterModificationUtils.getClitorisSizesAvailable()) {
 				id = "CLITORIS_SIZE_"+cs;
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						BodyChanging.getTarget().setVaginaClitorisSize(cs.getMedianValue());
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 					}, false);
@@ -2310,28 +2310,28 @@ public class CreationController {
 		} else {
 			id = "CLITORIS_SIZE_INCREASE";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().incrementVaginaClitorisSize(1);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
 			}
 			id = "CLITORIS_SIZE_INCREASE_LARGE";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().incrementVaginaClitorisSize(5);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
 			}
 			id = "CLITORIS_SIZE_DECREASE";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().incrementVaginaClitorisSize(-1);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
 			}
 			id = "CLITORIS_SIZE_DECREASE_LARGE";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().incrementVaginaClitorisSize(-5);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -2343,7 +2343,7 @@ public class CreationController {
 		for (LabiaSize ls : LabiaSize.values()) {
 			String id = "LABIA_SIZE_"+ls;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setVaginaLabiaSize(ls.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -2355,7 +2355,7 @@ public class CreationController {
 		for (Capacity capacity : Capacity.getCapacityListFromPreferences()) {
 			String id = "VAGINA_URETHRA_CAPACITY_"+capacity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setVaginaUrethraCapacity(capacity.getMedianValue(), true);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -2367,7 +2367,7 @@ public class CreationController {
 		for (OrificeDepth depth : OrificeDepth.values()) {
 			String id = "VAGINA_URETHRA_DEPTH_"+depth;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setVaginaUrethraDepth(depth.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -2379,7 +2379,7 @@ public class CreationController {
 		for (OrificeElasticity elasticity : OrificeElasticity.values()) {
 			String id = "VAGINA_URETHRA_ELASTICITY_"+elasticity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setVaginaUrethraElasticity(elasticity.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -2391,7 +2391,7 @@ public class CreationController {
 		for (OrificeModifier orificeMod : OrificeModifier.values()) {
 			String id = "VAGINA_URETHRA_MOD_"+orificeMod;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (BodyChanging.getTarget().hasVaginaUrethraOrificeModifier(orificeMod)) {
 						BodyChanging.getTarget().removeVaginaUrethraOrificeModifier(orificeMod);
 					} else {
@@ -2410,7 +2410,7 @@ public class CreationController {
 		for (OrificePlasticity plasticity : OrificePlasticity.values()) {
 			String id = "VAGINA_URETHRA_PLASTICITY_"+plasticity;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setVaginaUrethraPlasticity(plasticity.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -2423,7 +2423,7 @@ public class CreationController {
 		for (AbstractWingType wingType : WingType.getAllWingTypes()) {
 			String id = "WING_"+WingType.getIdFromWingType(wingType);
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setWingType(wingType);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -2435,7 +2435,7 @@ public class CreationController {
 		for (WingSize wingSize : WingSize.values()) {
 			String id = "WING_SIZE_"+wingSize;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setWingSize(wingSize.getValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -2448,7 +2448,7 @@ public class CreationController {
 		for (AffectionLevel affection : AffectionLevel.values()) {
 			String id = "AFFECTION_LEVEL_"+affection;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setAffection(Main.game.getPlayer(), affection.getMedianValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -2459,7 +2459,7 @@ public class CreationController {
 	public static void initAgeListeners() {
 		String id = "AGE_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setBirthday(BodyChanging.getTarget().getBirthday().minusYears(1));
 				CharacterModificationUtils.performAgeCheck();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -2467,7 +2467,7 @@ public class CreationController {
 		}
 		id = "AGE_INCREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setBirthday(BodyChanging.getTarget().getBirthday().minusYears(5));
 				CharacterModificationUtils.performAgeCheck();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -2475,7 +2475,7 @@ public class CreationController {
 		}
 		id = "AGE_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setBirthday(BodyChanging.getTarget().getBirthday().plusYears(1));
 				CharacterModificationUtils.performAgeCheck();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -2483,7 +2483,7 @@ public class CreationController {
 		}
 		id = "AGE_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setBirthday(BodyChanging.getTarget().getBirthday().plusYears(5));
 				CharacterModificationUtils.performAgeCheck();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -2494,7 +2494,7 @@ public class CreationController {
 	public static void initAgeAppearanceListeners() {
 		String id = "AGE_APPEARANCE_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				int targetAge = Math.max(GameCharacter.MINIMUM_AGE, Math.min(BodyChanging.getTarget().getAppearsAsAgeValue()+1, BodyChanging.getTarget().getAgeValue()+BodyChanging.getTarget().getAgeDifferenceUpperLimit()));
 				if(BodyChanging.getTarget().getAgeAppearanceAbsolute()!=0) {
 					BodyChanging.getTarget().setAgeAppearanceAbsolute(targetAge);
@@ -2506,7 +2506,7 @@ public class CreationController {
 		}
 		id = "AGE_APPEARANCE_INCREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				int targetAge = Math.max(GameCharacter.MINIMUM_AGE, Math.min(BodyChanging.getTarget().getAppearsAsAgeValue()+5, BodyChanging.getTarget().getAgeValue()+BodyChanging.getTarget().getAgeDifferenceUpperLimit()));
 				if(BodyChanging.getTarget().getAgeAppearanceAbsolute()!=0) {
 					BodyChanging.getTarget().setAgeAppearanceAbsolute(targetAge);
@@ -2518,7 +2518,7 @@ public class CreationController {
 		}
 		id = "AGE_APPEARANCE_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				int targetAge = Math.max(GameCharacter.MINIMUM_AGE, Math.min(BodyChanging.getTarget().getAppearsAsAgeValue()-1, BodyChanging.getTarget().getAgeValue()+BodyChanging.getTarget().getAgeDifferenceUpperLimit()));
 				if(BodyChanging.getTarget().getAgeAppearanceAbsolute()!=0) {
 					BodyChanging.getTarget().setAgeAppearanceAbsolute(targetAge);
@@ -2530,7 +2530,7 @@ public class CreationController {
 		}
 		id = "AGE_APPEARANCE_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				int targetAge = Math.max(GameCharacter.MINIMUM_AGE, Math.min(BodyChanging.getTarget().getAppearsAsAgeValue()-5, BodyChanging.getTarget().getAgeValue()+BodyChanging.getTarget().getAgeDifferenceUpperLimit()));
 				if(BodyChanging.getTarget().getAgeAppearanceAbsolute()!=0) {
 					BodyChanging.getTarget().setAgeAppearanceAbsolute(targetAge);
@@ -2546,7 +2546,7 @@ public class CreationController {
 		for (Occupation history : Occupation.values()) {
 			String id = "OCCUPATION_"+history;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", event->{
+				MainController.addEventListener(MainController.document, id, "click", event->{
 					Main.game.getPlayer().setHistory(history);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -2561,7 +2561,7 @@ public class CreationController {
 		for (Month month : Month.values()) {
 			id = "STARTING_MONTH_"+month;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.setStartingDateMonth(month);
 					CharacterModificationUtils.performAgeCheck();
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -2572,7 +2572,7 @@ public class CreationController {
 		// Birthday:
 		id = "BIRTH_DAY_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setBirthday(BodyChanging.getTarget().getBirthday().plusDays(1));
 				CharacterModificationUtils.performAgeCheck();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -2580,7 +2580,7 @@ public class CreationController {
 		}
 		id = "BIRTH_DAY_INCREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setBirthday(BodyChanging.getTarget().getBirthday().plusDays(5));
 				CharacterModificationUtils.performAgeCheck();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -2588,7 +2588,7 @@ public class CreationController {
 		}
 		id = "BIRTH_DAY_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setBirthday(BodyChanging.getTarget().getBirthday().minusDays(1));
 				CharacterModificationUtils.performAgeCheck();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -2596,7 +2596,7 @@ public class CreationController {
 		}
 		id = "BIRTH_DAY_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setBirthday(BodyChanging.getTarget().getBirthday().minusDays(5));
 				CharacterModificationUtils.performAgeCheck();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -2606,7 +2606,7 @@ public class CreationController {
 		// Birth month:
 		id = "BIRTH_MONTH_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setBirthday(BodyChanging.getTarget().getBirthday().plusMonths(1));
 				CharacterModificationUtils.performAgeCheck();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -2614,7 +2614,7 @@ public class CreationController {
 		}
 		id = "BIRTH_MONTH_INCREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setBirthday(BodyChanging.getTarget().getBirthday().plusMonths(5));
 				CharacterModificationUtils.performAgeCheck();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -2622,7 +2622,7 @@ public class CreationController {
 		}
 		id = "BIRTH_MONTH_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setBirthday(BodyChanging.getTarget().getBirthday().minusMonths(1));
 				CharacterModificationUtils.performAgeCheck();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -2630,7 +2630,7 @@ public class CreationController {
 		}
 		id = "BIRTH_MONTH_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setBirthday(BodyChanging.getTarget().getBirthday().minusMonths(5));
 				CharacterModificationUtils.performAgeCheck();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -2641,28 +2641,28 @@ public class CreationController {
 	public static void initFemininityListeners() {
 		String id = "FEMININITY_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementFemininity(1);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "FEMININITY_INCREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementFemininity(5);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "FEMININITY_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementFemininity(-1);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "FEMININITY_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().incrementFemininity(-5);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
@@ -2672,7 +2672,7 @@ public class CreationController {
 	public static void initFemininityPresetListeners() {
 		String id = "CHOOSE_FEM_ANDROGYNOUS";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().setFemininity(Femininity.ANDROGYNOUS.getMedianFemininity());
 				if (!Main.game.isInNewWorld() && BodyChanging.getTarget().isPlayer()) {
 					CharacterCreation.getDressed();
@@ -2684,7 +2684,7 @@ public class CreationController {
 		if (Main.game.getPlayer().hasPenis()) {
 			id = "CHOOSE_FEM_MASCULINE_STRONG";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setFemininity(Femininity.MASCULINE_STRONG.getMedianFemininity());
 					if (!Main.game.isInNewWorld() && BodyChanging.getTarget().isPlayer()) {
 						CharacterCreation.getDressed();
@@ -2696,7 +2696,7 @@ public class CreationController {
 			
 			id = "CHOOSE_FEM_MASCULINE";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setFemininity(Femininity.MASCULINE.getMedianFemininity());
 					if (!Main.game.isInNewWorld() && BodyChanging.getTarget().isPlayer()) {
 						CharacterCreation.getDressed();
@@ -2708,7 +2708,7 @@ public class CreationController {
 		} else {
 			id = "CHOOSE_FEM_FEMININE";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setFemininity(Femininity.FEMININE.getMedianFemininity());
 					if (!Main.game.isInNewWorld() && BodyChanging.getTarget().isPlayer()) {
 						CharacterCreation.getDressed();
@@ -2720,7 +2720,7 @@ public class CreationController {
 			
 			id = "CHOOSE_FEM_FEMININE_STRONG";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setFemininity(Femininity.FEMININE_STRONG.getMedianFemininity());
 					if (!Main.game.isInNewWorld() && BodyChanging.getTarget().isPlayer()) {
 						CharacterCreation.getDressed();
@@ -2737,7 +2737,7 @@ public class CreationController {
 			for (FetishDesire desire : FetishDesire.values()) {
 				String id = "FETISH_DESIRE_"+Fetish.getIdFromFetish(fetish)+desire;
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						if (desire == FetishDesire.FOUR_LOVE) {
 							BodyChanging.getTarget().addFetish(fetish);
 						} else {
@@ -2754,7 +2754,7 @@ public class CreationController {
 	public static void initGenderListeners() {
 		String id = "CHOOSE_GENDER_MALE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				CharacterCreation.setGenderMale();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
@@ -2762,7 +2762,7 @@ public class CreationController {
 		
 		id = "CHOOSE_GENDER_FEMALE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				CharacterCreation.setGenderFemale();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
@@ -2772,14 +2772,14 @@ public class CreationController {
 	public static void initLipPuffinessListeners() {
 		String id = "LIP_PUFFY_ON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().addFaceOrificeModifier(OrificeModifier.PUFFY);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "LIP_PUFFY_OFF";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().removeFaceOrificeModifier(OrificeModifier.PUFFY);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
@@ -2789,14 +2789,14 @@ public class CreationController {
 	public static void initNipplePuffinessListeners() {
 		String id = "NIPPLE_PUFFY_ON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().addNippleOrificeModifier(OrificeModifier.PUFFY);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
 		}
 		id = "NIPPLE_PUFFY_OFF";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				BodyChanging.getTarget().removeNippleOrificeModifier(OrificeModifier.PUFFY);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
@@ -2807,7 +2807,7 @@ public class CreationController {
 		for (ObedienceLevel obedience : ObedienceLevel.values()) {
 			String id = "OBEDIENCE_LEVEL_"+obedience;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setObedience(obedience.getMedianValue());
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -2819,7 +2819,7 @@ public class CreationController {
 		for (SexualOrientation orientation : SexualOrientation.values()) {
 			String id = "SEXUAL_ORIENTATION_"+orientation;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					BodyChanging.getTarget().setSexualOrientation(orientation);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -2831,7 +2831,7 @@ public class CreationController {
 		for (PersonalityTrait trait : PersonalityTrait.values()) {
 			String id = "PERSONALITY_TRAIT_"+trait;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (!BodyChanging.getTarget().hasPersonalityTrait(trait)) {
 						BodyChanging.getTarget().addPersonalityTrait(trait);
 					} else {
@@ -2877,7 +2877,7 @@ public class CreationController {
 				int i = entry.getValue();
 				String id = typeEntry.getKey() + "_" + entry.getKey();
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						CharacterModificationUtils.incrementSexExperience(typeEntry.getValue(), i);
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 						}, false);
@@ -2906,7 +2906,7 @@ public class CreationController {
 			id = "TATTOO_ADD_REMOVE_"+invSlot;
 			if (MainController.document.getElementById(id) != null) {
 				if (BodyChanging.getTarget().getTattooInSlot(invSlot) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						if (Main.game.getPlayer().getMoney()>=100 || !Main.game.isInNewWorld()) {
 							Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 								@Override
@@ -2954,7 +2954,7 @@ public class CreationController {
 					} else {
 						throw new NullPointerException("Этот узел не имеет назначенного следующего диалога");
 					}
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						Main.game.setContent(new Response("", "", nextDialogue) {
 							@Override
 							public void effects() {
@@ -2981,7 +2981,7 @@ public class CreationController {
 				} else {
 					throw new NullPointerException("Этот узел не имеет назначенного следующего диалога");
 				}
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.setContent(new Response("", "", nextDialogue) {
 						@Override
 						public void effects() {
@@ -2996,7 +2996,7 @@ public class CreationController {
 			
 			id = "TATTOO_ENCHANT_"+invSlot.toString();
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.setContent(new Response("", "", EnchantmentDialogue.ENCHANTMENT_MENU) {
 						@Override
 						public DialogueNode getNextDialogue() {
@@ -3024,7 +3024,7 @@ public class CreationController {
 			if (MainController.document.getElementById(id) != null) {
 				if (type.getSlotAvailability().contains(CharacterModificationUtils.tattooInventorySlot)) {
 					if (!CharacterModificationUtils.tattoo.getType().equals(type)) {
-						((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+						MainController.addEventListener(MainController.document, id, "click", e->{
 							Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 								@Override
 								public void effects() {
@@ -3048,7 +3048,7 @@ public class CreationController {
 		for (Colour c : CharacterModificationUtils.tattoo.getType().getAvailablePrimaryColours()) {
 			id = "TATTOO_COLOUR_PRIMARY_"+c.getId();
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 						@Override
 						public void effects() {
@@ -3065,7 +3065,7 @@ public class CreationController {
 		for (Colour c : CharacterModificationUtils.tattoo.getType().getAvailableSecondaryColours()) {
 			id = "TATTOO_COLOUR_SECONDARY_"+c.getId();
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 						@Override
 						public void effects() {
@@ -3082,7 +3082,7 @@ public class CreationController {
 		for (Colour c : CharacterModificationUtils.tattoo.getType().getAvailableTertiaryColours()) {
 			id = "TATTOO_COLOUR_TERTIARY_"+c.getId();
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 						@Override
 						public void effects() {
@@ -3098,7 +3098,7 @@ public class CreationController {
 		
 		id = "TATTOO_GLOW";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 					@Override
 					public void effects() {
@@ -3114,7 +3114,7 @@ public class CreationController {
 		for (TattooWritingStyle style : TattooWritingStyle.values()) {
 			id = "TATTOO_WRITING_STYLE_"+style.toString();
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 						@Override
 						public void effects() {
@@ -3134,7 +3134,7 @@ public class CreationController {
 		for (Colour c : TattooWriting.getAvailableColours()) {
 			id = "TATTOO_WRITING_COLOUR_"+c.getId();
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 						@Override
 						public void effects() {
@@ -3150,7 +3150,7 @@ public class CreationController {
 		
 		id = "TATTOO_WRITING_GLOW";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 					@Override
 					public void effects() {
@@ -3166,7 +3166,7 @@ public class CreationController {
 		for (TattooCounterType counterType : TattooCounterType.values()) {
 			id = "TATTOO_COUNTER_TYPE_"+counterType.toString();
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 						@Override
 						public void effects() {
@@ -3196,7 +3196,7 @@ public class CreationController {
 		
 		id = "TATTOO_COUNT_RETROACTIVE_ENABLED";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 					@Override
 					public void effects() {
@@ -3210,7 +3210,7 @@ public class CreationController {
 		}
 		id = "TATTOO_COUNT_RETROACTIVE_DISABLED";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				if(CharacterModificationUtils.tattoo.getCounter().getType().isRetroactiveApplicationAvailable()) {
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 						@Override
@@ -3228,7 +3228,7 @@ public class CreationController {
 		for (TattooCountType countType : TattooCountType.values()) {
 			id = "TATTOO_COUNT_TYPE_"+countType.toString();
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 						@Override
 						public void effects() {
@@ -3244,7 +3244,7 @@ public class CreationController {
 		for (Colour c : TattooCounter.getAvailableColours()) {
 			id = "TATTOO_COUNTER_COLOUR_"+c.getId();
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 						@Override
 						public void effects() {
@@ -3260,7 +3260,7 @@ public class CreationController {
 		
 		id = "TATTOO_COUNTER_GLOW";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 					@Override
 					public void effects() {

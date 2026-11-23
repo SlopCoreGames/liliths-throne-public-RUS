@@ -1272,18 +1272,31 @@ public class MainController implements Initializable {
 	private void unbindListeners(Document document) {
 		cookieManager.getCookieStore().removeAll();
 		if(document!=null) {
-			for(EventListenerData data : EventListenerDataMap.get(document)) {
-				((EventTarget) document.getElementById(data.ID)).removeEventListener(data.type, data.listener, data.useCapture);
+			List<EventListenerData> list = EventListenerDataMap.get(document);
+			if(list != null) {
+				for(EventListenerData data : list) {
+					EventTarget target = (EventTarget) document.getElementById(data.ID);
+					if(target != null) {
+						target.removeEventListener(data.type, data.listener, data.useCapture);
+					}
+				}
+				list.clear();
 			}
-			EventListenerDataMap.get(document).clear();
 			
 			EventListenerDataMap.remove(document);
 		}
 	}
 	
 	static void addEventListener(Document document, String ID, String type, EventListener listener, boolean useCapture) {
-		((EventTarget) document.getElementById(ID)).addEventListener(type, listener, useCapture);
-		EventListenerDataMap.get(document).add(new EventListenerData(ID, type, listener, useCapture));
+		if(document == null) {
+			return;
+		}
+		EventTarget target = (EventTarget) document.getElementById(ID);
+		if(target == null) {
+			return;
+		}
+		target.addEventListener(type, listener, useCapture);
+		EventListenerDataMap.computeIfAbsent(document, k -> new ArrayList<>()).add(new EventListenerData(ID, type, listener, useCapture));
 	}
 	
 	public static void addTooltipListeners(String id, EventListener tooltip) {
@@ -1453,7 +1466,7 @@ public class MainController implements Initializable {
 				String id = "DICE_PLAYER_"+i;
 				if ((MainController.document.getElementById(id)) != null) {
 					int finalI = i;
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+					addEventListener(MainController.document, id, "click", e -> {
 						if(DicePoker.isAbleToSelectReroll()) {
 							DicePoker.setReroll(DicePoker.getPlayerDice().get(finalI));
 						}
@@ -1949,7 +1962,7 @@ public class MainController implements Initializable {
 		String id = "INV_PAGE_LEFT_"+i;
 		if (((EventTarget) document.getElementById(id)) != null) {
 			if(i!=5 || Main.game.getPlayer().isCarryingQuestItems()) {
-				((EventTarget) document.getElementById(id)).addEventListener("click", e -> {
+				addEventListener(document, id, "click", e -> {
 					RenderingEngine.setPageLeft(i);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -1970,7 +1983,7 @@ public class MainController implements Initializable {
 				|| (InventoryDialogue.getInventoryNPC()==null
 					?Main.game.getPlayer().getCell().getInventory().isAnyQuestItemPresent()
 					:InventoryDialogue.getInventoryNPC().isCarryingQuestItems())) {
-				((EventTarget) document.getElementById(id)).addEventListener("click", e -> {
+				addEventListener(document, id, "click", e -> {
 					RenderingEngine.setPageRight(i);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -2147,7 +2160,7 @@ public class MainController implements Initializable {
 		// For all equipped clothing slots:
 		String id;
 		for (InventorySlot invSlot : InventorySlot.values()) {
-			id = invSlot.toString() + "Слот";
+			id = invSlot.toString() + "Slot";
 			if (!invSlot.isWeapon()) {
 				if (((EventTarget) documentAttributes.getElementById(id)) != null) {
 					if(!RenderingEngine.ENGINE.isRenderingTattoosLeft() || invSlot.isJewellery()) {
@@ -2173,7 +2186,7 @@ public class MainController implements Initializable {
 		
 		id = "TATTOO_SWITCH_LEFT";
 		if (((EventTarget) documentAttributes.getElementById(id)) != null) {
-			((EventTarget) documentAttributes.getElementById(id)).addEventListener("click", e -> {
+			addEventListener(documentAttributes, id, "click", e -> {
 				RenderingEngine.ENGINE.setRenderingTattoosLeft(!RenderingEngine.ENGINE.isRenderingTattoosLeft());
 				this.updateUILeftPanel();
 			}, false);
@@ -2201,7 +2214,7 @@ public class MainController implements Initializable {
 		
 		id = "DATE_DISPLAY_TOGGLE";
 		if (((EventTarget) documentAttributes.getElementById(id)) != null) {
-			((EventTarget) documentAttributes.getElementById(id)).addEventListener("click", e -> {
+			addEventListener(documentAttributes, id, "click", e -> {
 				if(!Main.game.isBadEnd()) {
 					Main.getProperties().setValue(PropertyValue.calendarDisplay, !Main.getProperties().hasValue(PropertyValue.calendarDisplay));
 					Main.saveProperties();
@@ -2210,7 +2223,7 @@ public class MainController implements Initializable {
 			}, false);
 			
 			addEventListener(documentAttributes, id, "mousemove", moveTooltipListener, false);
-			addEventListener(documentAttributes, id, "уход курсора", hideTooltipListener, false);
+			addEventListener(documentAttributes, id, "mouseleave", hideTooltipListener, false);
 			String day = Main.game.getDateNow().getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.ENGLISH);
 			StringBuilder dateSB = new StringBuilder();
 			if(Main.game.isBadEnd()) {
@@ -2232,7 +2245,7 @@ public class MainController implements Initializable {
 		
 		id = "TWENTY_FOUR_HOUR_TIME_TOGGLE";
 		if (((EventTarget) documentAttributes.getElementById(id)) != null) {
-			((EventTarget) documentAttributes.getElementById(id)).addEventListener("click", e -> {
+			addEventListener(documentAttributes, id, "click", e -> {
 				if(!Main.game.isBadEnd()) {
 				    overrideAutoLocale();
 					Main.getProperties().setValue(PropertyValue.twentyFourHourTime, !Main.getProperties().hasValue(PropertyValue.twentyFourHourTime));
@@ -2301,7 +2314,7 @@ public class MainController implements Initializable {
 			for (AbstractAttribute a : attributes) {
 				if (((EventTarget) documentAttributes.getElementById(idModifier+a.getName())) != null) {
 					if(a == Attribute.EXPERIENCE) {
-						((EventTarget) documentAttributes.getElementById(idModifier+a.getName())).addEventListener("click", e -> {
+						addEventListener(documentAttributes, idModifier+a.getName(), "click", e -> {
 							if(character.isPlayer()) {
 								// block when in character creation
 								if(Main.game.isInNewWorld()) {
@@ -2337,7 +2350,7 @@ public class MainController implements Initializable {
 			}
 			
 			if(((EventTarget) documentAttributes.getElementById(idModifier+"ATTRIBUTES"))!=null){
-				((EventTarget) documentAttributes.getElementById(idModifier+"ATTRIBUTES")).addEventListener("click", e -> {
+				addEventListener(documentAttributes, idModifier+"ATTRIBUTES", "click", e -> {
 					if(character.isPlayer()) {
 						// block when in character creation
 						if(Main.game.isInNewWorld()) {
@@ -2391,7 +2404,7 @@ public class MainController implements Initializable {
 			// Elemental:
 			id = idModifier+"ELEMENTAL_"+Attribute.EXPERIENCE.getName();
 			if (((EventTarget) documentAttributes.getElementById(id)) != null) {
-				((EventTarget) documentAttributes.getElementById(id)).addEventListener("click", e -> {
+				addEventListener(documentAttributes, id, "click", e -> {
 					if(character.isPlayer() && Main.game.isInNeutralDialogue()) {
 						Main.game.setContent(new Response("", "", ElementalDialogue.ELEMENTAL_START));
 					}
@@ -2404,7 +2417,7 @@ public class MainController implements Initializable {
 			
 			id = idModifier+"ELEMENTAL_ATTRIBUTES";
 			if(((EventTarget) documentAttributes.getElementById(id))!=null){
-				((EventTarget) documentAttributes.getElementById(id)).addEventListener("click", e -> {
+				addEventListener(documentAttributes, id, "click", e -> {
 					if(character.isPlayer() && Main.game.isInNeutralDialogue()) {
 						Main.game.setContent(new Response("", "", ElementalDialogue.ELEMENTAL_START));
 					}
@@ -2522,7 +2535,7 @@ public class MainController implements Initializable {
 	}
 
 	private static void setStatusEffectSexTargetChangeListener(Document document, String id, GameCharacter character, SexAreaInterface si) {
-		((EventTarget) document.getElementById(id)).addEventListener("click", e -> {
+		addEventListener(document, id, "click", e -> {
 			GameCharacter target = Main.sex.getCharactersHavingOngoingActionWith(character, si).isEmpty()
 					?null
 					:Main.sex.getCharactersHavingOngoingActionWith(character, si).get(0);
@@ -2548,7 +2561,7 @@ public class MainController implements Initializable {
 		// Inventory:
 		String id;
 		for (InventorySlot invSlot : InventorySlot.values()) {
-			id = invSlot.toString() + "Слот";
+			id = invSlot.toString() + "Slot";
 			if (!invSlot.isWeapon()) {
 				if (((EventTarget) documentRight.getElementById(id)) != null) {
 					if(concealedSlots.keySet().contains(invSlot)) {
@@ -2585,7 +2598,7 @@ public class MainController implements Initializable {
 		
 		id = "TATTOO_SWITCH_RIGHT";
 		if (((EventTarget) documentRight.getElementById(id)) != null) {
-			((EventTarget) documentRight.getElementById(id)).addEventListener("click", e -> {
+			addEventListener(documentRight, id, "click", e -> {
 				RenderingEngine.ENGINE.setRenderingTattoosRight(!RenderingEngine.ENGINE.isRenderingTattoosRight());
 				updateUIRightPanel();
 			}, false);
@@ -2734,7 +2747,7 @@ public class MainController implements Initializable {
 			for (AbstractAttribute a : attributes) {
 				if (((EventTarget) documentRight.getElementById("NPC_"+idModifier+a.getName())) != null) {
 					if(a == Attribute.EXPERIENCE && (!character.isElemental() || ((Elemental)character).isActive())) {
-						((EventTarget) documentRight.getElementById("NPC_"+idModifier+a.getName())).addEventListener("click", e -> {
+						addEventListener(documentRight, "NPC_"+idModifier+a.getName(), "click", e -> {
 							openCharactersPresent(character);
 						}, false);
 					}
@@ -2749,12 +2762,12 @@ public class MainController implements Initializable {
 			// Extra attribute info:
 			if(((EventTarget) documentRight.getElementById("NPC_"+idModifier+"ATTRIBUTES"))!=null){
 				if(!RenderingEngine.ENGINE.isRenderingCharactersRightPanel() && (!character.isElemental() || ((Elemental)character).isActive())) {
-					((EventTarget) documentRight.getElementById("NPC_"+idModifier+"ATTRIBUTES")).addEventListener("click", e -> {
+					addEventListener(documentRight, "NPC_"+idModifier+"ATTRIBUTES", "click", e -> {
 						openCharactersPresent(character);
 					}, false);
 					
 				} else if(Main.game.isInSex()) {
-					((EventTarget) documentRight.getElementById("NPC_"+idModifier+"ATTRIBUTES")).addEventListener("click", e -> {
+					addEventListener(documentRight, "NPC_"+idModifier+"ATTRIBUTES", "click", e -> {
 						Main.sex.setTargetedPartner(Main.game.getPlayer(), character);
 						Main.sex.recalculateSexActions();
 						updateUI();
@@ -2762,7 +2775,7 @@ public class MainController implements Initializable {
 					}, false);
 					
 				} else if(Main.game.isInCombat()) {
-					((EventTarget) documentRight.getElementById("NPC_"+idModifier+"ATTRIBUTES")).addEventListener("click", e -> {
+					addEventListener(documentRight, "NPC_"+idModifier+"ATTRIBUTES", "click", e -> {
 						Main.combat.setTargetedCombatant((NPC) character);
 						updateUI();
 						Main.game.updateResponses();

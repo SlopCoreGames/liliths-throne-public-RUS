@@ -49,7 +49,7 @@ public class InventoryController {
 		//SCROLL_LEFT_DOUBLE
 		String id = "FLOOR_SCROLL_LEFT_DOUBLE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				RenderingEngine.setPageRight(RenderingEngine.getPageRight()-5);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 //				System.out.println("<<");
@@ -57,7 +57,7 @@ public class InventoryController {
 		}
 		id = "FLOOR_SCROLL_LEFT";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				RenderingEngine.setPageRight(RenderingEngine.getPageRight()-1);
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 //				System.out.println("<");
@@ -65,7 +65,7 @@ public class InventoryController {
 		}
 		id = "FLOOR_SCROLL_RIGHT";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				RenderingEngine.setPageRight(Math.min(RenderingEngine.getPageRight()+1, RenderingEngine.getMaximumFloorPageIndex()));
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 //				System.out.println(">");
@@ -73,7 +73,7 @@ public class InventoryController {
 		}
 		id = "FLOOR_SCROLL_RIGHT_DOUBLE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				RenderingEngine.setPageRight(Math.min(RenderingEngine.getPageRight()+5, RenderingEngine.getMaximumFloorPageIndex()));
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 //				System.out.println(">>");
@@ -108,7 +108,7 @@ public class InventoryController {
 		}
 		id = "PLAYER_MONEY_TRANSFER_SMALL";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				if (Main.game.getPlayer().getMoney()>0 && InventoryDialogue.getNPCInventoryInteraction() == InventoryInteraction.FULL_MANAGEMENT) {
 					if (InventoryDialogue.getInventoryNPC() == null) {
 						Main.game.getPlayerCell().getInventory().incrementMoney((long) Math.max(1, Main.game.getPlayer().getMoney()*0.01f));
@@ -123,7 +123,7 @@ public class InventoryController {
 		}
 		id = "PLAYER_MONEY_TRANSFER_AVERAGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				if (Main.game.getPlayer().getMoney()>0 && InventoryDialogue.getNPCInventoryInteraction() == InventoryInteraction.FULL_MANAGEMENT) {
 					if (InventoryDialogue.getInventoryNPC() == null) {
 						Main.game.getPlayerCell().getInventory().incrementMoney((long) Math.max(1, Main.game.getPlayer().getMoney()*0.1f));
@@ -138,7 +138,7 @@ public class InventoryController {
 		}
 		id = "PLAYER_MONEY_TRANSFER_BIG";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				if (Main.game.getPlayer().getMoney()>0 && InventoryDialogue.getNPCInventoryInteraction() == InventoryInteraction.FULL_MANAGEMENT) {
 					if (InventoryDialogue.getInventoryNPC() == null) {
 						Main.game.getPlayerCell().getInventory().incrementMoney(Math.max(1, Main.game.getPlayer().getMoney()));
@@ -183,7 +183,7 @@ public class InventoryController {
 			}
 			id = idModifier+"MONEY_TRANSFER_SMALL";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (InventoryDialogue.getInventoryNPC().getMoney()>0 && InventoryDialogue.getNPCInventoryInteraction() == InventoryInteraction.FULL_MANAGEMENT) {
 						Main.game.getPlayer().incrementMoney((long) Math.max(1, InventoryDialogue.getInventoryNPC().getMoney()*0.01f));
 						InventoryDialogue.getInventoryNPC().incrementMoney((long) -Math.max(1, InventoryDialogue.getInventoryNPC().getMoney()*0.01f));
@@ -194,7 +194,7 @@ public class InventoryController {
 			}
 			id = idModifier+"MONEY_TRANSFER_AVERAGE";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (InventoryDialogue.getInventoryNPC().getMoney()>0 && InventoryDialogue.getNPCInventoryInteraction() == InventoryInteraction.FULL_MANAGEMENT) {
 						Main.game.getPlayer().incrementMoney((long) Math.max(1, InventoryDialogue.getInventoryNPC().getMoney()*0.1f));
 						InventoryDialogue.getInventoryNPC().incrementMoney((long) -Math.max(1, InventoryDialogue.getInventoryNPC().getMoney()*0.1f));
@@ -205,7 +205,7 @@ public class InventoryController {
 			}
 			id = idModifier+"MONEY_TRANSFER_BIG";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (InventoryDialogue.getInventoryNPC().getMoney()>0 && InventoryDialogue.getNPCInventoryInteraction() == InventoryInteraction.FULL_MANAGEMENT) {
 						Main.game.getPlayer().incrementMoney(Math.max(1, InventoryDialogue.getInventoryNPC().getMoney()));
 						InventoryDialogue.getInventoryNPC().incrementMoney(-Math.max(1, InventoryDialogue.getInventoryNPC().getMoney()));
@@ -246,7 +246,7 @@ public class InventoryController {
 			}
 			id = "FLOOR_MONEY_TRANSFER_SMALL";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (Main.game.getPlayerCell().getInventory().getMoney()>0 && InventoryDialogue.getNPCInventoryInteraction() == InventoryInteraction.FULL_MANAGEMENT) {
 						Main.game.getPlayer().incrementMoney((long) Math.max(1, Main.game.getPlayerCell().getInventory().getMoney()*0.01f));
 						Main.game.getPlayerCell().getInventory().incrementMoney((long) -Math.max(1, Main.game.getPlayerCell().getInventory().getMoney()*0.01f));
@@ -257,7 +257,7 @@ public class InventoryController {
 			}
 			id = "FLOOR_MONEY_TRANSFER_AVERAGE";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (Main.game.getPlayerCell().getInventory().getMoney()>0 && InventoryDialogue.getNPCInventoryInteraction() == InventoryInteraction.FULL_MANAGEMENT) {
 						Main.game.getPlayer().incrementMoney((long) Math.max(1, Main.game.getPlayerCell().getInventory().getMoney()*0.1f));
 						Main.game.getPlayerCell().getInventory().incrementMoney((long) -Math.max(1, Main.game.getPlayerCell().getInventory().getMoney()*0.1f));
@@ -268,7 +268,7 @@ public class InventoryController {
 			}
 			id = "FLOOR_MONEY_TRANSFER_BIG";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (Main.game.getPlayerCell().getInventory().getMoney()>0 && InventoryDialogue.getNPCInventoryInteraction() == InventoryInteraction.FULL_MANAGEMENT) {
 						Main.game.getPlayer().incrementMoney(Math.max(1, Main.game.getPlayerCell().getInventory().getMoney()));
 						Main.game.getPlayerCell().getInventory().incrementMoney(-Math.max(1, Main.game.getPlayerCell().getInventory().getMoney()));
@@ -309,7 +309,7 @@ public class InventoryController {
 			for (Colour c : cr.getAllColours()) {
 				String id = "DYE_CLOTHING_"+i+"_"+c.getId();
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						if (cr.isRecolouringAllowed()) {
 							InventoryDialogue.dyePreviews.remove(index);
 							InventoryDialogue.dyePreviews.add(index, c);
@@ -326,7 +326,7 @@ public class InventoryController {
 		for (Pattern pattern : Pattern.getAllPatterns()) {
 			String id = "ITEM_PATTERN_"+pattern.getId();
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (!InventoryDialogue.dyePreviewPattern.equals(pattern.getId())) {
 						InventoryDialogue.dyePreviewPattern = pattern.getId();
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -344,7 +344,7 @@ public class InventoryController {
 				String id = "DYE_CLOTHING_PATTERN_"+i+"_"+c.getId();
 				if (MainController.document.getElementById(id) != null) {
 					int finalI = i;
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						InventoryDialogue.dyePreviewPatternColours.remove(finalI);
 						InventoryDialogue.dyePreviewPatternColours.add(finalI, c);
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -362,7 +362,7 @@ public class InventoryController {
 				String id = "ITEM_STICKER_"+stickerEntry.getKey().getId()+s.getId();
 				String requirements = UtilText.parse(s.getUnavailabilityText()).trim();
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						if (InventoryDialogue.dyePreviewStickers.get(stickerEntry.getKey()) != s && requirements.isEmpty()) {
 							InventoryDialogue.dyePreviewStickers.put(stickerEntry.getKey(), s);
 							Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -428,7 +428,7 @@ public class InventoryController {
 			for (Colour c : cr.getAllColours()) {
 				String id = "DYE_WEAPON_"+i+"_"+c.getId();
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						if (cr.isRecolouringAllowed()) {
 							InventoryDialogue.dyePreviews.remove(index);
 							InventoryDialogue.dyePreviews.add(index, c);
@@ -446,7 +446,7 @@ public class InventoryController {
 		for (DamageType dt : weapon.getAvailableDamageTypes()) {
 			String id = "DAMAGE_TYPE_"+dt.toString();
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					InventoryDialogue.damageTypePreview = dt;
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);

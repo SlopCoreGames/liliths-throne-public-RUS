@@ -1856,16 +1856,16 @@ public class OptionsDialogue {
 					"<div id='"+id+"_INCREASE_LARGE' class='normal-button"+(value==maximum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 							+ (value==maximum?"[style.boldDisabled(+)]":"[style.boldGood(+)]")
 					+ "</div>"
-					+ "<div id='"+id+"_УВЕЛИЧИТЬ' class='normal-button"+(value==maximum?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+					+ "<div id='"+id+"_INCREASE' class='normal-button"+(value==maximum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 							+ (value==maximum?"[style.boldDisabled(+)]":"[style.boldMinorGood(+)]")
 					+ "</div>"
 					+ "<div class='container-full-width' style='text-align:center; width:40%; float:right; margin:0;'>"
 						+ "<b>"+valueDisplay+"</b>"
 					+ "</div>"
-					+ "<div id='"+id+"_УМЕНЬШИТЬ' class='normal-button"+(value==minimum?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+					+ "<div id='"+id+"_DECREASE' class='normal-button"+(value==minimum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 						+ (value==minimum?"[style.boldDisabled(-)]":"[style.boldMinorBad(-)]")
 					+ "</div>"
-					+ "<div id='"+id+"_УМЕНЬШИТЬ_БОЛЬШ' class='normal-button"+(value==minimum?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+					+ "<div id='"+id+"_DECREASE_LARGE' class='normal-button"+(value==minimum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 					+ (value==minimum?"[style.boldDisabled(-)]":"[style.boldBad(-)]")
 				+ "</div>");
 		
@@ -2093,13 +2093,13 @@ public class OptionsDialogue {
 		contentSB.append(
 				"<div class='container-full-width' style='width:100%; margin:0; padding:0; text-align:right;'>"
 					+ "Breasts: "
-					+ "<div id='"+id+"_ON' class='normal-button"+(value==maximum?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+					+ "<div id='"+id+"_ON' class='normal-button"+(value==maximum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 							+ (value==maximum?"[style.boldDisabled(+)]":"[style.boldGood(+)]")
 					+ "</div>"
 					+ "<div class='container-full-width' style='text-align:center; width:calc(30%); float:right; margin:0;'>"
 						+ "<b>"+valueDisplay+"</b>"
 					+ "</div>"
-					+ "<div id='"+id+"_ВЫКЛ' class='normal-button"+(value==minimum?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+					+ "<div id='"+id+"_OFF' class='normal-button"+(value==minimum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 						+ (value==minimum?"[style.boldDisabled(-)]":"[style.boldBad(-)]")
 					+ "</div>"
 				+ "</div>");
@@ -2107,13 +2107,13 @@ public class OptionsDialogue {
 		contentSB.append(
 				"<div class='container-full-width' style='width:100%; margin:0; padding:0; text-align:right;'>"
 					+ "Udders: "
-					+ "<div id='"+id+"_ГРУДИ_ВКЛ' class='normal-button"+(valueUdders==maximumUdders?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+					+ "<div id='"+id+"_UDDERS_ON' class='normal-button"+(valueUdders==maximumUdders?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 							+ (valueUdders==maximumUdders?"[style.boldDisabled(+)]":"[style.boldGood(+)]")
 					+ "</div>"
 					+ "<div class='container-full-width' style='text-align:center; width:calc(30%); float:right; margin:0;'>"
 						+ "<b>"+valueDisplayUdders+"</b>"
 					+ "</div>"
-					+ "<div id='"+id+"_ГРУДИ_ВЫКЛ' class='normal-button"+(valueUdders==minimumUdders?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+					+ "<div id='"+id+"_UDDERS_OFF' class='normal-button"+(valueUdders==minimumUdders?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 						+ (valueUdders==minimumUdders?"[style.boldDisabled(-)]":"[style.boldBad(-)]")
 					+ "</div>"
 				+ "</div>");
@@ -2148,9 +2148,9 @@ public class OptionsDialogue {
 					int value = entry.getValue();
 					contentSB.append(
 							"<div class='container-full-width' style='width:100%; margin:0; padding:0; text-align:right;'>"
-								+ "<span style='color:"+skinColour.toWebHexString()+";'>"+Util.capitaliseSentence(skinColour.getName())+":</span> <div id='"+id+"_"+(skinColour).getId()+"_ВКЛ' class='normal-button"+(value==maximum?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+								+ "<span style='color:"+skinColour.toWebHexString()+";'>"+Util.capitaliseSentence(skinColour.getName())+":</span> <div id='"+id+"_"+(skinColour).getId()+"_ON' class='normal-button"+(value==maximum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 										+ (value==maximum?"[style.boldDisabled(+)]":"[style.boldGood(+)]")
-								+ "</div><div class='container-full-width' style='text-align:center; width:calc(30%); float:right; margin:0;'>[style.colourSize"+value+"("+value+")]</div><div id='"+id+"_"+(skinColour).getId()+"_ВЫКЛ' class='normal-button"+(value==minimum?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+								+ "</div><div class='container-full-width' style='text-align:center; width:calc(30%); float:right; margin:0;'>[style.colourSize"+value+"("+value+")]</div><div id='"+id+"_"+(skinColour).getId()+"_OFF' class='normal-button"+(value==minimum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 									+ (value==minimum?"[style.boldDisabled(-)]":"[style.boldBad(-)]")
 								+ "</div>"
 							+ "</div>");
@@ -2174,13 +2174,13 @@ public class OptionsDialogue {
 					+ "<div class='container-half-width' style='width:calc(45% - 16px);'>");
 		
 		contentSB.append(
-				"<div id='"+id+"_ON' class='normal-button', "+(value==maximum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+				"<div id='"+id+"_ON' class='normal-button"+(value==maximum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 						+ (value==maximum?"[style.boldDisabled(+)]":"[style.boldGood(+)]")
 				+ "</div>"
 				+ "<div class='container-full-width' style='text-align:center; width:calc(30%); float:right; margin:0;'>"
 					+ "<b>"+valueDisplay+"</b>"
 				+ "</div>"
-				+ "<div id='"+id+"_ВЫКЛ' class='normal-button"+(value==minimum?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+				+ "<div id='"+id+"_OFF' class='normal-button"+(value==minimum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 					+ (value==minimum?"[style.boldDisabled(-)]":"[style.boldBad(-)]")
 				+ "</div>");
 		

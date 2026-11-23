@@ -44,7 +44,7 @@ public class DebugController {
 		for (AbstractClothingType clothingType : ClothingType.getAllClothing()) {
 			id = clothingType.getId()+"_SPAWN";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.getActiveWorld().getCell(Main.game.getPlayer().getLocation()).getInventory().addClothing(Main.game.getItemGen().generateClothing(clothingType, true));
 					MainController.updateUIRightPanel();
 				}, false);
@@ -55,7 +55,7 @@ public class DebugController {
 		for (AbstractWeaponType weaponType : WeaponType.getAllWeapons()) {
 			id = weaponType.getId()+"_SPAWN";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.getActiveWorld().getCell(Main.game.getPlayer().getLocation()).getInventory().addWeapon(Main.game.getItemGen().generateWeapon(weaponType));
 					MainController.updateUIRightPanel();
 				}, false);
@@ -66,7 +66,7 @@ public class DebugController {
 		for (AbstractItemType itemType : ItemType.getAllItems()) {
 			id = itemType.getId()+"_SPAWN";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.getActiveWorld().getCell(Main.game.getPlayer().getLocation()).getInventory().addItem(Main.game.getItemGen().generateItem(itemType));
 					MainController.updateUIRightPanel();
 				}, false);
@@ -84,7 +84,7 @@ public class DebugController {
 		for (InventorySlot slot : InventorySlot.values()) {
 			id = slot+"_SPAWN_SELECT";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					DebugDialogue.itemTag = null;
 					DebugDialogue.activeSlot = slot;
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -93,7 +93,7 @@ public class DebugController {
 		}
 		id = "ITEM_SPAWN_SELECT";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				DebugDialogue.activeSlot = null;
 				DebugDialogue.itemTag = null;
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -101,7 +101,7 @@ public class DebugController {
 		}
 		id = "BOOK_SPAWN_SELECT";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				DebugDialogue.activeSlot = null;
 				DebugDialogue.itemTag = ItemTag.BOOK;
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -109,7 +109,7 @@ public class DebugController {
 		}
 		id = "ESSENCE_SPAWN_SELECT";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				DebugDialogue.activeSlot = null;
 				DebugDialogue.itemTag = ItemTag.ESSENCE;
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -117,7 +117,7 @@ public class DebugController {
 		}
 		id = "SPELL_SPAWN_SELECT";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				DebugDialogue.activeSlot = null;
 				DebugDialogue.itemTag = ItemTag.SPELL_BOOK;
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -125,7 +125,7 @@ public class DebugController {
 		}
 		id = "HIDDEN_SPAWN_SELECT";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				DebugDialogue.activeSlot = null;
 				DebugDialogue.itemTag = ItemTag.CHEAT_ITEM;
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -137,7 +137,7 @@ public class DebugController {
 		for (AbstractSetBonus sb : SetBonus.allSetBonuses) {
 			String id = "SET_BONUS_"+SetBonus.getIdFromSetBonus(sb);
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if(WeaponType.getAllWeaponsInSet(sb)!=null) {
 						for (AbstractWeaponType wt : WeaponType.getAllWeaponsInSet(sb)) {
 							Main.game.getActiveWorld().getCell(Main.game.getPlayer().getLocation()).getInventory().addWeapon(Main.game.getItemGen().generateWeapon(wt));
@@ -158,7 +158,7 @@ public class DebugController {
 		for (AbstractOutfit ot : OutfitType.getAllOutfits()) {
 			String id = "OUTFIT_"+OutfitType.getIdFromOutfitType(ot);
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					DebugDialogue.applyOutfitToDoll(ot);
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -181,7 +181,7 @@ public class DebugController {
 				if (MainController.document.getElementById(id) != null) {
 					AbstractClothing clothing = Main.game.getItemGen().generateClothing(clothingId, false);
 					randomEnchantment.applyEffects(clothing);
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						Main.game.getPlayerCell().getInventory().addClothing(clothing);
 						
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -206,7 +206,7 @@ public class DebugController {
 				randomPotionEnchantment.executeConditionalPreParsing(Main.game.getPlayer()); // Execute parsing so that the name is corretly initialised
 				potion.setName(randomPotionEnchantment.getName(Main.game.getPlayer()));
 				
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.getPlayerCell().getInventory().addItem(potion);
 					
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -231,7 +231,7 @@ public class DebugController {
 				for(ExternalEncounterData data : encounter.getPossibleEncounters()) {
 					String id = "DEBUG_ENCOUNTER_"+encounterId+"_"+encounterIndex;
 					if (MainController.document.getElementById(id) != null) {
-						((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+						MainController.addEventListener(MainController.document, id, "click", e->{
 							Main.game.setContent(new Response("", "", DialogueManager.getDialogueFromId(data.getDialogueId())));
 						}, false);
 					}
@@ -244,7 +244,7 @@ public class DebugController {
 					EncounterType et = typeEntry.getKey();
 					String id = "DEBUG_ENCOUNTER_"+encounterId+"_"+et;
 					if (MainController.document.getElementById(id) != null) {
-						((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+						MainController.addEventListener(MainController.document, id, "click", e->{
 							DialogueNode dn = encounter.initialiseEncounter(et);
 							Main.game.setContent(new Response("", "", dn));
 						}, false);

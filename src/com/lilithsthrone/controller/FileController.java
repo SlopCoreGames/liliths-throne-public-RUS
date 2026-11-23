@@ -58,7 +58,7 @@ public class FileController {
 		
 		String id = "ARTWORK_ADD";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				// Create file chooser for .jpg and .png images in the most recently used directory
 				FileChooser chooser = new FileChooser();
 				chooser.setTitle("Добавить изображения");
@@ -91,7 +91,7 @@ public class FileController {
 				
 				id = "ARTWORK_INFO";
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						if (!artwork.getArtist().getWebsites().isEmpty()) {
 							Util.openLinkInDefaultBrowser(artwork.getArtist().getWebsites().get(0).getURL());
 						}
@@ -113,7 +113,7 @@ public class FileController {
 				
 				id = "ARTWORK_PREVIOUS";
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						if (artwork.getTotalArtworkCount()>1) {
 							artwork.incrementIndex(-1);
 							if (!character.isPlayer())
@@ -125,7 +125,7 @@ public class FileController {
 				
 				id = "ARTWORK_NEXT";
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						if (artwork.getTotalArtworkCount()>1) {
 							artwork.incrementIndex(1);
 							if (!character.isPlayer())
@@ -137,7 +137,7 @@ public class FileController {
 				
 				id = "ARTWORK_ARTIST_PREVIOUS";
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						if (character.getArtworkList().size()>1) {
 							character.incrementArtworkIndex(-1);
 							if (!character.isPlayer())
@@ -149,7 +149,7 @@ public class FileController {
 				
 				id = "ARTWORK_ARTIST_NEXT";
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						if (character.getArtworkList().size()>1) {
 							character.incrementArtworkIndex(1);
 							if (!character.isPlayer())
@@ -161,7 +161,7 @@ public class FileController {
 				
 				id = "ARTWORK_DELETE";
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						artwork.getCurrentImage().delete();
 						character.updateImages();
 						if (!character.isPlayer())
@@ -186,7 +186,7 @@ public class FileController {
 			
 			id = "OVERWRITE_"+fileIdentifier;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (!Main.getProperties().hasValue(PropertyValue.overwriteWarning) || OptionsDialogue.overwriteConfirmationName.equals(f.getName())) {
 						OptionsDialogue.overwriteConfirmationName = "";
 						Main.saveGame(fileName, true, false);
@@ -212,7 +212,7 @@ public class FileController {
 			}
 			id = "LOAD_"+fileIdentifier;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (!Main.getProperties().hasValue(PropertyValue.overwriteWarning) || OptionsDialogue.loadConfirmationName.equals(f.getName())) {
 						OptionsDialogue.loadConfirmationName = "";
 						Main.loadGame(fileName);
@@ -227,7 +227,7 @@ public class FileController {
 			}
 			id = "DELETE_"+fileIdentifier;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (!Main.getProperties().hasValue(PropertyValue.overwriteWarning) || OptionsDialogue.deleteConfirmationName.equals(f.getName())) {
 						OptionsDialogue.deleteConfirmationName = "";
 						Main.deleteGame(fileName);
@@ -245,7 +245,7 @@ public class FileController {
 		}
 		id = "NEW_SAVE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.mainController.getWebEngine().executeScript("document.getElementById('hiddenPField').innerHTML=document.getElementById('new_save_name').value;");
 				Main.saveGame(Main.mainController.getWebEngine().getDocument().getElementById("hiddenPField").getTextContent(), false, false);
 			}, false);
@@ -268,7 +268,7 @@ public class FileController {
 			
 			String id = "DELETE_CHARACTER_"+fileIdentifier;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (!Main.getProperties().hasValue(PropertyValue.overwriteWarning) || OptionsDialogue.deleteConfirmationName.equals(f.getName())) {
 						OptionsDialogue.deleteConfirmationName = "";
 						Main.deleteExportedCharacter(fileName);
@@ -283,7 +283,7 @@ public class FileController {
 			}
 		}
 		if (MainController.document.getElementById("NEW_SAVE") != null) {
-			((EventTarget) MainController.document.getElementById("NEW_SAVE")).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, "NEW_SAVE", "click", e->{
 				Main.mainController.getWebEngine().executeScript("document.getElementById('hiddenPField').innerHTML=document.getElementById('new_save_name').value;");
 				Main.saveGame(Main.mainController.getWebEngine().getDocument().getElementById("hiddenPField").getTextContent(), false, false);
 			}, false);
@@ -294,7 +294,7 @@ public class FileController {
 		for (File f : Main.getCharactersForImport()) {
 			String fileIdentifier = Util.getFileIdentifier(f);
 			if (MainController.document.getElementById("IMPORT_CHARACTER_"+fileIdentifier) != null) {
-				((EventTarget) MainController.document.getElementById("IMPORT_CHARACTER_"+fileIdentifier)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, "IMPORT_CHARACTER_"+fileIdentifier, "click", e->{
 					Main.importCharacter(f);
 				}, false);
 			}
@@ -306,7 +306,7 @@ public class FileController {
 			String fileIdentifier = Util.getFileIdentifier(f);
 			String fileName = Util.getFileName(f);
 			if (MainController.document.getElementById("IMPORT_SLAVE_"+fileIdentifier) != null) {
-				((EventTarget) MainController.document.getElementById("IMPORT_SLAVE_"+fileIdentifier)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, "IMPORT_SLAVE_"+fileIdentifier, "click", e->{
 					try {
 						Game.importCharacterAsSlave(fileName);
 						MainController.updateUI();
@@ -324,7 +324,7 @@ public class FileController {
 			String id = npc.getId()+"_BID";
 			if (MainController.document.getElementById(id) != null) {
 				if (Main.game.getPlayer().isHasSlaverLicense()) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						SlaverAlleyDialogue.setupBidding(npc);
 						Main.game.setContent(new Response("", "", SlaverAlleyDialogue.AUCTION_BIDDING));
 					}, false);
@@ -346,7 +346,7 @@ public class FileController {
 			String fileName = Util.getFileName(f);
 			
 			if (MainController.document.getElementById("IMPORT_LODGER_"+fileIdentifier) != null) {
-				((EventTarget) MainController.document.getElementById("IMPORT_LODGER_"+fileIdentifier)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, "IMPORT_LODGER_"+fileIdentifier, "click", e->{
 					try {
 						Game.importCharacterAsLodger(fileName);
 						MainController.updateUI();
@@ -363,7 +363,7 @@ public class FileController {
 		for (NPC npc : Main.game.getCharactersPresent()) {
 			String id = npc.getId()+"_LODGER";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					CityHall.setupLodger(npc);
 					Main.game.setContent(new Response("", "", CityHall.CITY_HALL_APPROACH_LODGER));
 				}, false);
@@ -379,7 +379,7 @@ public class FileController {
 			String fileIdentifier = Util.getFileIdentifier(f);
 			String fileName = Util.getFileName(f);
 			if (MainController.document.getElementById("IMPORT_CLUBBER_"+fileIdentifier) != null) {
-				((EventTarget) MainController.document.getElementById("IMPORT_CLUBBER_"+fileIdentifier)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, "IMPORT_CLUBBER_"+fileIdentifier, "click", e->{
 					try {
 						Game.importCharacterAsClubber(fileName);
 						MainController.updateUI();
@@ -401,7 +401,7 @@ public class FileController {
 			
 			id = "OVERWRITE_"+fileIdentifier;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (!Main.getProperties().hasValue(PropertyValue.overwriteWarning) || EnchantmentDialogue.overwriteConfirmationName.equals(f.getName())) {
 						EnchantmentDialogue.overwriteConfirmationName = "";
 						EnchantmentDialogue.saveEnchant(fileName, true, EnchantmentDialogue.ENCHANTMENT_SAVE_LOAD);
@@ -416,7 +416,7 @@ public class FileController {
 			}
 			id = "LOAD_"+fileIdentifier;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (!Main.getProperties().hasValue(PropertyValue.overwriteWarning) || EnchantmentDialogue.loadConfirmationName.equals(f.getName())) {
 						EnchantmentDialogue.loadConfirmationName = "";
 						LoadedEnchantment lEnch = EnchantmentDialogue.loadEnchant(fileName);
@@ -441,7 +441,7 @@ public class FileController {
 			}
 			id = "DELETE_"+fileIdentifier;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (!Main.getProperties().hasValue(PropertyValue.overwriteWarning) || EnchantmentDialogue.deleteConfirmationName.equals(f.getName())) {
 						EnchantmentDialogue.deleteConfirmationName = "";
 						EnchantmentDialogue.deleteEnchant(fileName);
@@ -460,7 +460,7 @@ public class FileController {
 		
 		id = "NEW_SAVE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.mainController.getWebEngine().executeScript("document.getElementById('hiddenPField').innerHTML=document.getElementById('new_save_name').value;");
 				EnchantmentDialogue.saveEnchant(Main.mainController.getWebEngine().getDocument().getElementById("hiddenPField").getTextContent(), false, EnchantmentDialogue.ENCHANTMENT_SAVE_LOAD);
 			}, false);
@@ -486,7 +486,7 @@ public class FileController {
 			
 			id = "OVERWRITE_"+fileIdentifier;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (!Main.getProperties().hasValue(PropertyValue.overwriteWarning) || CosmeticsDialogue.overwriteConfirmationName.equals(f.getName())) {
 						CosmeticsDialogue.overwriteConfirmationName = "";
 						CosmeticsDialogue.saveTattoo(fileName, true, CosmeticsDialogue.TATTOO_SAVE_LOAD);
@@ -501,7 +501,7 @@ public class FileController {
 			}
 			id = "LOAD_"+fileIdentifier;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (!Main.getProperties().hasValue(PropertyValue.overwriteWarning) || CosmeticsDialogue.loadConfirmationName.equals(f.getName())) {
 						CosmeticsDialogue.loadConfirmationName = "";
 						Tattoo loadedTattoo = CosmeticsDialogue.loadTattoo(fileName);
@@ -519,7 +519,7 @@ public class FileController {
 			}
 			id = "DELETE_"+fileIdentifier;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (!Main.getProperties().hasValue(PropertyValue.overwriteWarning) || CosmeticsDialogue.deleteConfirmationName.equals(f.getName())) {
 						CosmeticsDialogue.deleteConfirmationName = "";
 						CosmeticsDialogue.deleteTattoo(fileName);
@@ -538,7 +538,7 @@ public class FileController {
 		
 		id = "NEW_SAVE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.mainController.getWebEngine().executeScript("document.getElementById('hiddenPField').innerHTML=document.getElementById('new_save_name').value;");
 				CosmeticsDialogue.saveTattoo(Main.mainController.getWebEngine().getDocument().getElementById("hiddenPField").getTextContent(), false, CosmeticsDialogue.TATTOO_SAVE_LOAD);
 			}, false);
@@ -564,7 +564,7 @@ public class FileController {
 			
 			id = "OVERWRITE_"+fileIdentifier;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (!Main.getProperties().hasValue(PropertyValue.overwriteWarning) || BodyChanging.overwriteConfirmationName.equals(f.getName())) {
 						BodyChanging.overwriteConfirmationName = "";
 						BodyChanging.saveBody(fileName, true);
@@ -579,7 +579,7 @@ public class FileController {
 			}
 			id = "LOAD_"+fileIdentifier;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Body loadedBody = BodyChanging.loadBody(fileName);
 					if(BodyChanging.isPresetTransformationAvailable(loadedBody)) {
 						if (!Main.getProperties().hasValue(PropertyValue.overwriteWarning) || BodyChanging.loadConfirmationName.equals(f.getName())) {
@@ -601,7 +601,7 @@ public class FileController {
 			}
 			id = "DELETE_"+fileIdentifier;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (!Main.getProperties().hasValue(PropertyValue.overwriteWarning) || BodyChanging.deleteConfirmationName.equals(f.getName())) {
 						BodyChanging.deleteConfirmationName = "";
 						BodyChanging.deleteBody(fileName);
@@ -619,7 +619,7 @@ public class FileController {
 		}
 		id = "NEW_SAVE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.mainController.getWebEngine().executeScript("document.getElementById('hiddenPField').innerHTML=document.getElementById('new_save_name').value;");
 				BodyChanging.saveBody(Main.mainController.getWebEngine().getDocument().getElementById("hiddenPField").getTextContent(), false);
 			}, false);
@@ -642,7 +642,7 @@ public class FileController {
 			
 			id = "LOADED_OUTFIT_"+fileIdentifier;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					String name = Util.getFileIdentifier(f);
 					Outfit loadedOutfit = LilayaDressingRoomDialogue.loadOutfit(name);
 					LilayaDressingRoomDialogue.setActiveOutfit(loadedOutfit);
@@ -670,7 +670,7 @@ public class FileController {
 			
 			id = "WEAR_OUTFIT_"+fileIdentifier;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					
 					String name = Util.getFileIdentifier(f);
 					Outfit loadedOutfit = LilayaDressingRoomDialogue.loadOutfit(name);
@@ -685,7 +685,7 @@ public class FileController {
 			
 			id = "EDIT_OUTFIT_"+fileIdentifier;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					
 					String name = Util.getFileIdentifier(f);
 					Outfit loadedOutfit = LilayaDressingRoomDialogue.loadOutfit(name);
@@ -698,7 +698,7 @@ public class FileController {
 			
 			id = "DELETE_OUTFIT_"+fileIdentifier;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (!Main.getProperties().hasValue(PropertyValue.overwriteWarning) || LilayaDressingRoomDialogue.deleteConfirmationName.equals(f.getName())) {
 						LilayaDressingRoomDialogue.deleteConfirmationName = "";
 						LilayaDressingRoomDialogue.deleteOutfit(fileName);

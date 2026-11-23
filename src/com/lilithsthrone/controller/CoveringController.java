@@ -43,7 +43,7 @@ public class CoveringController {
 		for (AbstractBodyCoveringType bct : BodyCoveringType.getAllBodyCoveringTypes()) {
 			id = "APPLY_COVERING_"+BodyCoveringType.getIdFromBodyCoveringType(bct);
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (Main.game.getPlayer().getMoney()>=SuccubisSecrets.getBodyCoveringTypeCost(bct) || isNoCost()) {
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 							@Override
@@ -67,7 +67,7 @@ public class CoveringController {
 			
 			id = "RESET_COVERING_"+BodyCoveringType.getIdFromBodyCoveringType(bct);
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (Main.game.getPlayer().getMoney()>=SuccubisSecrets.getBodyCoveringTypeCost(bct) || isNoCost()) {
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 							@Override
@@ -81,7 +81,7 @@ public class CoveringController {
 			
 			id = BodyCoveringType.getIdFromBodyCoveringType(bct)+"_PRIMARY_GLOW_OFF";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 						@Override
 						public void effects() {
@@ -94,7 +94,7 @@ public class CoveringController {
 			
 			id = BodyCoveringType.getIdFromBodyCoveringType(bct)+"_PRIMARY_GLOW_ON";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 						@Override
 						public void effects() {
@@ -107,7 +107,7 @@ public class CoveringController {
 			
 			id = BodyCoveringType.getIdFromBodyCoveringType(bct)+"_SECONDARY_GLOW_OFF";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 						@Override
 						public void effects() {
@@ -120,7 +120,7 @@ public class CoveringController {
 			
 			id = BodyCoveringType.getIdFromBodyCoveringType(bct)+"_SECONDARY_GLOW_ON";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 						@Override
 						public void effects() {
@@ -134,7 +134,7 @@ public class CoveringController {
 			for (CoveringPattern pattern : CoveringPattern.values()) {
 				id = BodyCoveringType.getIdFromBodyCoveringType(bct)+"_PATTERN_"+pattern;
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 							@Override
 							public void effects() {
@@ -149,7 +149,7 @@ public class CoveringController {
 			for (CoveringModifier modifier : CoveringModifier.values()) {
 				id = BodyCoveringType.getIdFromBodyCoveringType(bct)+"_MODIFIER_"+modifier;
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 							@Override
 							public void effects() {
@@ -164,7 +164,7 @@ public class CoveringController {
 			for (Colour colour : bct.getAllPrimaryColours()) {
 				id = BodyCoveringType.getIdFromBodyCoveringType(bct)+"_PRIMARY_"+colour.getId();
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 							@Override
 							public void effects() {
@@ -180,7 +180,7 @@ public class CoveringController {
 			for (Colour colour : bct.getAllSecondaryColours()) {
 				id = BodyCoveringType.getIdFromBodyCoveringType(bct)+"_SECONDARY_"+colour.getId();
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 							@Override
 							public void effects() {
@@ -196,7 +196,7 @@ public class CoveringController {
 		
 		id = "MAKEUP_LIPSTICK_HEAVY_ON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 					@Override
 					public void effects() {
@@ -208,7 +208,7 @@ public class CoveringController {
 		
 		id = "MAKEUP_LIPSTICK_HEAVY_OFF";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 					@Override
 					public void effects() {
@@ -223,7 +223,7 @@ public class CoveringController {
 		for (HairLength hairLength : HairLength.values()) {
 			String id = "HAIR_LENGTH_"+hairLength;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (Main.game.getPlayer().getMoney()>=SuccubisSecrets.BASE_HAIR_LENGTH_COST || isNoCost()) {
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 							@Override
@@ -244,7 +244,7 @@ public class CoveringController {
 		for (HairStyle hairStyle : HairStyle.values()) {
 			String id = "HAIR_STYLE_"+hairStyle;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (Main.game.getPlayer().getMoney()>=SuccubisSecrets.BASE_HAIR_STYLE_COST || isNoCost()) {
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 							@Override
@@ -265,7 +265,7 @@ public class CoveringController {
 		for (PiercingType piercingType : PiercingType.values()) {
 			String id = piercingType+"_PIERCE_REMOVE";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (Main.game.getPlayer().getMoney()>=SuccubisSecrets.getPiercingCost(piercingType) || isNoCost()) {
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 							@Override
@@ -307,7 +307,7 @@ public class CoveringController {
 			
 			id = piercingType+"_PIERCE";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (Main.game.getPlayer().getMoney()>=SuccubisSecrets.getPiercingCost(piercingType) || isNoCost()) {
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 							@Override
@@ -351,7 +351,7 @@ public class CoveringController {
 	
 	public static void initBleachingListeners() {
 		if (MainController.document.getElementById("BLEACHING_OFF") != null) {
-			((EventTarget) MainController.document.getElementById("BLEACHING_OFF")).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, "BLEACHING_OFF", "click", e->{
 				if (Main.game.getPlayer().getMoney()>=SuccubisSecrets.BASE_ANAL_BLEACHING_COST || isNoCost()) {
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 						@Override
@@ -367,7 +367,7 @@ public class CoveringController {
 		}
 		
 		if (MainController.document.getElementById("BLEACHING_ON") != null) {
-			((EventTarget) MainController.document.getElementById("BLEACHING_ON")).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, "BLEACHING_ON", "click", e->{
 				if (Main.game.getPlayer().getMoney()>=SuccubisSecrets.BASE_ANAL_BLEACHING_COST || isNoCost()) {
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 						@Override
@@ -387,7 +387,7 @@ public class CoveringController {
 		for (BodyHair bodyHair : BodyHair.values()) {
 			String id = "ASS_HAIR_"+bodyHair;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (Main.game.getPlayer().getMoney()>=SuccubisSecrets.BASE_BODY_HAIR_COST || isNoCost()) {
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 							@Override
@@ -408,7 +408,7 @@ public class CoveringController {
 		for (BodyHair bodyHair : BodyHair.values()) {
 			String id = "UNDERARM_HAIR_"+bodyHair;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (Main.game.getPlayer().getMoney()>=SuccubisSecrets.BASE_BODY_HAIR_COST || isNoCost()) {
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 							@Override
@@ -429,7 +429,7 @@ public class CoveringController {
 		for (BodyHair bodyHair : BodyHair.values()) {
 			String id = "PUBIC_HAIR_"+bodyHair;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (Main.game.getPlayer().getMoney()>=SuccubisSecrets.BASE_BODY_HAIR_COST || isNoCost()) {
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 							@Override
@@ -450,7 +450,7 @@ public class CoveringController {
 		for (BodyHair bodyHair : BodyHair.values()) {
 			String id = "FACIAL_HAIR_"+bodyHair;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (Main.game.getPlayer().getMoney()>=SuccubisSecrets.BASE_BODY_HAIR_COST || isNoCost()) {
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 							@Override

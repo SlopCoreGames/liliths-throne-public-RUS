@@ -450,7 +450,7 @@ public class CharacterModificationUtils {
 						+ "<div id='"+id+"_DECREASE_LARGE' class='normal-button"+(decreaseDisabled?" disabled":"")+"' style='width:48%; margin:0 1%;'>"
 							+ (decreaseDisabled?"[style.boldDisabled(--"+measurementPlural+")]":"[style.boldBad(--)]")
 						+ "</div>"
-						+ "<div id='"+id+"_УМЕНЬШИТЬ' class='normal-button"+(decreaseDisabled?" disabled":"")+"' style='width:48%; margin:0 1%;'>"
+						+ "<div id='"+id+"_DECREASE' class='normal-button"+(decreaseDisabled?" disabled":"")+"' style='width:48%; margin:0 1%;'>"
 							+ (decreaseDisabled?"[style.boldDisabled(-"+measurement+")]":"[style.boldMinorBad(-)]")
 						+ "</div>"
 					+ "</div>"
@@ -458,10 +458,10 @@ public class CharacterModificationUtils {
 						+ value
 					+ "</div>"
 					+ "<div class='container-half-width' style='width:30%; margin:0; padding:0; text-align:center;'>"
-						+ "<div id='"+id+"_УВЕЛИЧИТЬ' class='normal-button"+(increaseDisabled?" disabled":"")+"' style='width:48%; margin:0 1%;'>"
+						+ "<div id='"+id+"_INCREASE' class='normal-button"+(increaseDisabled?" disabled":"")+"' style='width:48%; margin:0 1%;'>"
 							+ (increaseDisabled?"[style.boldDisabled(+"+measurement+")]":"[style.boldMinorGood(+)]")
 						+ "</div>"
-						+ "<div id='"+id+"_УВЕЛИЧИТЬ_БОЛЬШОЙ' class='normal-button"+(increaseDisabled?" disabled":"")+"' style='width:48%; margin:0 1%;'>"
+						+ "<div id='"+id+"_INCREASE_LARGE' class='normal-button"+(increaseDisabled?" disabled":"")+"' style='width:48%; margin:0 1%;'>"
 							+ (increaseDisabled?"[style.boldDisabled(++"+measurementPlural+")]":"[style.boldGood(++)]")
 						+ "</div>"
 					+ "</div>";
@@ -808,10 +808,10 @@ public class CharacterModificationUtils {
 					+ "</div><div class='container-full-width inner' style='width:75%;margin:0;padding:0;text-align:center;'><i>Количество раз "+description+".</i></div><div class='container-full-width' style='width:100%;margin:0;padding:0; display:flex; align-items:baseline;'><div class='container-full-width' style='width:25%; text-align:center; float:left; position:relative; padding:0; margin:0;'><div id='"+id+"_DECREASE_LARGE' class='normal-button"+(decreaseDisabled?" disabled":"")+"' style='width:30%; margin:1%; padding:0;'>"
 								+ (decreaseDisabled?"[style.boldDisabled(-"+majorStep+")]":"[style.boldBad(-"+majorStep+")]")
 							+ "</div>"
-							+ "<div id='"+id+"_УМЕНЬШИТЬ' class='normal-button"+(decreaseDisabled?" disabled":"")+"' style='width:30%; margin:1%; padding:0;'>"
+							+ "<div id='"+id+"_DECREASE' class='normal-button"+(decreaseDisabled?" disabled":"")+"' style='width:30%; margin:1%; padding:0;'>"
 								+ (decreaseDisabled?"[style.boldDisabled(-"+minorStep+")]":"[style.boldBad(-"+minorStep+")]")
 							+ "</div>"
-							+ "<div id='"+id+"_УМЕНЬШИТЬ_МАЛ' class='normal-button"+(decreaseDisabled?" disabled":"")+"' style='width:30%; margin:1%; padding:0;'>"
+							+ "<div id='"+id+"_DECREASE_SMALL' class='normal-button"+(decreaseDisabled?" disabled":"")+"' style='width:30%; margin:1%; padding:0;'>"
 								+ (decreaseDisabled?"[style.boldDisabled(-"+singleStep+")]":"[style.boldBadMinor(-"+singleStep+")]")
 							+ "</div>"
 						+ "</div>"
@@ -819,13 +819,13 @@ public class CharacterModificationUtils {
 							+"<span style='color:"+sexColours[index].toWebHexString()+";'>"+sexCount+"</span>"
 						+ "</div>"
 						+ "<div class='container-full-width' style='width:25%; text-align:center; float:left; position:relative; padding:0; margin:0;'>"
-							+ "<div id='"+id+"_УВЕЛИЧИТЬ_МАЛ' class='normal-button"+(increaseDisabled?" disabled":"")+"' style='width:30%; margin:1%; padding:0;'>"
+							+ "<div id='"+id+"_INCREASE_SMALL' class='normal-button"+(increaseDisabled?" disabled":"")+"' style='width:30%; margin:1%; padding:0;'>"
 								+ (increaseDisabled?"[style.boldDisabled(+"+singleStep+")]":"[style.boldGoodMinor(+"+singleStep+")]")
 							+ "</div>"
-							+ "<div id='"+id+"_УВЕЛИЧИТЬ' class='normal-button"+(increaseDisabled?" disabled":"")+"' style='width:30%; margin:1%; padding:0;'>"
+							+ "<div id='"+id+"_INCREASE' class='normal-button"+(increaseDisabled?" disabled":"")+"' style='width:30%; margin:1%; padding:0;'>"
 								+ (increaseDisabled?"[style.boldDisabled(+"+minorStep+")]":"[style.boldGoodMinor(+"+minorStep+")]")
 							+ "</div>"
-							+ "<div id='"+id+"_УВЕЛИЧИТЬ_БОЛЬШОЙ' class='normal-button"+(increaseDisabled?" disabled":"")+"' style='width:30%; margin:1%; padding:0;'>"
+							+ "<div id='"+id+"_INCREASE_LARGE' class='normal-button"+(increaseDisabled?" disabled":"")+"' style='width:30%; margin:1%; padding:0;'>"
 								+ (increaseDisabled?"[style.boldDisabled(+"+majorStep+")]":"[style.boldGood(+"+majorStep+")]")
 							+ "</div>"
 						+ "</div>"
@@ -886,10 +886,10 @@ public class CharacterModificationUtils {
 							+ "<b>"+title+"</b>"
 						+"</p>"
 						+ "<div class='container-full-width' style='width:25%; text-align:center; float:left; position:relative; padding:0; margin:0;'>"
-							+ "<div id='"+id+"_УМЕНЬШИТЬ_БОЛЬШ' class='normal-button"+(decreaseDisabled?" disabled":"")+"' style='width:48%; margin:1%; padding:0;'>"
+							+ "<div id='"+id+"_DECREASE_LARGE' class='normal-button"+(decreaseDisabled?" disabled":"")+"' style='width:48%; margin:1%; padding:0;'>"
 								+ (decreaseDisabled?"[style.boldDisabled(-"+majorStep+")]":"[style.boldBad(-"+majorStep+")]")
 							+ "</div>"
-							+ "<div id='"+id+"_УМЕНЬШИТЬ' class='normal-button"+(decreaseDisabled?" disabled":"")+"' style='width:48%; margin:1%; padding:0;'>"
+							+ "<div id='"+id+"_DECREASE' class='normal-button"+(decreaseDisabled?" disabled":"")+"' style='width:48%; margin:1%; padding:0;'>"
 								+ (decreaseDisabled?"[style.boldDisabled(-"+minorStep+")]":"[style.boldBadMinor(-"+minorStep+")]")
 							+ "</div>"
 						+ "</div>"
@@ -897,10 +897,10 @@ public class CharacterModificationUtils {
 							+ value
 						+ "</div>"
 						+ "<div class='container-full-width' style='width:25%; text-align:center; float:left; position:relative; padding:0; margin:0;'>"
-							+ "<div id='"+id+"_УВЕЛИЧИТЬ' class='normal-button"+(increaseDisabled?" disabled":"")+"' style='width:48%; margin:1%; padding:0;'>"
+							+ "<div id='"+id+"_INCREASE' class='normal-button"+(increaseDisabled?" disabled":"")+"' style='width:48%; margin:1%; padding:0;'>"
 								+ (increaseDisabled?"[style.boldDisabled(+"+minorStep+")]":"[style.boldGoodMinor(+"+minorStep+")]")
 							+ "</div>"
-							+ "<div id='"+id+"_УВЕЛИЧИТЬ_БОЛЬШОЙ' class='normal-button"+(increaseDisabled?" disabled":"")+"' style='width:48%; margin:1%; padding:0;'>"
+							+ "<div id='"+id+"_INCREASE_LARGE' class='normal-button"+(increaseDisabled?" disabled":"")+"' style='width:48%; margin:1%; padding:0;'>"
 								+ (increaseDisabled?"[style.boldDisabled(+"+majorStep+")]":"[style.boldGood(+"+majorStep+")]")
 							+ "</div>"
 						+ "</div>"
@@ -924,16 +924,16 @@ public class CharacterModificationUtils {
 					+"</p>"
 					+ "<div class='container-full-width'>"
 						+ "<div class='container-full-width' style='width:25%; text-align:center; float:left; position:relative; padding:0; margin:0;'>"
-							+ "<div id='"+id+"_УМЕНЬШИТЬ_МАЛ' class='normal-button"+(decreaseDisabled?" disabled":"")+"' style='width:98%; margin:1%; padding:0;'>"
+							+ "<div id='"+id+"_DECREASE_SMALL' class='normal-button"+(decreaseDisabled?" disabled":"")+"' style='width:98%; margin:1%; padding:0;'>"
 								+ (decreaseDisabled?"[style.boldDisabled("+Units.fluid(-incrementSmall)+")]":"[style.boldBadMinor("+Units.fluid(-incrementSmall)+")]")
 							+ "</div>"
-							+ "<div id='"+id+"_УМЕНЬШИТЬ' class='normal-button"+(decreaseDisabled?" disabled":"")+"' style='width:98%; margin:1%; padding:0;'>"
+							+ "<div id='"+id+"_DECREASE' class='normal-button"+(decreaseDisabled?" disabled":"")+"' style='width:98%; margin:1%; padding:0;'>"
 								+ (decreaseDisabled?"[style.boldDisabled("+Units.fluid(-incrementAverage)+")]":"[style.boldBadMinor("+Units.fluid(-incrementAverage)+")]")
 							+ "</div>"
-							+ "<div id='"+id+"_УМЕНЬШИТЬ_БОЛЬШ' class='normal-button"+(decreaseDisabled?" disabled":"")+"' style='width:98%; margin:1%; padding:0;'>"
+							+ "<div id='"+id+"_DECREASE_LARGE' class='normal-button"+(decreaseDisabled?" disabled":"")+"' style='width:98%; margin:1%; padding:0;'>"
 								+ (decreaseDisabled?"[style.boldDisabled("+Units.fluid(-incrementLarge)+")]":"[style.boldBad("+Units.fluid(-incrementLarge)+")]")
 							+ "</div>"
-							+ "<div id='"+id+"_УМЕНЬШИТЬ_ОГРОМНОЕ' class='normal-button"+(decreaseDisabled?" disabled":"")+"' style='width:98%; margin:1%; padding:0;'>"
+							+ "<div id='"+id+"_DECREASE_HUGE' class='normal-button"+(decreaseDisabled?" disabled":"")+"' style='width:98%; margin:1%; padding:0;'>"
 								+ (decreaseDisabled?"[style.boldDisabled("+Units.fluid(-incrementHuge)+")]":"[style.boldBad("+Units.fluid(-incrementHuge)+")]")
 							+ "</div>"
 						+ "</div>"
@@ -941,16 +941,16 @@ public class CharacterModificationUtils {
 							+ value
 						+ "</div>"
 						+ "<div class='container-full-width' style='width:25%; text-align:center; float:left; position:relative; padding:0; margin:0;'>"
-							+ "<div id='"+id+"_УВЕЛИЧИТЬ_МАЛ' class='normal-button"+(increaseDisabled?" disabled":"")+"' style='width:98%; margin:1%; padding:0;'>"
+							+ "<div id='"+id+"_INCREASE_SMALL' class='normal-button"+(increaseDisabled?" disabled":"")+"' style='width:98%; margin:1%; padding:0;'>"
 								+ (increaseDisabled?"[style.boldDisabled(+"+Units.fluid(incrementSmall)+")]":"[style.boldGoodMinor(+"+Units.fluid(incrementSmall)+")]")
 							+ "</div>"
-							+ "<div id='"+id+"_УВЕЛИЧИТЬ' class='normal-button"+(increaseDisabled?" disabled":"")+"' style='width:98%; margin:1%; padding:0;'>"
+							+ "<div id='"+id+"_INCREASE' class='normal-button"+(increaseDisabled?" disabled":"")+"' style='width:98%; margin:1%; padding:0;'>"
 								+ (increaseDisabled?"[style.boldDisabled(+"+Units.fluid(incrementAverage)+")]":"[style.boldGoodMinor(+"+Units.fluid(incrementAverage)+")]")
 							+ "</div>"
-							+ "<div id='"+id+"_УВЕЛИЧИТЬ_БОЛЬШОЙ' class='normal-button"+(increaseDisabled?" disabled":"")+"' style='width:98%; margin:1%; padding:0;'>"
+							+ "<div id='"+id+"_INCREASE_LARGE' class='normal-button"+(increaseDisabled?" disabled":"")+"' style='width:98%; margin:1%; padding:0;'>"
 								+ (increaseDisabled?"[style.boldDisabled(+"+Units.fluid(incrementLarge)+")]":"[style.boldGood(+"+Units.fluid(incrementLarge)+")]")
 							+ "</div>"
-							+ "<div id='"+id+"_УВЕЛИЧИТЬ_ОГРОМНЫЙ' class='normal-button"+(increaseDisabled?" disabled":"")+"' style='width:98%; margin:1%; padding:0;'>"
+							+ "<div id='"+id+"_INCREASE_HUGE' class='normal-button"+(increaseDisabled?" disabled":"")+"' style='width:98%; margin:1%; padding:0;'>"
 								+ (increaseDisabled?"[style.boldDisabled(+"+Units.fluid(incrementHuge)+")]":"[style.boldGood(+"+Units.fluid(incrementHuge)+")]")
 							+ "</div>"
 						+ "</div>"
@@ -3771,10 +3771,10 @@ public class CharacterModificationUtils {
 		
 		if(BodyChanging.getTarget().isVaginaEggLayer()) {
 			contentSB.append(
-					"<div id='VAGINA_EGG_LAYER_OFF' class='cosmetics-button"+(disabled?" disabled":"")+"'><span style='color:"+PresetColour.GENERIC_SEX.getShades()[0]+";'>Естественные роды</span></div><div class='cosmetics-button"+(disabled?" отключено":" активно")+"'><span style='color:"+PresetColour.EGG.toWebHexString()+";'>Яйцеклад</span></div>");
+					"<div id='VAGINA_EGG_LAYER_OFF' class='cosmetics-button"+(disabled?" disabled":"")+"'><span style='color:"+PresetColour.GENERIC_SEX.getShades()[0]+";'>Естественные роды</span></div><div class='cosmetics-button"+(disabled?" disabled":" active")+"'><span style='color:"+PresetColour.EGG.toWebHexString()+";'>Яйцеклад</span></div>");
 		} else {
 			contentSB.append(
-					"<div class='cosmetics-button"+(disabled?" disabled":" active")+"'><span style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>Живорождение</span></div><div id='VAGINA_EGG_LAYER_ON' class='cosmetics-button"+(disabled?" отключено":"")+"'><span style='color:"+PresetColour.EGG.getShades()[0]+";'>Яйцеклад</span></div>");
+					"<div class='cosmetics-button"+(disabled?" disabled":" active")+"'><span style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>Живорождение</span></div><div id='VAGINA_EGG_LAYER_ON' class='cosmetics-button"+(disabled?" disabled":"")+"'><span style='color:"+PresetColour.EGG.getShades()[0]+";'>Яйцеклад</span></div>");
 		}
 		
 		return applyWrapper("Тип рождения",
@@ -5707,7 +5707,7 @@ public class CharacterModificationUtils {
 													?"<div class='phone-item-colour' style='background: repeating-linear-gradient(135deg, " + c.toWebHexString() + ", " + c.getShades()[4] + " 10px);"
 													:(c.getRainbowColours()!=null
 														?"<div class='phone-item-colour' style='background: "+rainbow
-														:"<div class='phone-item-colour' style='background"+(c==PresetColour.COVERING_CLEAR?"-изображение":"-цвет")+":" + (c.getCoveringIconColour()) + ";"))
+														:"<div class='phone-item-colour' style='background"+(c==PresetColour.COVERING_CLEAR?"-image":"-color")+":" + (c.getCoveringIconColour()) + ";"))
 												+(c==PresetColour.COVERING_NONE
 													?" color:"+PresetColour.BASE_RED.toWebHexString()+";'>X"
 													:"'>")
@@ -5754,7 +5754,7 @@ public class CharacterModificationUtils {
 														?"<div class='phone-item-colour' style='background: repeating-linear-gradient(135deg, " + c.toWebHexString() + ", " + c.getShades()[4] + " 10px);"
 														:(c.getRainbowColours()!=null
 															?"<div class='phone-item-colour' style='background: "+rainbow
-															:"<div class='phone-item-colour' style='background"+(c==PresetColour.COVERING_CLEAR?"-изображение":"-цвет")+":" + (c.getCoveringIconColour()) + ";"))
+															:"<div class='phone-item-colour' style='background"+(c==PresetColour.COVERING_CLEAR?"-image":"-color")+":" + (c.getCoveringIconColour()) + ";"))
 													+(c==PresetColour.COVERING_NONE
 														?" color:"+PresetColour.BASE_RED.toWebHexString()+";'>X"
 														:"'>")
@@ -6104,7 +6104,7 @@ public class CharacterModificationUtils {
 		
 				for(AbstractTattooType type : TattooType.getConditionalTattooTypes(BodyChanging.getTarget())) {
 					if(type.getSlotAvailability().contains(tattooInventorySlot)) {
-						contentSB.append("<div style='width:23%; margin:1%; padding:0; display:inline-block;'><div class='normal-button"+(tattoo.getType()==type?" выбранный":"")+"' id='TATTOO_TYPE_"+type.getId()+"' style='width:100%; margin:0; color:"+(tattoo.getType()==type?PresetColour.GENERIC_GOOD:PresetColour.TEXT_HALF_GREY).toWebHexString()+";'>"+Util.capitaliseSentence(type.getName())+"</div>"
+						contentSB.append("<div style='width:23%; margin:1%; padding:0; display:inline-block;'><div class='normal-button"+(tattoo.getType()==type?" selected":"")+"' id='TATTOO_TYPE_"+type.getId()+"' style='width:100%; margin:0; color:"+(tattoo.getType()==type?PresetColour.GENERIC_GOOD:PresetColour.TEXT_HALF_GREY).toWebHexString()+";'>"+Util.capitaliseSentence(type.getName())+"</div>"
 										+ "</div>");
 						
 					} else {
@@ -6192,7 +6192,7 @@ public class CharacterModificationUtils {
 					+"<form style='padding:0; margin:0 0 4px 0; text-align:center;'>"
 						+ "<input type='text' id='tattoo_name' value='" +UtilText.parseForHTMLDisplay(tattoo.getWriting().getText())+"' style='padding:0;margin:0;width:80%;'></form><p style='width:100%; text-align:center;'>Стиль письма</p>");
 			for(TattooWritingStyle style : TattooWritingStyle.values()) {
-				contentSB.append("<div style='width:18%; margin:0 1%; padding:0; display:inline-block;'><div class='normal-button"+(tattoo.getWriting().getStyles().contains(style)?" выбранный":"")+"' id='TATTOO_WRITING_STYLE_"+style.toString()+"' style='width:100%; margin:0; color:"+(tattoo.getWriting().getStyles().contains(style)?PresetColour.GENERIC_GOOD:PresetColour.TEXT_HALF_GREY).toWebHexString()+";'>"+Util.capitaliseSentence(style.getName())+"</div>"
+				contentSB.append("<div style='width:18%; margin:0 1%; padding:0; display:inline-block;'><div class='normal-button"+(tattoo.getWriting().getStyles().contains(style)?" selected":"")+"' id='TATTOO_WRITING_STYLE_"+style.toString()+"' style='width:100%; margin:0; color:"+(tattoo.getWriting().getStyles().contains(style)?PresetColour.GENERIC_GOOD:PresetColour.TEXT_HALF_GREY).toWebHexString()+";'>"+Util.capitaliseSentence(style.getName())+"</div>"
 								+ "</div>");
 			}
 			contentSB.append("<div class='container-full-width'>"
@@ -6238,7 +6238,7 @@ public class CharacterModificationUtils {
 					contentSB.append("<div class='container-full-width' style='position:relative; text-align:center; margin-top:0; padding-top:0;'>");
 						contentSB.append("<p style='width:100%; text-align:center;'>Тип счетчика</p>");
 						for(TattooCounterType counterType : TattooCounterType.getTattooCounterTypesWithContentFiltersApplied()) {
-							contentSB.append("<div style='width:48%; margin:1%; padding:0; display:inline-block;'><div class='normal-button"+(tattoo.getCounter().getType()==counterType?" выбранный":"")+"' id='TATTOO_COUNTER_TYPE_"+counterType.toString()+"' style='width:100%; margin:0; color:"+(tattoo.getCounter().getType()==counterType?PresetColour.GENERIC_GOOD:PresetColour.TEXT_HALF_GREY).toWebHexString()+";'>"
+							contentSB.append("<div style='width:48%; margin:1%; padding:0; display:inline-block;'><div class='normal-button"+(tattoo.getCounter().getType()==counterType?" selected":"")+"' id='TATTOO_COUNTER_TYPE_"+counterType.toString()+"' style='width:100%; margin:0; color:"+(tattoo.getCounter().getType()==counterType?PresetColour.GENERIC_GOOD:PresetColour.TEXT_HALF_GREY).toWebHexString()+";'>"
 													+Util.capitaliseSentence(counterType.getName())
 													+ (counterType.isRetroactiveApplicationAvailable()?"":" *")
 												+"</div>"
@@ -6290,7 +6290,7 @@ public class CharacterModificationUtils {
 					contentSB.append("<div class='container-full-width' style='position:relative; text-align:center;'>");
 						contentSB.append("<p style='width:100%; text-align:center;'>Стиль счетчика</p>");
 						for(TattooCountType countType : TattooCountType.values()) {
-							contentSB.append("<div style='width:98%; margin:1%; padding:0; display:inline-block;'><div class='normal-button"+(tattoo.getCounter().getCountType()==countType?" выбранный":"")+"' id='TATTOO_COUNT_TYPE_"+countType.toString()+"' style='width:100%; margin:0; color:"+(tattoo.getCounter().getCountType()==countType?PresetColour.GENERIC_GOOD:PresetColour.TEXT_HALF_GREY).toWebHexString()+";'>"
+							contentSB.append("<div style='width:98%; margin:1%; padding:0; display:inline-block;'><div class='normal-button"+(tattoo.getCounter().getCountType()==countType?" selected":"")+"' id='TATTOO_COUNT_TYPE_"+countType.toString()+"' style='width:100%; margin:0; color:"+(tattoo.getCounter().getCountType()==countType?PresetColour.GENERIC_GOOD:PresetColour.TEXT_HALF_GREY).toWebHexString()+";'>"
 													+Util.capitaliseSentence(countType.getName())+"</div>"
 											+ "</div>");
 						}

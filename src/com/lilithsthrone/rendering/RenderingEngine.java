@@ -670,7 +670,7 @@ public enum RenderingEngine {
 		if(lipstickMarkings!=null) {
 			int lipstickMarkingCount = lipstickMarkings.size();
 			for(int i=0; i<lipstickMarkingCount; i++) {
-				sb.append("<div class='lipstickIcon' style='width:calc(40 - "+(lipstickMarkingCount*10)+")%; height:calc(40 - "+(lipstickMarkingCount*10)+")%; справа:"+(i*10)+"%;'>");
+				sb.append("<div class='lipstickIcon' style='width:calc(40 - "+(lipstickMarkingCount*10)+")%; height:calc(40 - "+(lipstickMarkingCount*10)+")%; right:"+(i*10)+"%;'>");
 				sb.append(SVGImages.SVG_IMAGE_PROVIDER.getLipstickIcon(lipstickMarkings.get(i)));
 				sb.append("</div>");
 			}
@@ -785,12 +785,12 @@ public enum RenderingEngine {
 			currentPage = (charactersInventoryToRender.isPlayer()?pageLeft:pageRight);
 		
 			inventorySB.append(
-					"<div class='container-full-width' style='width:15%; margin:0; text-align:center;'><div class='square-button max"+(currentPage==0?" выбранный":"")+"'>"
+					"<div class='container-full-width' style='width:15%; margin:0; text-align:center;'><div class='square-button max"+(currentPage==0?" selected":"")+"'>"
 								+ "<div style='width:80%;height:80%;position:absolute;left:0; bottom:0;'>"+SVGImages.SVG_IMAGE_PROVIDER.getInventoryIcon()+"</div>"
 								+ "<div style='width:50%;height:50%;position:absolute;right:4px; top:0;'>"+(currentPage==0?SVGImages.SVG_IMAGE_PROVIDER.getCounterOne():SVGImages.SVG_IMAGE_PROVIDER.getCounterOneDisabled())+"</div>"
 	//							+ (!buyback
 	//									?
-												+ "<div class='overlay' "+(currentPage==0?"":"id='"+pageIdMod+"0'")+"></div></div><div class='square-button max"+(currentPage==1?" выбранный":"")+"'>"
+												+ "<div class='overlay' "+(currentPage==0?"":"id='"+pageIdMod+"0'")+"></div></div><div class='square-button max"+(currentPage==1?" selected":"")+"'>"
 								+ "<div style='width:80%;height:80%;position:absolute;left:0; bottom:0;'>"
 									+(totalUniques>1*ITEMS_PER_PAGE && !buyback?SVGImages.SVG_IMAGE_PROVIDER.getInventoryIcon():SVGImages.SVG_IMAGE_PROVIDER.getInventoryIconDisabled())
 								+"</div>"
@@ -798,7 +798,7 @@ public enum RenderingEngine {
 								+ (totalUniques>1*ITEMS_PER_PAGE && !buyback
 										?"<div class='overlay' "+(currentPage==1?"":"id='"+pageIdMod+"1'")+"></div>"
 										:"<div class='overlay disabled'></div>")
-						+ "</div><div class='square-button max"+(currentPage==2?" выбранный":"")+"'>"
+						+ "</div><div class='square-button max"+(currentPage==2?" selected":"")+"'>"
 								+ "<div style='width:80%;height:80%;position:absolute;left:0; bottom:0;'>"
 									+(totalUniques>2*ITEMS_PER_PAGE && !buyback?SVGImages.SVG_IMAGE_PROVIDER.getInventoryIcon():SVGImages.SVG_IMAGE_PROVIDER.getInventoryIconDisabled())
 								+"</div>"
@@ -806,7 +806,7 @@ public enum RenderingEngine {
 								+ (totalUniques>2*ITEMS_PER_PAGE && !buyback
 										?"<div class='overlay' "+(currentPage==2?"":"id='"+pageIdMod+"2'")+"></div>"
 										:"<div class='overlay disabled'></div>")
-						+ "</div><div class='square-button max"+(currentPage==3?" выбранный":"")+"'>"
+						+ "</div><div class='square-button max"+(currentPage==3?" selected":"")+"'>"
 								+ "<div style='width:80%;height:80%;position:absolute;left:0; bottom:0;'>"
 									+(totalUniques>3*ITEMS_PER_PAGE && !buyback?SVGImages.SVG_IMAGE_PROVIDER.getInventoryIcon():SVGImages.SVG_IMAGE_PROVIDER.getInventoryIconDisabled())
 								+"</div>"
@@ -814,7 +814,7 @@ public enum RenderingEngine {
 								+ (totalUniques>3*ITEMS_PER_PAGE && !buyback
 										?"<div class='overlay' "+(currentPage==3?"":"id='"+pageIdMod+"3'")+"></div>"
 										:"<div class='overlay disabled'></div>")
-						+ "</div><div class='square-button max"+(currentPage==4?" выбранный":"")+"'>"
+						+ "</div><div class='square-button max"+(currentPage==4?" selected":"")+"'>"
 								+ "<div style='width:80%;height:80%;position:absolute;left:0; bottom:0;'>"
 									+(totalUniques>4*ITEMS_PER_PAGE && !buyback?SVGImages.SVG_IMAGE_PROVIDER.getInventoryIcon():SVGImages.SVG_IMAGE_PROVIDER.getInventoryIconDisabled())
 								+"</div>"
@@ -876,17 +876,17 @@ public enum RenderingEngine {
 			if(charactersInventoryToRender.isPlayer()) {
 				inventorySB.append(
 						"<div style='"+style+" width:"+styleWidth+";'>"+ UtilText.formatAsEssences(charactersInventoryToRender.getEssenceCount(), "b", true) +"</div>"
-						+ "<div style='"+style+" width:"+styleWidth+";'>"+ UtilText.formatAsMoney(charactersInventoryToRender.getMoney(), "b") +"</div><div class='normal-button"+(transferDisabled?" отключено":"")+"' id='"+idModifier+"MONEY_TRANSFER_SMALL' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourMinorGood")+"(&gt;)]</div><div class='normal-button"+(transferDisabled?" отключено":"")+"' id='"+idModifier+"MONEY_TRANSFER_AVERAGE' стиль='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourGood")+"(&gt;)]</div><div class='normal-button"+(transferDisabled?" отключено":"")+"' id='"+idModifier+"MONEY_TRANSFER_BIG' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourExcellent")+"(&gt;)]</div>");
+						+ "<div style='"+style+" width:"+styleWidth+";'>"+ UtilText.formatAsMoney(charactersInventoryToRender.getMoney(), "b") +"</div><div class='normal-button"+(transferDisabled?" disabled":"")+"' id='"+idModifier+"MONEY_TRANSFER_SMALL' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourMinorGood")+"(&gt;)]</div><div class='normal-button"+(transferDisabled?" disabled":"")+"' id='"+idModifier+"MONEY_TRANSFER_AVERAGE' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourGood")+"(&gt;)]</div><div class='normal-button"+(transferDisabled?" disabled":"")+"' id='"+idModifier+"MONEY_TRANSFER_BIG' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourExcellent")+"(&gt;)]</div>");
 				
 			} else {
 				inventorySB.append(
-						"<div class='normal-button"+(transferDisabled?" disabled":"")+"' id='"+idModifier+"MONEY_TRANSFER_BIG' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourExcellent")+"(&lt;)]</div><div class='normal-button"+(transferDisabled?" отключено":"")+"' id='"+idModifier+"MONEY_TRANSFER_AVERAGE' стиль='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourGood")+"(&lt;)]</div><div class='normal-button"+(transferDisabled?" отключено":"")+"' id='"+idModifier+"MONEY_TRANSFER_SMALL' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourMinorGood")+"(&lt;)]</div><div style='"+style+" width:"+styleWidth+";'>"+ (transferDisabled?UtilText.formatAsMoney("[style.colourUnknown(Неизвестно)]", "b"):UtilText.formatAsMoney(charactersInventoryToRender.getMoney(), "b")) +"</div>"
+						"<div class='normal-button"+(transferDisabled?" disabled":"")+"' id='"+idModifier+"MONEY_TRANSFER_BIG' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourExcellent")+"(&lt;)]</div><div class='normal-button"+(transferDisabled?" disabled":"")+"' id='"+idModifier+"MONEY_TRANSFER_AVERAGE' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourGood")+"(&lt;)]</div><div class='normal-button"+(transferDisabled?" disabled":"")+"' id='"+idModifier+"MONEY_TRANSFER_SMALL' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourMinorGood")+"(&lt;)]</div><div style='"+style+" width:"+styleWidth+";'>"+ (transferDisabled?UtilText.formatAsMoney("[style.colourUnknown(Неизвестно)]", "b"):UtilText.formatAsMoney(charactersInventoryToRender.getMoney(), "b")) +"</div>"
 						+ "<div style='"+style+" width:"+styleWidth+";'>"+ UtilText.formatAsEssences(charactersInventoryToRender.getEssenceCount(), "b", true) +"</div>");
 			}
 			
 		} else {
 			inventorySB.append(
-					"<div class='normal-button"+(transferDisabled?" disabled":"")+"' id='"+idModifier+"MONEY_TRANSFER_BIG' style='"+buttonStyle+" margin:0 0.75% 0 1%;'>[style."+(transferDisabled?"colourDisabled":"colourExcellent")+"(&lt;)]</div><div class='normal-button"+(transferDisabled?" отключено":"")+"' id='"+idModifier+"MONEY_TRANSFER_AVERAGE' стиль='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourGood")+"(&lt;)]</div><div class='normal-button"+(transferDisabled?" отключено":"")+"' id='"+idModifier+"MONEY_TRANSFER_SMALL' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourMinorGood")+"(&lt;)]</div><div style='"+style+" width:"+styleWidthDouble+"; margin-right:0;'>"+ UtilText.formatAsMoney(Main.game.getPlayerCell().getInventory().getMoney(), "b") +"</div>");
+					"<div class='normal-button"+(transferDisabled?" disabled":"")+"' id='"+idModifier+"MONEY_TRANSFER_BIG' style='"+buttonStyle+" margin:0 0.75% 0 1%;'>[style."+(transferDisabled?"colourDisabled":"colourExcellent")+"(&lt;)]</div><div class='normal-button"+(transferDisabled?" disabled":"")+"' id='"+idModifier+"MONEY_TRANSFER_AVERAGE' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourGood")+"(&lt;)]</div><div class='normal-button"+(transferDisabled?" disabled":"")+"' id='"+idModifier+"MONEY_TRANSFER_SMALL' style='"+buttonStyle+"'>[style."+(transferDisabled?"colourDisabled":"colourMinorGood")+"(&lt;)]</div><div style='"+style+" width:"+styleWidthDouble+"; margin-right:0;'>"+ UtilText.formatAsMoney(Main.game.getPlayerCell().getInventory().getMoney(), "b") +"</div>");
 		}
 		
 		inventorySB.append("</div>");

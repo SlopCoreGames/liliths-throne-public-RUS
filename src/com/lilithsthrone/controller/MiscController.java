@@ -92,7 +92,7 @@ public class MiscController {
 		for(int i=0; i<3; i++) {
 			if (MainController.document.getElementById(id+i) != null) {
 				int i2 = i;
-				((EventTarget) MainController.document.getElementById(id+i)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id+i, "click", e->{
 					MiscDialogue.dollOption = i2;
 					Main.game.setContent(new Response("", "", MiscDialogue.DOLL_BROCHURE_INTERNAL));
 				}, false);
@@ -102,7 +102,7 @@ public class MiscController {
 		for(int i=0; i<3; i++) {
 			if (MainController.document.getElementById(id+i) != null) {
 				int i2 = i;
-				((EventTarget) MainController.document.getElementById(id+i)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id+i, "click", e->{
 					MiscDialogue.genitalsOption = i2;
 					Main.game.setContent(new Response("", "", MiscDialogue.DOLL_BROCHURE_INTERNAL));
 				}, false);
@@ -112,7 +112,7 @@ public class MiscController {
 		for(int i=0; i<6; i++) {
 			if (MainController.document.getElementById(id+i) != null) {
 				int i2 = i;
-				((EventTarget) MainController.document.getElementById(id+i)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id+i, "click", e->{
 					MiscDialogue.ageOption = i2;
 					Main.game.setContent(new Response("", "", MiscDialogue.DOLL_BROCHURE_INTERNAL));
 				}, false);
@@ -122,7 +122,7 @@ public class MiscController {
 		for(int i=0; i<4; i++) {
 			if (MainController.document.getElementById(id+i) != null) {
 				int i2 = i;
-				((EventTarget) MainController.document.getElementById(id+i)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id+i, "click", e->{
 					MiscDialogue.outfitOption = i2;
 					Main.game.setContent(new Response("", "", MiscDialogue.DOLL_BROCHURE_INTERNAL));
 				}, false);
@@ -131,35 +131,35 @@ public class MiscController {
 		// Extra:
 		id = "DOLL_BARCODE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				MiscDialogue.barcodeRemoval = !MiscDialogue.barcodeRemoval;
 				Main.game.setContent(new Response("", "", MiscDialogue.DOLL_BROCHURE_INTERNAL));
 			}, false);
 		}
 		id = "DOLL_TOYS";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				MiscDialogue.toySet = !MiscDialogue.toySet;
 				Main.game.setContent(new Response("", "", MiscDialogue.DOLL_BROCHURE_INTERNAL));
 			}, false);
 		}
 		id = "DOLL_HAIR";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				MiscDialogue.hair = !MiscDialogue.hair;
 				Main.game.setContent(new Response("", "", MiscDialogue.DOLL_BROCHURE_INTERNAL));
 			}, false);
 		}
 		id = "DOLL_DECK";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				MiscDialogue.deck = !MiscDialogue.deck;
 				Main.game.setContent(new Response("", "", MiscDialogue.DOLL_BROCHURE_INTERNAL));
 			}, false);
 		}
 		id = "DOLL_FUCKED";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				MiscDialogue.fucked = !MiscDialogue.fucked;
 				Main.game.setContent(new Response("", "", MiscDialogue.DOLL_BROCHURE_INTERNAL));
 			}, false);
@@ -169,7 +169,7 @@ public class MiscController {
 	public static void initAlarmListeners() {
 		String id = "PLAYER_ALARM_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.game.getDialogueFlags().incrementSavedLong("player_phone_alarm", -60);
 				if (Main.game.getDialogueFlags().getSavedLong("player_phone_alarm")<0) {
 					Main.game.getDialogueFlags().incrementSavedLong("player_phone_alarm", 24*60);
@@ -179,7 +179,7 @@ public class MiscController {
 		}
 		id = "PLAYER_ALARM_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.game.getDialogueFlags().incrementSavedLong("player_phone_alarm", -5);
 				if (Main.game.getDialogueFlags().getSavedLong("player_phone_alarm")<0) {
 					Main.game.getDialogueFlags().incrementSavedLong("player_phone_alarm", 24*60);
@@ -189,7 +189,7 @@ public class MiscController {
 		}
 		id = "PLAYER_ALARM_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.game.getDialogueFlags().incrementSavedLong("player_phone_alarm", 5);
 				if (Main.game.getDialogueFlags().getSavedLong("player_phone_alarm")>=24*60) {
 					Main.game.getDialogueFlags().incrementSavedLong("player_phone_alarm", -24*60);
@@ -199,7 +199,7 @@ public class MiscController {
 		}
 		id = "PLAYER_ALARM_INCREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.game.getDialogueFlags().incrementSavedLong("player_phone_alarm", 60);
 				if (Main.game.getDialogueFlags().getSavedLong("player_phone_alarm")>=24*60) {
 					Main.game.getDialogueFlags().incrementSavedLong("player_phone_alarm", -24*60);
@@ -214,7 +214,7 @@ public class MiscController {
 		for (Map.Entry<AbstractWeapon, Integer> entry : Main.game.getPlayer().getAllWeaponsInInventory().entrySet()) {
 			id = "GIFT_"+entry.getKey().hashCode();
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.restoreSavedContent(false);
 					Main.game.setContent(new Response("Подарить подарок", "", GiftDialogue.getDialogueToProceedTo()) {
 						@Override
@@ -231,7 +231,7 @@ public class MiscController {
 		for (Map.Entry<AbstractItem, Integer> entry : Main.game.getPlayer().getAllItemsInInventory().entrySet()) {
 			id = "GIFT_"+entry.getKey().hashCode();
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.restoreSavedContent(false);
 					Main.game.setContent(new Response("Подарить подарок", "", GiftDialogue.getDialogueToProceedTo()) {
 						@Override
@@ -248,7 +248,7 @@ public class MiscController {
 		for (Map.Entry<AbstractClothing, Integer> entry : Main.game.getPlayer().getAllClothingInInventory().entrySet()) {
 			id = "GIFT_"+entry.getKey().hashCode();
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.restoreSavedContent(false);
 					Main.game.setContent(new Response("Подарить подарок", "", GiftDialogue.getDialogueToProceedTo()) {
 						@Override
@@ -275,7 +275,7 @@ public class MiscController {
 		
 		String id = slave.getId()+"_RENAME";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				boolean unsuitableName = false;
 				if (Main.mainController.getWebEngine().executeScript("document.getElementById('slaveNameInput')") != null) {
 					Main.mainController.getWebEngine().executeScript("document.getElementById('hiddenFieldName').innerHTML=document.getElementById('slaveNameInput').value;");
@@ -300,7 +300,7 @@ public class MiscController {
 		
 		id = slave.getId()+"_RENAME_RANDOM";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.game.setContent(new Response("Переименовать", "", Main.game.getCurrentDialogueNode()) {
 					@Override
 					public void effects() {
@@ -313,7 +313,7 @@ public class MiscController {
 		
 		id = slave.getId()+"_RENAME_SURNAME";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				boolean unsuitableName = false;
 				if (Main.mainController.getWebEngine().executeScript("document.getElementById('slaveSurnameInput')") != null) {
 					Main.mainController.getWebEngine().executeScript("document.getElementById('hiddenFieldName').innerHTML=document.getElementById('slaveSurnameInput').value;");
@@ -336,7 +336,7 @@ public class MiscController {
 		
 		id = slave.getId()+"_RENAME_SURNAME_RANDOM";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.game.setContent(new Response("Переименовать", "", Main.game.getCurrentDialogueNode()) {
 					@Override
 					public void effects() {
@@ -348,7 +348,7 @@ public class MiscController {
 		
 		id = slave.getId()+"_CALLS_PLAYER";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				boolean unsuitableName = false;
 				if (Main.mainController.getWebEngine().executeScript("document.getElementById('slaveToPlayerNameInput')") != null) {
 					Main.mainController.getWebEngine().executeScript("document.getElementById('hiddenFieldName').innerHTML=document.getElementById('slaveToPlayerNameInput').value;");
@@ -372,7 +372,7 @@ public class MiscController {
 		
 		id = "GLOBAL_CALLS_PLAYER";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				boolean unsuitableName = false;
 				if (Main.mainController.getWebEngine().executeScript("document.getElementById('slaveToPlayerNameInput')") != null) {
 					Main.mainController.getWebEngine().executeScript("document.getElementById('hiddenFieldName').innerHTML=document.getElementById('slaveToPlayerNameInput').value;");
@@ -403,7 +403,7 @@ public class MiscController {
 	public static void initFamilyRenameListeners() {
 		String id = Main.game.getActiveNPC().getId()+"_PET_NAME";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				boolean unsuitableName = false;
 				if (Main.mainController.getWebEngine().executeScript("document.getElementById('offspringPetNameInput')") != null) {
 					Main.mainController.getWebEngine().executeScript("document.getElementById('hiddenFieldName').innerHTML=document.getElementById('offspringPetNameInput').value;");
@@ -494,7 +494,7 @@ public class MiscController {
 			}
 			id = "SPELL_TREE_CAST_"+s;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", event->{
+				MainController.addEventListener(MainController.document, id, "click", event->{
 					if (s.getSpellCastOutOfCombatDescription(SpellManagement.getSpellOwner(), SpellManagement.getSpellTarget()).getKey()) {
 						Main.game.setContent(new Response("", "", SpellManagement.castSpell(s)));
 					}
@@ -510,7 +510,7 @@ public class MiscController {
 				for (TreeEntry<SpellSchool, SpellUpgrade> upgrade : upgradeList) {
 					id = "SPELL_UPGRADE_"+upgrade.getEntry();
 					if (MainController.document.getElementById(id) != null) {
-						((EventTarget) MainController.document.getElementById(id)).addEventListener("click", event->{
+						MainController.addEventListener(MainController.document, id, "click", event->{
 							if (Spell.isSpellUpgradeAvailable(SpellManagement.getSpellOwner(), s, upgrade)
 									&& SpellManagement.getSpellOwner().getSpellUpgradePoints(upgrade.getCategory())>=upgrade.getEntry().getPointCost()
 									&& !SpellManagement.getSpellOwner().hasSpellUpgrade(upgrade.getEntry())) {
@@ -570,7 +570,7 @@ public class MiscController {
 					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setLevelUpPerk(PerkManager.MANAGER.getPerkRow(character, perk), perk, character, availableForSelection));
 					if (availableForSelection) {
 						GameCharacter finalCharacter = character;
-						((EventTarget) MainController.document.getElementById(id)).addEventListener("click", event->{
+						MainController.addEventListener(MainController.document, id, "click", event->{
 							finalCharacter.removeTrait(perk);
 							Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 						}, false);
@@ -588,7 +588,7 @@ public class MiscController {
 						// These two dialogues are just for viewing, not modifying:
 						if (availableForSelection) {
 							GameCharacter finalCharacter = character;
-							((EventTarget) MainController.document.getElementById(id)).addEventListener("click", event->{
+							MainController.addEventListener(MainController.document, id, "click", event->{
 								if (e.getEntry().isEquippableTrait() && PerkManager.MANAGER.isPerkOwned(finalCharacter, e)) {
 									if (!finalCharacter.hasTraitActivated(e.getEntry())) {
 										finalCharacter.addTrait(e.getEntry());
@@ -619,7 +619,7 @@ public class MiscController {
 			GameCharacter character = CombatMovesSetup.getTarget();
 			String id = "MOVE_"+move.getIdentifier();
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", event->{
+				MainController.addEventListener(MainController.document, id, "click", event->{
 					if (character.getEquippedMoves().contains(move)) {
 						character.unequipMove(move.getIdentifier());
 					} else if (character.getEquippedMoves().size()<GameCharacter.MAX_COMBAT_MOVES) {
@@ -642,7 +642,7 @@ public class MiscController {
 		for (AbstractFetish f : Fetish.getAllFetishes()) {
 			String id = "FETISH_"+Fetish.getIdFromFetish(f);
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (Main.game.getPlayer().getEssenceCount()>=f.getCost()
 							&& f.getFetishesForAutomaticUnlock().isEmpty()
 							&& !targetedCharacter.hasFetish(f)
@@ -663,7 +663,7 @@ public class MiscController {
 			for (FetishDesire desire : FetishDesire.values()) {
 				id = Fetish.getIdFromFetish(f)+"_"+desire;
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						if (Main.game.getPlayer().getEssenceCount()>=FetishDesire.getCostToChange()
 								&& targetedCharacter.getBaseFetishDesire(f) != desire
 								&& !targetedCharacter.hasPerkAnywhereInTree(Perk.DOLL_LUST_3)) {
@@ -682,7 +682,7 @@ public class MiscController {
 		for(AbstractRace race : Race.getAllRaces()) {
 			String id = "ENCYCLOPEDIA_RACE_"+Race.getIdFromRace(race);
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					PhoneDialogue.applyRaceSelection(race);
 					Main.game.setContent(new Response("", "", PhoneDialogue.SUBSPECIES));
 				}, false);
@@ -711,7 +711,7 @@ public class MiscController {
 				String id = type.toString();
 				if (MainController.document.getElementById(id) != null) {
 					if (type.isAvailable(null, Main.game.getPlayer())) {
-						((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+						MainController.addEventListener(MainController.document, id, "click", e->{
 							Pathing.initPathingVariables();
 							Pathing.setMapTravelType(type);
 							Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -735,7 +735,7 @@ public class MiscController {
 			if (!interactive) {
 			    return;
 			}
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Vector2i clickLocation = new Vector2i(j, i);
 				if (c.getDialogue(false) != null // Make sure the destination actually has an associated DialogueNode
 						&& (c.isTravelledTo() || Main.game.isDebugMode()) // The player needs to have travelled here before (or have debug active)
@@ -836,7 +836,7 @@ public class MiscController {
 	public static void initDressingRoomListeners() {
 		String id = "apply_outfit_name";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				boolean unsuitableName = false;
 				if (Main.mainController.getWebEngine().executeScript("document.getElementById('outfit_name')") != null) {
 					Main.mainController.getWebEngine().executeScript("document.getElementById('hiddenPField').innerHTML=document.getElementById('outfit_name').value;");
@@ -865,7 +865,7 @@ public class MiscController {
 				if (MainController.document.getElementById(id) != null) {
 					boolean disabled = LilayaDressingRoomDialogue.isSlotDisabled(slot);
 					if(!disabled) {
-						((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+						MainController.addEventListener(MainController.document, id, "click", e->{
 							
 							LilayaDressingRoomDialogue.setSelectedSlot(slot);
 							LilayaDressingRoomDialogue.newlyCreatedWeapon = false;
@@ -909,7 +909,7 @@ public class MiscController {
 				
 				id = "clear_slot_"+slot.toString();
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						
 						LilayaDressingRoomDialogue.setSelectedSlot(slot);
 						LilayaDressingRoomDialogue.clearSlot();
@@ -924,7 +924,7 @@ public class MiscController {
 		if(Main.game.getCurrentDialogueNode()==LilayaDressingRoomDialogue.OUTFIT_EDITOR_ITEM_CHOICE) {
 			id = "clear_slot";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					
 					LilayaDressingRoomDialogue.clearSlot();
 					Main.game.setContent(new Response("Очистить слот", "", LilayaDressingRoomDialogue.OUTFIT_EDITOR));
@@ -936,7 +936,7 @@ public class MiscController {
 			
 			id = "ignore_slot";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 
 					LilayaDressingRoomDialogue.ignoreSlot();
 					Main.game.setContent(new Response("Игнорировать слот", "", LilayaDressingRoomDialogue.OUTFIT_EDITOR));
@@ -955,7 +955,7 @@ public class MiscController {
 				for(AbstractWeaponType weaponType : PhoneDialogue.getWeaponsDiscoveredList()) {
 					id = weaponType.getId();
 					if (MainController.document.getElementById(id) != null) {
-						((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+						MainController.addEventListener(MainController.document, id, "click", e->{
 							
 							LilayaDressingRoomDialogue.setWeaponSelected(weaponType);
 							Main.game.setContent(new Response("Выбрать оружие", "", LilayaDressingRoomDialogue.OUTFIT_EDITOR_ITEM_DYE));
@@ -970,7 +970,7 @@ public class MiscController {
 				for(AbstractClothingType clothingType : PhoneDialogue.getClothingDiscoveredList()) {
 					id = clothingType.getId();
 					if (MainController.document.getElementById(id) != null) {
-						((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+						MainController.addEventListener(MainController.document, id, "click", e->{
 
 							LilayaDressingRoomDialogue.setClothingSelected(clothingType);
 							Main.game.setContent(new Response("Выбрать одежду", "", LilayaDressingRoomDialogue.OUTFIT_EDITOR_ITEM_DYE));
@@ -1015,7 +1015,7 @@ public class MiscController {
 				for (Colour c : cr.getAllColours()) {
 					String id = "DYE_CLOTHING_"+i+"_"+c.getId();
 					if (MainController.document.getElementById(id) != null) {
-						((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+						MainController.addEventListener(MainController.document, id, "click", e->{
 							if (cr.isRecolouringAllowed()) {
 								LilayaDressingRoomDialogue.getClothingSelected().setColour(index, c);
 							}
@@ -1029,7 +1029,7 @@ public class MiscController {
 			for (Pattern pattern : Pattern.getAllPatterns()) {
 				String id = "ITEM_PATTERN_"+pattern.getId();
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						if (!LilayaDressingRoomDialogue.getClothingSelected().getPattern().equals(pattern.getId())) {
 							LilayaDressingRoomDialogue.getClothingSelected().setPattern(pattern.getId());
 							Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -1044,7 +1044,7 @@ public class MiscController {
 					String id = "DYE_CLOTHING_PATTERN_"+i+"_"+c.getId();
 					if (MainController.document.getElementById(id) != null) {
 						int finalI = i;
-						((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+						MainController.addEventListener(MainController.document, id, "click", e->{
 							LilayaDressingRoomDialogue.getClothingSelected().setPatternColour(finalI, c);
 							Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 						}, false);
@@ -1058,7 +1058,7 @@ public class MiscController {
 					String id = "ITEM_STICKER_"+stickerEntry.getKey().getId()+s.getId();
 					String requirements = UtilText.parse(s.getUnavailabilityText()).trim();
 					if (MainController.document.getElementById(id) != null) {
-						((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+						MainController.addEventListener(MainController.document, id, "click", e->{
 							if (LilayaDressingRoomDialogue.getClothingSelected().getStickersAsObjects().get(stickerEntry.getKey()) != s && requirements.isEmpty()) {
 								LilayaDressingRoomDialogue.getClothingSelected().setSticker(stickerEntry.getKey(), s);
 								Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -1124,7 +1124,7 @@ public class MiscController {
 				for (Colour c : cr.getAllColours()) {
 					String id = "DYE_WEAPON_"+i+"_"+c.getId();
 					if (MainController.document.getElementById(id) != null) {
-						((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+						MainController.addEventListener(MainController.document, id, "click", e->{
 							if (cr.isRecolouringAllowed()) {
 								LilayaDressingRoomDialogue.getWeaponSelected().setColour(index, c);
 							}
@@ -1138,7 +1138,7 @@ public class MiscController {
 			for (DamageType dt : weapon.getAvailableDamageTypes()) {
 				String id = "DAMAGE_TYPE_"+dt.toString();
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						LilayaDressingRoomDialogue.getWeaponSelected().setDamageType(dt);
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 					}, false);
@@ -1151,7 +1151,7 @@ public class MiscController {
 	public static void initDressingRoomEnchantmentListeners() {
 		String id = "apply_enchanted_item_name";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.mainController.getWebEngine().executeScript("document.getElementById('hiddenPField').innerHTML=document.getElementById('output_name').value;");
 				LilayaDressingRoomDialogue.setOutputName(Main.mainController.getWebEngine().getDocument().getElementById("hiddenPField").getTextContent());
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -1270,7 +1270,7 @@ public class MiscController {
 		// Adding an effect:
 		id = "ENCHANT_ADD_BUTTON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				if (LilayaDressingRoomDialogue.getSelectedItem().getEnchantmentEffect().getEffectsDescription(
 						LilayaDressingRoomDialogue.getPrimaryMod(), LilayaDressingRoomDialogue.getSecondaryMod(), LilayaDressingRoomDialogue.getPotency(), LilayaDressingRoomDialogue.getLimit(), Main.game.getPlayer(), Main.game.getPlayer()) != null) {
 					Main.game.setContent(new Response("Добавить", "Добавить эффект.", LilayaDressingRoomDialogue.OUTFIT_EDITOR_ITEM_ENCHANT) {

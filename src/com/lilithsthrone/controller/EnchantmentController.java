@@ -27,7 +27,7 @@ public class EnchantmentController {
 	static void initEnchantmentMenuListeners() {
 		String id = "apply_enchanted_item_name";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.mainController.getWebEngine().executeScript("document.getElementById('hiddenPField').innerHTML=document.getElementById('output_name').value;");
 				EnchantmentDialogue.setOutputName(Main.mainController.getWebEngine().getDocument().getElementById("hiddenPField").getTextContent());
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -142,7 +142,7 @@ public class EnchantmentController {
 		// Adding an effect:
 		id = "ENCHANT_ADD_BUTTON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				if (EnchantmentDialogue.getIngredient().getEnchantmentEffect().getEffectsDescription(
 						EnchantmentDialogue.getPrimaryMod(), EnchantmentDialogue.getSecondaryMod(), EnchantmentDialogue.getPotency(), EnchantmentDialogue.getLimit(), Main.game.getPlayer(), Main.game.getPlayer()) != null) {
 					Main.game.setContent(new Response("Добавить", "Добавить эффект.", EnchantmentDialogue.ENCHANTMENT_MENU) {

@@ -51,7 +51,7 @@ public class OccupantController {
 			} else if (MainController.document.getElementById(c.getId()+"_DISABLED") != null) {
 				MainController.addTooltipListeners(c.getId()+"_DISABLED", new TooltipInformationEventListener().setInformation("Управление комнатой", "Вы не можете управлять этой комнатой!"));
 			} else if (MainController.document.getElementById(c.getId()+"_PRESENT") != null) {
-				((EventTarget) MainController.document.getElementById(c.getId()+"_PRESENT")).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, c.getId()+"_PRESENT", "click", e->{
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 						@Override
 						public void effects() {
@@ -66,7 +66,7 @@ public class OccupantController {
 				}, false);
 				MainController.addTooltipListeners(c.getId()+"_PRESENT", new TooltipInformationEventListener().setInformation("Управление комнатой", "Открыть экран управления этой комнатой."));
 			} else if (MainController.document.getElementById(c.getId()) != null) {
-				((EventTarget) MainController.document.getElementById(c.getId())).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, c.getId(), "click", e->{
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 						@Override
 						public void effects() {
@@ -96,7 +96,7 @@ public class OccupantController {
 			}
 			id = PlaceUpgrade.getIdFromPlaceUpgrade(placeUpgrade)+"_BUY";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.setContent(
 							new Response("",
 									"",
@@ -124,7 +124,7 @@ public class OccupantController {
 			}
 			id = PlaceUpgrade.getIdFromPlaceUpgrade(placeUpgrade)+"_SELL";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 						@Override
 						public void effects() {
@@ -151,7 +151,7 @@ public class OccupantController {
 		
 		id = "rename_room_button";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				boolean unsuitableName = false;
 				if (Main.mainController.getWebEngine().executeScript("document.getElementById('nameInput')") != null) {
 					Main.mainController.getWebEngine().executeScript("document.getElementById('hiddenFieldName').innerHTML=document.getElementById('nameInput').value;");
@@ -206,7 +206,7 @@ public class OccupantController {
 						:UtilText.parse(fluidOwner, "[npc.namePos]"));
 				
 				if (canIngest) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						Main.game.getTextEndStringBuilder().append("<p>");
 						if (MilkingRoom.getTargetedCharacter().isPlayer()) {
 							switch (area.getKey()) {
@@ -315,7 +315,7 @@ public class OccupantController {
 		
 		String id = idModifier+"_SELL_"+fluid.hashCode();
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				int income = Math.max(1, (int) (fluid.getFluid().getValuePerMl()*fluid.getMillilitres()));
 				Main.game.getPlayer().incrementMoney(income);
 				room.getFluidsStored().remove(fluid);
@@ -332,7 +332,7 @@ public class OccupantController {
 			String id = "SLAVE_DAY_"+i;
 			if (MainController.document.getElementById(id) != null) {
 				int finalI = i; // Lambda requirement
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					OccupantManagementDialogue.setDayNumber(Main.game.getDayNumber()-finalI);
 					Main.game.setContent(new Response("Переименовать", "", Main.game.getCurrentDialogueNode()));
 				}, false);
@@ -347,7 +347,7 @@ public class OccupantController {
 		// Schedule:
 		id = "copySlaveJobSchedule";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				CompanionManagement.copyJobSchedule();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
@@ -357,7 +357,7 @@ public class OccupantController {
 		}
 		id = "pasteSlaveJobSchedule";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				if(CompanionManagement.isJobSchedulePasteAvailable()) {
 					boolean fullyPasted = CompanionManagement.pasteJobSchedule();
 					if(fullyPasted) {
@@ -376,7 +376,7 @@ public class OccupantController {
 		// Job settings:
 		id = "copySlaveJobSettings";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				CompanionManagement.copyJobSettings();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
@@ -386,7 +386,7 @@ public class OccupantController {
 		}
 		id = "pasteSlaveJobSettings";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				if(CompanionManagement.isJobSettingsPasteAvailable()) {
 					CompanionManagement.pasteJobSettings();
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -404,7 +404,7 @@ public class OccupantController {
 			id = i+"_WORK";
 			if (MainController.document.getElementById(id) != null) {
 				int finalI = i;
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					SlaveJob job = Main.game.getDialogueFlags().getSlaveryManagerJobSelected();
 					if (Main.game.getDialogueFlags().getManagementCompanion().getSlaveJob(finalI) == job) {
 						Main.game.getDialogueFlags().getManagementCompanion().setSlaveJob(finalI, SlaveJob.IDLE);
@@ -425,7 +425,7 @@ public class OccupantController {
 		for (SlaveJobHours preset : SlaveJobHours.values()) {
 			id = preset+"_TIME";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					if (preset == SlaveJobHours.NONE) {
 						for (int hour = 0; hour<24; hour++) {
 							SlaveJob job = Main.game.getDialogueFlags().getSlaveryManagerJobSelected();
@@ -464,7 +464,7 @@ public class OccupantController {
 			
 			id = job+"_ASSIGN";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.getDialogueFlags().setSlaveryManagerJobSelected(job);
 					Main.game.setContent(new Response("", "", CompanionManagement.getSlaveryManagementSlaveJobsDialogue(Main.game.getDialogueFlags().getManagementCompanion())));
 				}, false);
@@ -474,7 +474,7 @@ public class OccupantController {
 			for (SlaveJobSetting setting : job.getMutualSettings()) {
 				id = job+setting.toString()+"_ADD";
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						Main.game.getDialogueFlags().getManagementCompanion().addSlaveJobSettings(job, setting);
 						Main.game.setContent(new Response("", "", CompanionManagement.getSlaveryManagementSlaveJobsDialogue(Main.game.getDialogueFlags().getManagementCompanion())));
 					}, false);
@@ -486,7 +486,7 @@ public class OccupantController {
 				
 				id = job.toString()+setting+"_REMOVE";
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						Main.game.getDialogueFlags().getManagementCompanion().removeSlaveJobSettings(job, setting);
 						Main.game.setContent(new Response("", "", CompanionManagement.getSlaveryManagementSlaveJobsDialogue(Main.game.getDialogueFlags().getManagementCompanion())));
 					}, false);
@@ -501,7 +501,7 @@ public class OccupantController {
 				for (SlaveJobSetting setting : entry.getValue()) {
 					id = setting+"_TOGGLE_ADD";
 					if (MainController.document.getElementById(id) != null) {
-						((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+						MainController.addEventListener(MainController.document, id, "click", e->{
 							for (SlaveJobSetting settingRem : entry.getValue()) {
 								Main.game.getDialogueFlags().getManagementCompanion().removeSlaveJobSettings(job, settingRem);
 							}
@@ -531,7 +531,7 @@ public class OccupantController {
 		// Permissions:
 		String id = "copyPermissions";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				CompanionManagement.copyPermissions();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 			}, false);
@@ -541,7 +541,7 @@ public class OccupantController {
 		}
 		id = "pastePermissions";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				if(CompanionManagement.isPermissionsPasteAvailable()) {
 					CompanionManagement.pastePermissions();
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -559,7 +559,7 @@ public class OccupantController {
 			for (SlavePermissionSetting setting : permission.getSettings()) {
 				id = setting+"_ADD";
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						Main.game.getDialogueFlags().getManagementCompanion().addSlavePermissionSetting(permission, setting);
 						Main.game.setContent(new Response("", "", CompanionManagement.getSlaveryManagementSlavePermissionsDialogue(Main.game.getDialogueFlags().getManagementCompanion())));
 					}, false);
@@ -575,7 +575,7 @@ public class OccupantController {
 				
 				id = setting+"_REMOVE";
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						Main.game.getDialogueFlags().getManagementCompanion().removeSlavePermissionSetting(permission, setting);
 						Main.game.setContent(new Response("", "", CompanionManagement.getSlaveryManagementSlavePermissionsDialogue(Main.game.getDialogueFlags().getManagementCompanion())));
 					}, false);
@@ -605,7 +605,7 @@ public class OccupantController {
 			id = "SORT_SLAVES_BY_"+osm;
 			if (MainController.document.getElementById(id) != null) {
 				String friendlyName = Util.capitaliseSentence(osm.getName());
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 						@Override
 						public void effects() {
@@ -625,7 +625,7 @@ public class OccupantController {
 		// Sort ascending
 		id = "SORT_SLAVES_ASC";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 					@Override
 					public void effects() {
@@ -641,7 +641,7 @@ public class OccupantController {
 		// Sort Descending
 		id = "SORT_SLAVES_DESC";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 					@Override
 					public void effects() {
@@ -667,7 +667,7 @@ public class OccupantController {
 			
 			if (slave != null) { // slave shouldn't be null...
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						Main.game.setContent(new Response("", "", CompanionManagement.getSlaveryManagementInspectSlaveDialogue(slave)) {
 							@Override
 							public void effects() {
@@ -683,7 +683,7 @@ public class OccupantController {
 				
 				id = slaveId+"_JOB";
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						Main.game.setContent(new Response("", "", CompanionManagement.getSlaveryManagementSlaveJobsDialogue(slave)) {
 							@Override
 							public boolean isIgnoreContentScroll() {
@@ -703,7 +703,7 @@ public class OccupantController {
 				
 				id = slaveId+"_PERMISSIONS";
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						Main.game.setContent(new Response("", "", CompanionManagement.getSlaveryManagementSlavePermissionsDialogue(slave)) {
 							@Override
 							public boolean isIgnoreContentScroll() {
@@ -723,7 +723,7 @@ public class OccupantController {
 				
 				id = slaveId+"_INVENTORY";
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						CompanionManagement.initManagement(Main.game.getCurrentDialogueNode(), CompanionManagement.getDefaultResponseTab(), slave);
 						Main.mainController.openInventory(slave, InventoryInteraction.FULL_MANAGEMENT);
 					}, false);
@@ -734,7 +734,7 @@ public class OccupantController {
 				
 				id = slaveId+"_TRANSFER";
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 							@Override
 							public void effects() {
@@ -778,7 +778,7 @@ public class OccupantController {
 				
 				id = slaveId+"_SELL";
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						if (slave.isAbleToBeSold()) {
 							Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 								@Override
@@ -818,7 +818,7 @@ public class OccupantController {
 				
 				id = slaveId+"_COSMETICS";
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						Main.game.setContent(new Response("", "", CompanionManagement.getSlaveryManagementSlaveCosmeticsDialogue(slave)) {
 							@Override
 							public void effects() {
@@ -855,7 +855,7 @@ public class OccupantController {
 			
 			if (occupant != null) { // It shouldn't equal null...
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						Main.game.setContent(new Response("", "", CompanionManagement.getSlaveryManagementInspectSlaveDialogue(occupant)) {
 							@Override
 							public void effects() {
@@ -877,7 +877,7 @@ public class OccupantController {
 								18*2));
 						
 					} else {
-						((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e -> {
+						MainController.addEventListener(MainController.document, id, "click", e -> {
 							Main.game.setContent(new Response("", "", CompanionManagement.getSlaveryManagementSlaveJobsDialogue(occupant)) {
 								@Override
 								public void effects() {
@@ -901,7 +901,7 @@ public class OccupantController {
 				
 				id = occupantId+"_INVENTORY";
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 //						Main.game.getDialogueFlags().setManagementCompanion(occupant);
 						CompanionManagement.initManagement(Main.game.getCurrentDialogueNode(), CompanionManagement.getDefaultResponseTab(), occupant);
 						Main.mainController.openInventory(occupant, InventoryInteraction.FULL_MANAGEMENT);
@@ -914,7 +914,7 @@ public class OccupantController {
 				
 				id = occupantId+"_TRANSFER";
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 							@Override
 							public void effects() {
@@ -937,7 +937,7 @@ public class OccupantController {
 				
 				id = occupantId+"_COSMETICS";
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						Main.game.setContent(new Response("", "", CompanionManagement.getSlaveryManagementSlaveCosmeticsDialogue(occupant)) {
 							@Override
 							public void effects() {
@@ -974,7 +974,7 @@ public class OccupantController {
 			}
 			
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.setContent(new Response("", "", CompanionManagement.getSlaveryManagementInspectSlaveDialogue(slave)) {
 						@Override
 						public void effects() {
@@ -1013,7 +1013,7 @@ public class OccupantController {
 			
 			id = slaveId+"_BUY";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()) {
 						@Override
 						public void effects() {

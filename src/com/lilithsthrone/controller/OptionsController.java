@@ -45,28 +45,28 @@ public class OptionsController {
 	public static void initKeybindListeners() {
 		for (KeyboardAction ka : KeyboardAction.values()) {
 			if (MainController.document.getElementById("KB_PRIMARY_"+ka) != null) {
-				((EventTarget) MainController.document.getElementById("KB_PRIMARY_"+ka)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, "KB_PRIMARY_"+ka, "click", e->{
 					MainController.actionToBind = ka;
 					MainController.primaryBinding = true;
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
 			}
 			if (MainController.document.getElementById("KB_PRIMARY_CLEAR_"+ka) != null) {
-				((EventTarget) MainController.document.getElementById("KB_PRIMARY_CLEAR_"+ka)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, "KB_PRIMARY_CLEAR_"+ka, "click", e->{
 					Main.getProperties().hotkeyMapPrimary.put(ka, null);
 					Main.saveProperties();
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
 			}
 			if (MainController.document.getElementById("KB_SECONDARY_"+ka) != null) {
-				((EventTarget) MainController.document.getElementById("KB_SECONDARY_"+ka)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, "KB_SECONDARY_"+ka, "click", e->{
 					MainController.actionToBind = ka;
 					MainController.primaryBinding = false;
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
 				}, false);
 			}
 			if (MainController.document.getElementById("KB_SECONDARY_CLEAR_"+ka) != null) {
-				((EventTarget) MainController.document.getElementById("KB_SECONDARY_CLEAR_"+ka)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, "KB_SECONDARY_CLEAR_"+ka, "click", e->{
 					Main.getProperties().hotkeyMapSecondary.put(ka, null);
 					Main.saveProperties();
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -81,7 +81,7 @@ public class OptionsController {
 			String id = "OFFSPRING_GENDER_PREF_"+i;
 			int javaWooooooooooooooooooooooooooooooooOOOOOoooOOOOOoooOOOOOOooOOOOOooo = i;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.getProperties().offspringGenderLevel = javaWooooooooooooooooooooooooooooooooOOOOOoooOOOOOoooOOOOOOooOOOOOooo;
 					Main.saveProperties();
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -95,7 +95,7 @@ public class OptionsController {
 		for (Gender g : Gender.values()) {
 			for (ContentPreferenceValue preference : ContentPreferenceValue.values()) {
 				if (MainController.document.getElementById(preference+"_"+g) != null) {
-					((EventTarget) MainController.document.getElementById(preference+"_"+g)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, preference+"_"+g, "click", e->{
 						Main.getProperties().genderPreferencesMap.put(g, preference.getValue());
 						Main.saveProperties();
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -109,7 +109,7 @@ public class OptionsController {
 		for (SexualOrientation o : SexualOrientation.values()) {
 			for (SexualOrientationPreference preference : SexualOrientationPreference.values()) {
 				if (MainController.document.getElementById(preference+"_"+o) != null) {
-					((EventTarget) MainController.document.getElementById(preference+"_"+o)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, preference+"_"+o, "click", e->{
 						Main.getProperties().orientationPreferencesMap.put(o, preference.getValue());
 						Main.saveProperties();
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -127,7 +127,7 @@ public class OptionsController {
 			for (FetishPreference preference : FetishPreference.values()) {
 				String id = preference+"_"+Fetish.getIdFromFetish(f);
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						Main.getProperties().fetishPreferencesMap.put(f, preference.getValue());
 						Main.saveProperties();
 						Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -145,7 +145,7 @@ public class OptionsController {
 			for (PronounType pronoun : PronounType.values()) {
 				for (ContentPreferenceValue preference : ContentPreferenceValue.values()) {
 					if (MainController.document.getElementById(pronoun+"_"+preference+"_"+ageCat) != null) {
-						((EventTarget) MainController.document.getElementById(pronoun+"_"+preference+"_"+ageCat)).addEventListener("click", e->{
+						MainController.addEventListener(MainController.document, pronoun+"_"+preference+"_"+ageCat, "click", e->{
 							Main.getProperties().agePreferencesMap.get(pronoun).put(ageCat, preference.getValue());
 							Main.saveProperties();
 							Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -168,7 +168,7 @@ public class OptionsController {
 		// Human spawn rates:
 		id = "HUMAN_SPAWN_RATE_INCREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().humanSpawnRate = Math.max(0, Math.min(Main.getProperties().humanSpawnRate+25, 100));
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -177,7 +177,7 @@ public class OptionsController {
 		}
 		id = "HUMAN_SPAWN_RATE_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().humanSpawnRate = Math.max(0, Math.min(Main.getProperties().humanSpawnRate+5, 100));
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -186,7 +186,7 @@ public class OptionsController {
 		}
 		id = "HUMAN_SPAWN_RATE_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().humanSpawnRate = Math.max(0, Math.min(Main.getProperties().humanSpawnRate-5, 100));
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -195,7 +195,7 @@ public class OptionsController {
 		}
 		id = "HUMAN_SPAWN_RATE_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().humanSpawnRate = Math.max(0, Math.min(Main.getProperties().humanSpawnRate-25, 100));
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -206,7 +206,7 @@ public class OptionsController {
 		// Taur spawn rates:
 		id = "TAUR_SPAWN_RATE_INCREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().taurSpawnRate = Math.max(0, Math.min(Main.getProperties().taurSpawnRate+25, 100));
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -215,7 +215,7 @@ public class OptionsController {
 		}
 		id = "TAUR_SPAWN_RATE_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().taurSpawnRate = Math.max(0, Math.min(Main.getProperties().taurSpawnRate+5, 100));
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -224,7 +224,7 @@ public class OptionsController {
 		}
 		id = "TAUR_SPAWN_RATE_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().taurSpawnRate = Math.max(0, Math.min(Main.getProperties().taurSpawnRate-5, 100));
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -233,7 +233,7 @@ public class OptionsController {
 		}
 		id = "TAUR_SPAWN_RATE_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().taurSpawnRate = Math.max(0, Math.min(Main.getProperties().taurSpawnRate-25, 100));
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -244,7 +244,7 @@ public class OptionsController {
 		// Human spawn rates:
 		id = "HALF_DEMON_SPAWN_RATE_INCREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().halfDemonSpawnRate = Math.max(0, Math.min(Main.getProperties().halfDemonSpawnRate+25, 100));
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -253,7 +253,7 @@ public class OptionsController {
 		}
 		id = "HALF_DEMON_SPAWN_RATE_INCREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().halfDemonSpawnRate = Math.max(0, Math.min(Main.getProperties().halfDemonSpawnRate+5, 100));
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -262,7 +262,7 @@ public class OptionsController {
 		}
 		id = "HALF_DEMON_SPAWN_RATE_DECREASE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().halfDemonSpawnRate = Math.max(0, Math.min(Main.getProperties().halfDemonSpawnRate-5, 100));
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -271,7 +271,7 @@ public class OptionsController {
 		}
 		id = "HALF_DEMON_SPAWN_RATE_DECREASE_LARGE";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().halfDemonSpawnRate = Math.max(0, Math.min(Main.getProperties().halfDemonSpawnRate-25, 100));
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -284,7 +284,7 @@ public class OptionsController {
 			int index = i;
 			id = "TAUR_FURRY_LIMIT_"+index;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.getProperties().taurFurryLevel = index;
 					Main.saveProperties();
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -297,7 +297,7 @@ public class OptionsController {
 		for (FurryPreference preference : FurryPreference.values()) {
 			id = "ALL_FURRY_"+preference;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					for (AbstractSubspecies subspecies : Subspecies.getAllSubspecies()) {
 						if(subspecies.isFurryPreferencesEnabled() && subspecies.isDisplayedInFurryPreferences()) {
 							Main.getProperties().setFeminineFurryPreference(subspecies, preference);
@@ -312,7 +312,7 @@ public class OptionsController {
 		for (SubspeciesPreference preference : SubspeciesPreference.values()) {
 			id = "ALL_SPAWN_"+preference;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					for (AbstractSubspecies subspecies : Subspecies.getAllSubspecies()) {
 						if(subspecies.isSpawnPreferencesEnabled() && subspecies.isDisplayedInFurryPreferences()) {
 							Main.getProperties().setFeminineSubspeciesPreference(subspecies, preference);
@@ -331,7 +331,7 @@ public class OptionsController {
 				id = "FEMININE_"+preference+"_"+subspeciesId;
 				if (MainController.document.getElementById(id) != null) {
 					if (subspecies.isFurryPreferencesEnabled()) {
-						((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+						MainController.addEventListener(MainController.document, id, "click", e->{
 							Main.getProperties().setFeminineFurryPreference(subspecies, preference);
 							Main.saveProperties();
 							Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -346,7 +346,7 @@ public class OptionsController {
 				}
 				id = "MASCULINE_"+preference+"_"+subspeciesId;
 				if (MainController.document.getElementById(id) != null) {
-					((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+					MainController.addEventListener(MainController.document, id, "click", e->{
 						if (subspecies.isFurryPreferencesEnabled()) {
 							Main.getProperties().setMasculineFurryPreference(subspecies, preference);
 							Main.saveProperties();
@@ -364,7 +364,7 @@ public class OptionsController {
 				id = "FEMININE_SPAWN_"+preference+"_"+subspeciesId;
 				if (MainController.document.getElementById(id) != null) {
 					if (subspecies.isSpawnPreferencesEnabled()) {
-						((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+						MainController.addEventListener(MainController.document, id, "click", e->{
 							Main.getProperties().setFeminineSubspeciesPreference(subspecies, preference);
 							Main.saveProperties();
 							Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -380,7 +380,7 @@ public class OptionsController {
 				id = "MASCULINE_SPAWN_"+preference+"_"+subspeciesId;
 				if (MainController.document.getElementById(id) != null) {
 					if (subspecies.isSpawnPreferencesEnabled()) {
-						((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+						MainController.addEventListener(MainController.document, id, "click", e->{
 							Main.getProperties().setMasculineSubspeciesPreference(subspecies, preference);
 							Main.saveProperties();
 							Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -438,7 +438,7 @@ public class OptionsController {
 	
 	public static void createToggleListener(String id, PropertyValue option, boolean value, Runnable action) {
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().setValue(option, value);
 				if (action != null) {
 					action.run();
@@ -463,7 +463,7 @@ public class OptionsController {
 			id = "AUTOSAVE_FREQUENCY_"+i;
 			if (MainController.document.getElementById(id) != null) {
 				int finalI = i;
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.getProperties().autoSaveFrequency = finalI;
 					Main.saveProperties();
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -475,7 +475,7 @@ public class OptionsController {
 		for (Artist artist : Artwork.allArtists) {
 			id = "ARTIST_"+artist.getFolderName()+"_UP";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.getProperties().modifyArtistPriority(artist.getFolderName(), -1);
 					Main.saveProperties();
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -483,7 +483,7 @@ public class OptionsController {
 			}
 			id = "ARTIST_"+artist.getFolderName()+"_DOWN";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.getProperties().modifyArtistPriority(artist.getFolderName(), 1);
 					Main.saveProperties();
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -506,7 +506,7 @@ public class OptionsController {
 			id = "BYPASS_SEX_ACTIONS_"+i;
 			if (MainController.document.getElementById(id) != null) {
 				int finalI = i;
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.getProperties().bypassSexActions = finalI;
 					Main.saveProperties();
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -519,7 +519,7 @@ public class OptionsController {
 			id = "CLOTHING_FEMININITY_"+i;
 			int i2 = i; // "Local variable i defined in an enclosing scope must be final or effectively final" ...
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.getProperties().setClothingFemininityLevel(i2);
 					Main.saveProperties();
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -530,7 +530,7 @@ public class OptionsController {
 		
 		id = "PREGNANCY_DURATION_ON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().pregnancyDuration = Math.min(40, Main.getProperties().pregnancyDuration+1);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -538,7 +538,7 @@ public class OptionsController {
 		}
 		id = "PREGNANCY_DURATION_OFF";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().pregnancyDuration = Math.max(1, Main.getProperties().pregnancyDuration-1);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -547,7 +547,7 @@ public class OptionsController {
 		
 		id = "FORCED_TF_ON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().forcedTFPercentage = Math.min(100, Main.getProperties().forcedTFPercentage+10);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -555,7 +555,7 @@ public class OptionsController {
 		}
 		id = "FORCED_TF_OFF";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().forcedTFPercentage = Math.max(0, Main.getProperties().forcedTFPercentage-10);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -566,7 +566,7 @@ public class OptionsController {
 		for (FurryPreference fp : FurryPreference.values()) {
 			id = "FORCED_TF_FURRY_LIMIT_"+fp;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.getProperties().setForcedTFPreference(fp);
 					Main.saveProperties();
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -603,7 +603,7 @@ public class OptionsController {
 		for (ForcedTFTendency ftt : ForcedTFTendency.values()) {
 			id = "FORCED_TF_TENDENCY_"+ftt;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.getProperties().setForcedTFTendency(ftt);
 					Main.saveProperties();
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -615,7 +615,7 @@ public class OptionsController {
 		
 		id = "FORCED_FETISH_ON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().forcedFetishPercentage = Math.min(100, Main.getProperties().forcedFetishPercentage+10);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -623,7 +623,7 @@ public class OptionsController {
 		}
 		id = "FORCED_FETISH_OFF";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().forcedFetishPercentage = Math.max(0, Main.getProperties().forcedFetishPercentage-10);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -634,7 +634,7 @@ public class OptionsController {
 		for (ForcedFetishTendency fft : ForcedFetishTendency.values()) {
 			id = "FORCED_FETISH_TENDENCY_"+fft;
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.getProperties().setForcedFetishTendency(fft);
 					Main.saveProperties();
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -684,7 +684,7 @@ public class OptionsController {
 			id = "FULL_EXPOSURE_DESCRIPTIONS_"+i;
 			if (MainController.document.getElementById(id) != null) {
 				int finalI = i;
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.getProperties().fullExposureDescriptions = finalI;
 					Main.saveProperties();
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -700,7 +700,7 @@ public class OptionsController {
 			id = "MULTI_BREAST_PREFERENCE_"+i;
 			if (MainController.document.getElementById(id) != null) {
 				int finalI = i;
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.getProperties().multiBreasts = finalI;
 					Main.saveProperties();
 					for(NPC npc : Main.game.getAllNPCs()) {
@@ -717,7 +717,7 @@ public class OptionsController {
 			id = "UDDER_PREFERENCE_"+i;
 			if (MainController.document.getElementById(id) != null) {
 				int finalI1 = i;
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.getProperties().setUddersLevel(finalI1);
 					Main.saveProperties();
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -733,7 +733,7 @@ public class OptionsController {
 			id = "HAIR_GROWTH_PREFERENCE_"+i;
 			if (MainController.document.getElementById(id) != null) {
 				int finalI1 = i;
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					Main.getProperties().setHairGrowth(finalI1);
 					Main.saveProperties();
 					Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -743,7 +743,7 @@ public class OptionsController {
 		
 		id = "PREGNANCY_BREAST_GROWTH_ON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().pregnancyBreastGrowth = Math.min(10, Main.getProperties().pregnancyBreastGrowth+1);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -751,7 +751,7 @@ public class OptionsController {
 		}
 		id = "PREGNANCY_BREAST_GROWTH_OFF";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().pregnancyBreastGrowth = Math.max(0, Main.getProperties().pregnancyBreastGrowth-1);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -759,7 +759,7 @@ public class OptionsController {
 		}
 		id = "PREGNANCY_BREAST_GROWTH_UDDERS_ON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().pregnancyUdderGrowth = Math.min(10, Main.getProperties().pregnancyUdderGrowth+1);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -767,7 +767,7 @@ public class OptionsController {
 		}
 		id = "PREGNANCY_BREAST_GROWTH_UDDERS_OFF";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().pregnancyUdderGrowth = Math.max(0, Main.getProperties().pregnancyUdderGrowth-1);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -776,7 +776,7 @@ public class OptionsController {
 		
 		id = "PREGNANCY_BREAST_GROWTH_LIMIT_ON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().pregnancyBreastGrowthLimit = Math.min(CupSize.getCupSizeFromInt(100).getMeasurement(), Main.getProperties().pregnancyBreastGrowthLimit+1);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -784,7 +784,7 @@ public class OptionsController {
 		}
 		id = "PREGNANCY_BREAST_GROWTH_LIMIT_OFF";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().pregnancyBreastGrowthLimit = Math.max(0, Main.getProperties().pregnancyBreastGrowthLimit-1);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -792,7 +792,7 @@ public class OptionsController {
 		}
 		id = "PREGNANCY_BREAST_GROWTH_LIMIT_UDDERS_ON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().pregnancyUdderGrowthLimit = Math.min(CupSize.getCupSizeFromInt(100).getMeasurement(), Main.getProperties().pregnancyUdderGrowthLimit+1);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -800,7 +800,7 @@ public class OptionsController {
 		}
 		id = "PREGNANCY_BREAST_GROWTH_LIMIT_UDDERS_OFF";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().pregnancyUdderGrowthLimit = Math.max(0, Main.getProperties().pregnancyUdderGrowthLimit-1);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -809,7 +809,7 @@ public class OptionsController {
 		
 		id = "PREGNANCY_LACTATION_ON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().pregnancyLactationIncrease = Math.min(1000, Main.getProperties().pregnancyLactationIncrease+50);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -817,7 +817,7 @@ public class OptionsController {
 		}
 		id = "PREGNANCY_LACTATION_OFF";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().pregnancyLactationIncrease = Math.max(0, Main.getProperties().pregnancyLactationIncrease-50);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -825,7 +825,7 @@ public class OptionsController {
 		}
 		id = "PREGNANCY_LACTATION_UDDERS_ON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().pregnancyUdderLactationIncrease = Math.min(1000, Main.getProperties().pregnancyUdderLactationIncrease+50);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -833,7 +833,7 @@ public class OptionsController {
 		}
 		id = "PREGNANCY_LACTATION_UDDERS_OFF";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().pregnancyUdderLactationIncrease = Math.max(0, Main.getProperties().pregnancyUdderLactationIncrease-50);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -842,7 +842,7 @@ public class OptionsController {
 		
 		id = "PREGNANCY_LACTATION_LIMIT_ON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().pregnancyLactationLimit = Math.min(Lactation.SEVEN_MONSTROUS_AMOUNT_POURING.getMaximumValue(), Main.getProperties().pregnancyLactationLimit+500);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -850,7 +850,7 @@ public class OptionsController {
 		}
 		id = "PREGNANCY_LACTATION_LIMIT_OFF";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().pregnancyLactationLimit = Math.max(0, Main.getProperties().pregnancyLactationLimit-500);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -858,7 +858,7 @@ public class OptionsController {
 		}
 		id = "PREGNANCY_LACTATION_LIMIT_UDDERS_ON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().pregnancyUdderLactationLimit = Math.min(Lactation.SEVEN_MONSTROUS_AMOUNT_POURING.getMaximumValue(), Main.getProperties().pregnancyUdderLactationLimit+500);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -866,7 +866,7 @@ public class OptionsController {
 		}
 		id = "PREGNANCY_LACTATION_LIMIT_UDDERS_OFF";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().pregnancyUdderLactationLimit = Math.max(0, Main.getProperties().pregnancyUdderLactationLimit-500);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -876,7 +876,7 @@ public class OptionsController {
 		
 		id = "BREAST_SIZE_PREFERENCE_ON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().breastSizePreference = Math.min(20, Main.getProperties().breastSizePreference+1);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -884,7 +884,7 @@ public class OptionsController {
 		}
 		id = "BREAST_SIZE_PREFERENCE_OFF";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().breastSizePreference = Math.max(-20, Main.getProperties().breastSizePreference-1);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -892,7 +892,7 @@ public class OptionsController {
 		}
 		id = "BREAST_SIZE_PREFERENCE_UDDERS_ON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().udderSizePreference = Math.min(20, Main.getProperties().udderSizePreference+1);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -900,7 +900,7 @@ public class OptionsController {
 		}
 		id = "BREAST_SIZE_PREFERENCE_UDDERS_OFF";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().udderSizePreference = Math.max(-20, Main.getProperties().udderSizePreference-1);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -910,7 +910,7 @@ public class OptionsController {
 		
 		id = "PENIS_SIZE_PREFERENCE_ON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().penisSizePreference = Math.min(20, Main.getProperties().penisSizePreference+1);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -918,7 +918,7 @@ public class OptionsController {
 		}
 		id = "PENIS_SIZE_PREFERENCE_OFF";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().penisSizePreference = Math.max(-20, Main.getProperties().penisSizePreference-1);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -928,7 +928,7 @@ public class OptionsController {
 		
 		id = "TRAP_PENIS_SIZE_PREFERENCE_ON";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().trapPenisSizePreference = Math.min(100, Main.getProperties().trapPenisSizePreference+10);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -936,7 +936,7 @@ public class OptionsController {
 		}
 		id = "TRAP_PENIS_SIZE_PREFERENCE_OFF";
 		if (MainController.document.getElementById(id) != null) {
-			((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+			MainController.addEventListener(MainController.document, id, "click", e->{
 				Main.getProperties().trapPenisSizePreference = Math.max(-90, Main.getProperties().trapPenisSizePreference-10);
 				Main.saveProperties();
 				Main.game.setContent(new Response("", "", Main.game.getCurrentDialogueNode()));
@@ -947,7 +947,7 @@ public class OptionsController {
 		for (Colour colour : PresetColour.getHumanSkinColours()) {
 			id = "SKIN_COLOUR_PREFERENCE_"+colour.getId()+"_ON";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					int newValue = Math.min(10, Main.getProperties().skinColourPreferencesMap.get(colour)+1);
 					Main.getProperties().skinColourPreferencesMap.put(colour, newValue);
 					Main.saveProperties();
@@ -956,7 +956,7 @@ public class OptionsController {
 			}
 			id = "SKIN_COLOUR_PREFERENCE_"+colour.getId()+"_OFF";
 			if (MainController.document.getElementById(id) != null) {
-				((EventTarget) MainController.document.getElementById(id)).addEventListener("click", e->{
+				MainController.addEventListener(MainController.document, id, "click", e->{
 					int newValue = Math.max(0, Main.getProperties().skinColourPreferencesMap.get(colour)-1);
 					Main.getProperties().skinColourPreferencesMap.put(colour, newValue);
 					Main.saveProperties();
