@@ -447,6 +447,83 @@ def unmask_text(text: str, masks: dict) -> str:
     return text
 
 
+_IF_OPEN_RE = re.compile(r"#(?:ELSE\s*IF|IF)(?!END)")
+_ELSE_KW_RE = re.compile(r"#ELSE(?!\s*IF)")
+_ENDIF_KW_RE = re.compile(r"#ENDIF")
+_OPT_THEN_RE = re.compile(r"\s*#THEN")
+
+
+def _skip_conditional_header(text: str, pos: int) -> int:
+    """If text[pos:] is a UtilText #IF/#ELSEIF/#ELSE IF header (bracketed or #THEN-terminated), return end index, else -1."""
+    m = _IF_OPEN_RE.match(text, pos)
+    if not m:
+        return -1
+    k = m.end()
+    n = len(text)
+    while k < n and text[k].isspace():
+        k += 1
+    if k < n and text[k] == "(":
+        end_p = _find_matching_paren(text, k)
+        if end_p == -1:
+            return -1
+        end_hdr = end_p + 1
+        mt = _OPT_THEN_RE.match(text, end_hdr)
+        if mt:
+            end_hdr = mt.end()
+        return end_hdr
+    t_pos = text.find("#THEN", m.end())
+    if t_pos != -1:
+        return t_pos + 5
+    return -1
+
+
+def _bracket_paren_signature(text: str) -> tuple[tuple[int, ...], tuple[int, ...]]:
+    """Return (remaining_open_bracket_paren_deltas, closed_bracket_paren_deltas) outside Nashorn [#...] / #IF headers."""
+    # Strip [#...] blocks first so JS syntax inside them does not interfere
+    dummy_masks: dict[str, str] = {}
+    cleaned = _mask_nashorn_blocks(text, dummy_masks, [0])
+    # First pass: compute minimum '[' balance to infer initial open '[' depth from previous chunk
+    sq = 0
+    min_sq = 0
+    i = 0
+    n = len(cleaned)
+    while i < n:
+        if cleaned[i] == "#":
+            hdr_end = _skip_conditional_header(cleaned, i)
+            if hdr_end != -1:
+                i = hdr_end
+                continue
+        if cleaned[i] == "[":
+            sq += 1
+        elif cleaned[i] == "]":
+            sq -= 1
+            if sq < min_sq:
+                min_sq = sq
+        i += 1
+    init_sq = -min_sq
+    stack = [0] * init_sq
+    closed_deltas: list[int] = []
+    i = 0
+    while i < n:
+        if cleaned[i] == "#":
+            hdr_end = _skip_conditional_header(cleaned, i)
+            if hdr_end != -1:
+                i = hdr_end
+                continue
+        ch = cleaned[i]
+        if ch == "[":
+            stack.append(0)
+        elif ch == "]":
+            if stack:
+                closed_deltas.append(stack.pop())
+        elif ch == "(" and stack:
+            stack[-1] += 1
+        elif ch == ")" and stack:
+            stack[-1] -= 1
+        i += 1
+    return tuple(stack), tuple(closed_deltas)
+
+
 def validate_masks(
     translated: str, masks: dict, require_cyr: bool = False, src_text: str = "", required_keys: list[str] | None = None
 ) -> bool:
@@ -468,6 +545,8 @@ def validate_masks(
         if src_text.count("[") != unmasked.count("[") or src_text.count("]") != unmasked.count("]"):
             return False
         if sorted(WRAPPER_PREFIX_RE.findall(unmasked)) != sorted(WRAPPER_PREFIX_RE.findall(src_text)):
+            return False
+        if _bracket_paren_signature(unmasked) != _bracket_paren_signature(src_text):
             return False
     if require_cyr and not re.search(r"[А-Яа-яЁё]", unmasked):
         return False
@@ -927,29 +1006,26 @@ def split_directives(inner: str) -> list[tuple[bool, str]]:
             i += len(m_br.group(0))
             buf_start = i
             continue
-        # Check #IF(...) / #ELSEIF(...) / #ELSE / #ENDIF
+        # Check #IF(...) / #IF...#THEN / #ELSEIF / #ELSE / #ENDIF
         if inner[i] == "#":
-            if inner.startswith("#IF(", i) or inner.startswith("#ELSEIF(", i):
-                open_p = inner.find("(", i)
-                end_p = _find_matching_paren(inner, open_p)
-                if end_p != -1:
-                    if i > buf_start:
-                        for sub in split_long_prose(inner[buf_start:i]):
-                            tokens.append((False, sub))
-                    tokens.append((True, inner[i : end_p + 1]))
-                    i = end_p + 1
-                    buf_start = i
-                    continue
-            else:
-                m_kw = re.match(r"#(?:ELSEIF|ELSE|ENDIF)(?![A-Za-z0-9_])", inner[i:])
-                if m_kw:
-                    if i > buf_start:
-                        for sub in split_long_prose(inner[buf_start:i]):
-                            tokens.append((False, sub))
-                    tokens.append((True, m_kw.group(0)))
-                    i += len(m_kw.group(0))
-                    buf_start = i
-                    continue
+            hdr_end = _skip_conditional_header(inner, i)
+            if hdr_end != -1:
+                if i > buf_start:
+                    for sub in split_long_prose(inner[buf_start:i]):
+                        tokens.append((False, sub))
+                tokens.append((True, inner[i:hdr_end]))
+                i = hdr_end
+                buf_start = i
+                continue
+            m_kw = _ELSE_KW_RE.match(inner, i) or _ENDIF_KW_RE.match(inner, i)
+            if m_kw:
+                if i > buf_start:
+                    for sub in split_long_prose(inner[buf_start:i]):
+                        tokens.append((False, sub))
+                tokens.append((True, m_kw.group(0)))
+                i = m_kw.end()
+                buf_start = i
+                continue
         i += 1
     if buf_start < n:
         for sub in split_long_prose(inner[buf_start:n]):

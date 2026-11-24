@@ -585,8 +585,8 @@ public class PositioningMenu {
 									+(Main.sex.isMasturbation()
 										?"ты возишься и ерзаешь, пока не принимаешь нужную позу..."
 										:(Main.sex.getAllParticipants(false).size()==2
-											?UtilText.parse(Main.sex.getTargetedPartner(Main.game.getPlayer()), "ты перетаскиваешь [npc.name] на новое [npc.her]...")
-											:"ты перетаскиваешь своих партнеров на новые места...")));
+											?UtilText.parse(Main.sex.getTargetedPartner(Main.game.getPlayer()), "ты перемещаешь [npc.name] на [npc.her] новое место...")
+											:"ты перемещаешь своих партнеров на новые места...")));
 
 						SexActionUtility.POSITION_SELECTION.applyEffects();
 						Main.sex.endSexTurn(SexActionUtility.POSITION_SELECTION);
@@ -657,7 +657,7 @@ public class PositioningMenu {
 							:Util.capitaliseSentence(slot.getDescription()),
 						characterInSlot!=null && slot!=SexSlotGeneric.MISC_WATCHING
 							?UtilText.parse(targetedCharacter, characterInSlot,
-									"[npc2.NameIsFull] уже занимает это место, поэтому, выбрав [npc.name] на это место, вы поменяете их местами. (В итоге [npc2.name] окажется в слоте '"+positioningSlots.get(targetedCharacter).getDescription()+"' слот.)")
+									"[npc2.NameIsFull] уже занимает это место, поэтому, выбрав [npc.name] на это место, вы поменяете их местами. (В итоге [npc2.name] займёт слот «"+positioningSlots.get(targetedCharacter).getDescription()+"».)")
 							:UtilText.parse(targetedCharacter, "Назначить [npc.name] на это место."),
 						POSITIONING_MENU){
 					@Override
@@ -715,7 +715,7 @@ public class PositioningMenu {
 
 		@Override
 		public String getActionDescription() {
-			return "Открыть меню позиций для всех вариантов, связанных с основной позицией '"+Util.capitaliseSentence(SexPosition.STANDING.getName())+"основная позиция.";
+			return "Открыть меню позиций для всех вариантов, связанных с основной позицией «"+Util.capitaliseSentence(SexPosition.STANDING.getName())+"».";
 		}
 
 		@Override
@@ -783,7 +783,7 @@ public class PositioningMenu {
 
 		@Override
 		public String getActionDescription() {
-			return "Открыть меню позиций для всех вариантов, связанных с основной позицией '"+Util.capitaliseSentence(SexPosition.AGAINST_WALL.getName())+"основная позиция.";
+			return "Открыть меню позиций для всех вариантов, связанных с основной позицией «"+Util.capitaliseSentence(SexPosition.AGAINST_WALL.getName())+"».";
 		}
 
 		@Override
@@ -859,7 +859,7 @@ public class PositioningMenu {
 
 		@Override
 		public String getActionDescription() {
-			return "Открыть меню позиций для всех вариантов, связанных с основной позицией '"+Util.capitaliseSentence(SexPosition.SITTING.getName())+"основная позиция.";
+			return "Открыть меню позиций для всех вариантов, связанных с основной позицией «"+Util.capitaliseSentence(SexPosition.SITTING.getName())+"».";
 		}
 
 		@Override
@@ -945,7 +945,7 @@ public class PositioningMenu {
 
 		@Override
 		public String getActionDescription() {
-			return "Открыть меню позиций для всех вариантов, связанных с основной позицией '"+Util.capitaliseSentence(SexPosition.OVER_DESK.getName())+"основная позиция.";
+			return "Открыть меню позиций для всех вариантов, связанных с основной позицией «"+Util.capitaliseSentence(SexPosition.OVER_DESK.getName())+"».";
 		}
 
 		@Override
@@ -1013,7 +1013,7 @@ public class PositioningMenu {
 
 		@Override
 		public String getActionDescription() {
-			return "Открыть меню позиций для всех вариантов, связанных с основной позицией '"+Util.capitaliseSentence(SexPosition.ALL_FOURS.getName())+"основная позиция.";
+			return "Открыть меню позиций для всех вариантов, связанных с основной позицией «"+Util.capitaliseSentence(SexPosition.ALL_FOURS.getName())+"».";
 		}
 
 		@Override
@@ -1081,7 +1081,7 @@ public class PositioningMenu {
 
 		@Override
 		public String getActionDescription() {
-			return "Открыть меню позиций для всех вариантов, связанных с основной позицией '"+Util.capitaliseSentence(SexPosition.LYING_DOWN.getName())+"основная позиция.";
+			return "Открыть меню позиций для всех вариантов, связанных с основной позицией «"+Util.capitaliseSentence(SexPosition.LYING_DOWN.getName())+"».";
 		}
 
 		@Override
@@ -1149,7 +1149,7 @@ public class PositioningMenu {
 
 		@Override
 		public String getActionDescription() {
-			return "Открыть меню позиций для всех вариантов, связанных с основной позицией '"+Util.capitaliseSentence(SexPosition.STOCKS.getName())+"основная позиция.";
+			return "Открыть меню позиций для всех вариантов, связанных с основной позицией «"+Util.capitaliseSentence(SexPosition.STOCKS.getName())+"».";
 		}
 
 		@Override
@@ -1217,7 +1217,7 @@ public class PositioningMenu {
 
 		@Override
 		public String getActionDescription() {
-			return "Открыть меню позиций для всех вариантов, связанных с основной позицией '"+Util.capitaliseSentence(SexPosition.MILKING_STALL.getName())+"основная позиция.";
+			return "Открыть меню позиций для всех вариантов, связанных с основной позицией «"+Util.capitaliseSentence(SexPosition.MILKING_STALL.getName())+"».";
 		}
 
 		@Override

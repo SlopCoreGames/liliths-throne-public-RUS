@@ -29,10 +29,16 @@ CONSTRUCTOR_SKIP_ARGS: dict[tuple[str, int], set[int]] = {
     ("AbstractAttribute", 11): {6},
     ("AbstractPerk", 9): {4},
     ("AbstractPerk", 12): {4},
+    ("AbstractStatusEffect", 7): {2},
     ("AbstractStatusEffect", 8): {2},
     ("AbstractStatusEffect", 9): {2},
     ("AbstractStatusEffect", 10): {2},
     ("AbstractStatusEffect", 11): {3},
+    ("StatusEffect", 7): {2},
+    ("StatusEffect", 8): {2},
+    ("StatusEffect", 9): {2},
+    ("StatusEffect", 10): {2},
+    ("StatusEffect", 11): {3},
     ("AbstractFetish", 10): {3},
     ("AbstractTattooType", 8): {0},
     ("AbstractSubspecies", 37): {2, 3, 4, 5},
@@ -412,6 +418,9 @@ def collect_string_units(src: str) -> list[dict]:
     after_case = False
     in_header_stmt = False  # package / import
     in_annot = False
+    pending_enum = False
+    enum_name = ""
+    enum_body_depth = -1
 
     n = len(tokens)
     t_idx = 0
@@ -422,6 +431,11 @@ def collect_string_units(src: str) -> list[dict]:
         if kind == "ID":
             if val in ("import", "package") and not stack:
                 in_header_stmt = True
+            elif val == "enum":
+                pending_enum = True
+            elif pending_enum and enum_body_depth == -1:
+                enum_name = val
+                pending_enum = False
             elif val.startswith("@") and t_idx + 1 < n and tokens[t_idx + 1]["val"] == "(":
                 in_annot = True
             elif val == "case":
@@ -434,6 +448,8 @@ def collect_string_units(src: str) -> list[dict]:
                 in_header_stmt = False
                 in_annot = False
                 after_case = False
+                if len(stack) == enum_body_depth:
+                    enum_name = ""
             elif val == ":":
                 after_case = False
             elif val == "(":
@@ -444,15 +460,29 @@ def collect_string_units(src: str) -> list[dict]:
                     if t_idx >= 2 and tokens[t_idx - 2]["kind"] == "ID" and tokens[t_idx - 2]["val"] == "new":
                         is_new = True
                 total_args = _count_args_in_parens(tokens, t_idx)
+                is_enum_const = bool(
+                    enum_name and len(stack) == enum_body_depth and re.match(r"^[A-Z][A-Z0-9_]*$", prev_id)
+                )
                 if in_annot:
-                    stack.append({"kind": "ANNOT", "name": prev_id, "arg_idx": 0, "total_args": total_args})
+                    stack.append({"kind": "ANNOT", "name": prev_id, "enum_type": "", "arg_idx": 0, "total_args": total_args})
                     in_annot = False
                 elif prev_id and prev_id not in ("if", "for", "while", "switch", "catch", "synchronized", "return"):
-                    stack.append({"kind": "CALL", "name": prev_id, "arg_idx": 0, "total_args": total_args, "is_new": is_new})
+                    stack.append(
+                        {
+                            "kind": "CALL",
+                            "name": prev_id,
+                            "enum_type": enum_name if is_enum_const else "",
+                            "arg_idx": 0,
+                            "total_args": total_args,
+                            "is_new": is_new,
+                        }
+                    )
                 else:
-                    stack.append({"kind": "PAREN", "name": "", "arg_idx": 0, "total_args": 0})
+                    stack.append({"kind": "PAREN", "name": "", "enum_type": "", "arg_idx": 0, "total_args": 0})
             elif val == "{":
-                stack.append({"kind": "BRACE", "name": "", "arg_idx": 0, "total_args": 0})
+                stack.append({"kind": "BRACE", "name": "", "enum_type": "", "arg_idx": 0, "total_args": 0})
+                if enum_name and enum_body_depth == -1:
+                    enum_body_depth = len(stack)
             elif val == ",":
                 for frame in reversed(stack):
                     if frame["kind"] in ("CALL", "BRACE"):
@@ -461,6 +491,9 @@ def collect_string_units(src: str) -> list[dict]:
                         break
             elif val in (")", "}"):
                 if stack:
+                    if val == "}" and len(stack) == enum_body_depth:
+                        enum_body_depth = -1
+                        enum_name = ""
                     stack.pop()
             t_idx += 1
             continue
@@ -532,14 +565,18 @@ def _check_skip_context(
     if re.search(r"[А-Яа-яЁё]", text) and not base.has_translatable_words(text):
         return "already_ru"
 
-    # Check direct enclosing calls for forbidden functions or skip arg indices
+    # Check direct enclosing calls for forbidden functions or skip arg indices (including enum type!)
     for f in enclosing_calls:
         cname = f["name"]
+        etype = f.get("enum_type", "")
         if cname in FORBIDDEN_CALLS:
             return f"forbidden_call:{cname}"
         skip_set = CONSTRUCTOR_SKIP_ARGS.get((cname, f["total_args"]))
+        if not skip_set and etype:
+            skip_set = CONSTRUCTOR_SKIP_ARGS.get((etype, f["total_args"]))
         if skip_set and f["arg_idx"] in skip_set:
-            return f"skip_arg:{cname}#{f['arg_idx']}"
+            label = etype or cname
+            return f"skip_arg:{label}#{f['arg_idx']}"
 
     # Special rule for Colour formattingNames: Util.newArrayListOfValues(...) inside Colour constructor!
     call_names = [f["name"] for f in enclosing_calls]
